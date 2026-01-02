@@ -26,9 +26,10 @@
 - 🔹 **Weather Web App** – Real-time weather application with clean UI  
   🌐 Live: https://j-weather.onrender.com  
 
-- 🔹 **AI Resume Analyzer & Skill Gap Finder** *(In Progress)*  
-  🧠 Python-based tool to analyze resumes and suggest skill improvements  
+- 🔹 **AI Resume Analyzer & Skill Gap Finder** - 🧠 Python-based tool to analyze resumes and suggest skill improvements  
+   🌐 Live: https://ai-resume-analyzer-hhhb.onrender.com
 
+  
 ---
 
 ### 🌱 I’m currently learning
