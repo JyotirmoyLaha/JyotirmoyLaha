@@ -11,13 +11,6 @@
 - 🚀 Passionate about building **real-world projects**, not just college assignments
 - 🧠 Believe in *learning by building*, breaking things, and fixing them better
 
----
-
-### 🔭 I’m currently working on
-- **AI Resume Analyzer & Skill Gap Finder**  
-  *(Python + NLP + Resume Parsing + Smart Recommendations)*
-
----
 
 ### 🚀 Featured Projects
 - 🔹 **Portfolio Website** – Personal portfolio showcasing my skills & projects  
@@ -34,10 +27,8 @@
 
 ### 🌱 I’m currently learning
 - Advanced Python (OOP, file handling, optimization)
-- Data Structures & Algorithms (arrays, linked lists, trees)
 - Machine Learning fundamentals (basics, not hype)
 - Backend Development (APIs, Databases)
-- Modern Web Development (HTML, CSS, JavaScript)
 
 ---
 
