@@ -17,7 +17,7 @@
 ## 👨‍💻 About Me
 
 ```text
-🎓  BCA 2nd Year Student @ [Your College]
+🎓  BCA 2nd Year Student
 💼  Building real-world solutions with code
 🎯  Strong foundation in Python, DSA & Full-Stack Web Development
 🚀  3+ live projects deployed and serving users
