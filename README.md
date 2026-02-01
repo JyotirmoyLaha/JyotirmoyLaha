@@ -13,17 +13,19 @@
 
 
 ### 🚀 Featured Projects
+
 - 🔹 **Portfolio Website** – Personal portfolio showcasing my skills & projects  
   🌐 Live: https://jyotirmoy-portfolio.onrender.com  
 
 - 🔹 **Weather Web App** – Real-time weather application with clean UI  
   🌐 Live: https://j-weather.onrender.com  
 
-- 🔹 **AI Resume Analyzer & Skill Gap Finder** - 🧠 Python-based tool to analyze resumes and suggest skill improvements  
-   🌐 Live: https://ai-resume-analyzer-hhhb.onrender.com
+- 🔹 **AI Resume Analyzer & Skill Gap Finder** – Python-based tool to analyze resumes and suggest skill improvements  
+  🌐 Live: https://ai-resume-analyzer-hhhb.onrender.com  
 
-  
----
+- 🔹 **Mess Manager (PWA)** – Real-time mess expense and fund tracker for hostel groups  
+  🌐 Live: https://mess-maneger.onrender.com/
+
 
 ### 🌱 I’m currently learning
 - Advanced Python (OOP, file handling, optimization)
