@@ -23,7 +23,7 @@
 - 🔹 **AI Resume Analyzer & Skill Gap Finder** – Python-based tool to analyze resumes and suggest skill improvements  
   🌐 Live: https://ai-resume-analyzer-hhhb.onrender.com  
 
-- 🔹 **Mess Manager (PWA)** – Real-time mess expense and fund tracker for hostel groups  
+- 🔹 **Mess Manager** – Real-time mess expense and fund tracker for hostel groups  
   🌐 Live: https://mess-maneger.onrender.com/
 
 
