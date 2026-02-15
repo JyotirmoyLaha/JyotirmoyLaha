@@ -7,25 +7,32 @@
 ---
 
 ### 👨‍💻 About Me
-- 🎓 BCA 2nd Year Student with a strong foundation in **Python, DSA & Web Development**
-- 🚀 Passionate about building **real-world projects**, not just college assignments
-- 🧠 Believe in *learning by building*, breaking things, and fixing them better
+- 🎓 BCA 2nd Year Student with a strong foundation in Python, DSA & Web Development
+- 🚀 Passionate about building real-world projects, not just college assignments
+- 🧠 Believe in learning by building, breaking things, and fixing them better
 
 
 ### 🚀 Featured Projects
 
-- 🔹 **Portfolio Website** – Personal portfolio showcasing my skills & projects  
-  🌐 Live: https://jyotirmoy-portfolio.onrender.com  
+- **Portfolio Website**  
+  Personal portfolio showcasing my skills & projects  
+  🌐 https://jyotirmoy-portfolio.onrender.com  
 
-- 🔹 **Weather Web App** – Real-time weather application with clean UI  
-  🌐 Live: https://j-weather.onrender.com  
+- **Weather Web App**  
+  Real-time weather application with clean UI  
+  🌐 https://j-weather.onrender.com  
 
-- 🔹 **AI Resume Analyzer & Skill Gap Finder** – Python-based tool to analyze resumes and suggest skill improvements  
-  🌐 Live: https://ai-resume-analyzer-hhhb.onrender.com  
+- **AI Resume Analyzer & Skill Gap Finder**  
+  Python-based tool to analyze resumes and suggest skill improvements  
+  🌐 https://ai-resume-analyzer-hhhb.onrender.com  
 
-- 🔹 **Mess Manager** – Real-time mess expense and fund tracker for hostel groups  
-  🌐 Live: https://mess-maneger.onrender.com/
+- **Mess Manager**  
+  Real-time mess expense and fund tracker for hostel groups  
+  🌐 https://mess-maneger.onrender.com/
 
+- **StudyVerse**  
+  A beautifully crafted study journal & life tracker with a premium Japanese-inspired design  
+  🌐 https://studyverse-vlzh.onrender.com/
 
 ### 🌱 I’m currently learning
 - Advanced Python (OOP, file handling, optimization)
@@ -59,7 +66,7 @@
 
 ### 📫 How to reach me
 - 📧 Email: **jyotirmoylaha713128@gmail.com**
-- 💼 GitHub: *You’re already here 😉*
+- 💼 Linkedin: **https://www.linkedin.com/in/jyotirmoy-laha-416818319/**
 
 ---
 
