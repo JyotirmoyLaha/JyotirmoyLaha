@@ -1,7 +1,7 @@
 ## 💫 Hi 👋, I'm Jyotirmoy Laha  
 **BCA Student | Aspiring Software Engineer | Web & AI Enthusiast**
 
-📩 **Email:** jyotirmoylaha713128@gmail.com  
+📩 **Email:** jyotirmoy713128@gmail.com  
 💼 *Open to collaboration, internships & serious tech discussions*
 
 ---
