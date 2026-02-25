@@ -65,7 +65,7 @@
 ---
 
 ### 📫 How to reach me
-- 📧 Email: **jyotirmoylaha713128@gmail.com**
+- 📧 Email: **jyotirmoy713128@gmail.com**
 - 💼 Linkedin: **https://www.linkedin.com/in/jyotirmoy-laha-416818319/**
 
 ---
