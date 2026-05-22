@@ -34,33 +34,6 @@
   A beautifully crafted study journal & life tracker with a premium Japanese-inspired design  
   🌐 https://studyverse-vlzh.onrender.com/
 
-### 🌱 I’m currently learning
-- Advanced Python (OOP, file handling, optimization)
-- Machine Learning fundamentals (basics, not hype)
-- Backend Development (APIs, Databases)
-
----
-
-### 👯 I’m looking to collaborate on
-- AI / ML based projects  
-- Python automation tools  
-- Resume analyzers & productivity tools  
-- Beginner–friendly open-source projects  
-
----
-
-### 🤔 I’m looking for help with
-- Improving project architecture & scalability  
-- Writing scalable, clean, industry-standard code  
-- Internship & technical interview preparation  
-
----
-
-### 💬 Ask me about
-- Python programming  
-- College-level DSA & practical exams  
-- Beginner AI / ML concepts  
-- Building projects as a student  
 
 ---
 
