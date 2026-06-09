@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 220" width="100%" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="240">
   <style>
     .card-border {
       fill: #0c0b16;
@@ -37,41 +37,106 @@
       color: #adbac7;
     }
     
-    /* Typewriter keyframes */
+    /* Typewriter Keyframes Loop */
     .line1 {
-      animation: type 1.2s steps(25, end) forwards, blink-caret 0.6s step-end infinite, hide-cursor 0s 1.2s forwards;
+      animation: type-line1 16s infinite, blink-line1 16s infinite;
     }
     .line2 {
-      animation: type 1.6s steps(45, end) 1.2s forwards, blink-caret 0.6s step-end infinite 1.2s, hide-cursor 0s 2.8s forwards;
+      animation: type-line2 16s infinite, blink-line2 16s infinite;
     }
     .line3 {
-      animation: type 1.6s steps(45, end) 2.8s forwards, blink-caret 0.6s step-end infinite 2.8s, hide-cursor 0s 4.4s forwards;
+      animation: type-line3 16s infinite, blink-line3 16s infinite;
     }
     .line4 {
-      animation: type 1.6s steps(45, end) 4.4s forwards, blink-caret 0.6s step-end infinite 4.4s, hide-cursor 0s 6.0s forwards;
+      animation: type-line4 16s infinite, blink-line4 16s infinite;
     }
     .line5 {
-      animation: type 1.8s steps(50, end) 6.0s forwards, blink-caret 0.6s step-end infinite 6.0s, hide-cursor 0s 7.8s forwards;
+      animation: type-line5 16s infinite, blink-line5 16s infinite;
     }
     .line6 {
-      animation: type 1.2s steps(20, end) 7.8s forwards, blink-caret 0.6s step-end infinite 7.8s;
+      animation: type-line6 16s infinite, blink-line6 16s infinite;
     }
     
-    @keyframes type {
-      from { width: 0; }
-      to { width: 100%; }
+    @keyframes type-line1 {
+      0% { width: 0; }
+      6% { width: 34ch; }
+      90% { width: 34ch; }
+      94%, 100% { width: 0; }
     }
-    @keyframes blink-caret {
-      from, to { border-right-color: transparent; }
-      50% { border-right-color: #3b82f6; }
+    @keyframes blink-line1 {
+      0%, 2%, 4%, 6% { border-right-color: #3b82f6; }
+      1%, 3%, 5% { border-right-color: transparent; }
+      6.1%, 100% { border-right-color: transparent; }
     }
-    @keyframes hide-cursor {
-      to { border-right-color: transparent; }
+    
+    @keyframes type-line2 {
+      0%, 6% { width: 0; }
+      18% { width: 80ch; }
+      90% { width: 80ch; }
+      94%, 100% { width: 0; }
+    }
+    @keyframes blink-line2 {
+      0%, 5.9% { border-right-color: transparent; }
+      6%, 9%, 12%, 15%, 18% { border-right-color: #3b82f6; }
+      7.5%, 10.5%, 13.5%, 16.5% { border-right-color: transparent; }
+      18.1%, 100% { border-right-color: transparent; }
+    }
+    
+    @keyframes type-line3 {
+      0%, 18% { width: 0; }
+      30% { width: 70ch; }
+      90% { width: 70ch; }
+      94%, 100% { width: 0; }
+    }
+    @keyframes blink-line3 {
+      0%, 17.9% { border-right-color: transparent; }
+      18%, 21%, 24%, 27%, 30% { border-right-color: #3b82f6; }
+      19.5%, 22.5%, 25.5%, 28.5% { border-right-color: transparent; }
+      30.1%, 100% { border-right-color: transparent; }
+    }
+    
+    @keyframes type-line4 {
+      0%, 30% { width: 0; }
+      42% { width: 76ch; }
+      90% { width: 76ch; }
+      94%, 100% { width: 0; }
+    }
+    @keyframes blink-line4 {
+      0%, 29.9% { border-right-color: transparent; }
+      30%, 33%, 36%, 39%, 42% { border-right-color: #3b82f6; }
+      31.5%, 34.5%, 37.5%, 40.5% { border-right-color: transparent; }
+      42.1%, 100% { border-right-color: transparent; }
+    }
+    
+    @keyframes type-line5 {
+      0%, 42% { width: 0; }
+      56% { width: 83ch; }
+      90% { width: 83ch; }
+      94%, 100% { width: 0; }
+    }
+    @keyframes blink-line5 {
+      0%, 41.9% { border-right-color: transparent; }
+      42%, 45%, 48%, 51%, 54%, 56% { border-right-color: #3b82f6; }
+      43.5%, 46.5%, 49.5%, 52.5%, 55% { border-right-color: transparent; }
+      56.1%, 100% { border-right-color: transparent; }
+    }
+    
+    @keyframes type-line6 {
+      0%, 56% { width: 0; }
+      68% { width: 24ch; }
+      90% { width: 24ch; }
+      94%, 100% { width: 0; }
+    }
+    @keyframes blink-line6 {
+      0%, 55.9% { border-right-color: transparent; }
+      56%, 60%, 64%, 68%, 72%, 76%, 80%, 84%, 88%, 90% { border-right-color: #3b82f6; }
+      58%, 62%, 66%, 70%, 74%, 78%, 82%, 86%, 89% { border-right-color: transparent; }
+      90.1%, 100% { border-right-color: transparent; }
     }
   </style>
 
   <!-- Card Background -->
-  <rect width="848" height="218" x="1" y="1" class="card-border" />
+  <rect width="848" height="238" x="1" y="1" class="card-border" />
 
   <!-- Terminal Header Bar -->
   <path d="M 1,13 C 1,5 5,1 13,1 L 835,1 C 843,1 847,5 847,13 L 847,30 L 1,30 Z" class="terminal-header" />
@@ -83,26 +148,26 @@
   <text x="425" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#6c7a89" text-anchor="middle">about_me.sh</text>
 
   <!-- Terminal Body content via foreignObject -->
-  <foreignObject x="20" y="45" width="810" height="165">
+  <foreignObject x="20" y="45" width="810" height="185">
     <div xmlns="http://www.w3.org/1999/xhtml" style="margin: 0; padding: 0;">
       <!-- Line 1: Command Prompt -->
-      <div style="margin-bottom: 5px;">
+      <div style="margin-bottom: 6px;">
         <span class="term-text line1"><span class="prompt">jyotirmoy@laha:~$</span> <span class="command">cat about_me.txt</span></span>
       </div>
       <!-- Line 2: BCA Student -->
-      <div style="margin-bottom: 5px;">
+      <div style="margin-bottom: 6px;">
         <span class="term-text line2 content-text">🎓 BCA Student (2nd Year) with a strong foundation in Python, DSA, and Web Dev.</span>
       </div>
       <!-- Line 3: Builder Mindset -->
-      <div style="margin-bottom: 5px;">
+      <div style="margin-bottom: 6px;">
         <span class="term-text line3 content-text">🚀 Builder Mindset — Passionate about building real-world projects.</span>
       </div>
       <!-- Line 4: Philosophy -->
-      <div style="margin-bottom: 5px;">
+      <div style="margin-bottom: 6px;">
         <span class="term-text line4 content-text">🧠 Philosophy — Learn by building, breaking things, and rebuilding better.</span>
       </div>
       <!-- Line 5: Fun Fact -->
-      <div style="margin-bottom: 5px;">
+      <div style="margin-bottom: 6px;">
         <span class="term-text line5 content-text">⚡ Fun Fact — I don't just learn tech — I build with it, break it, and rebuild it.</span>
       </div>
       <!-- Line 6: Pronouns -->
