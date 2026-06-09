@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 130" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Theme Gradients -->
+    <linearGradient id="theme-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .card-border {
+      fill: #0c0b16;
+      stroke: #221e3f;
+      stroke-width: 1.5;
+      rx: 12;
+      transition: all 0.3s ease;
+    }
+    .card-border:hover {
+      stroke: #6366F1;
+    }
+    .project-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      fill: #ffffff;
+    }
+    .project-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 10.5px;
+      fill: #8b949e;
+    }
+    .pill-bg {
+      fill: #141226;
+      stroke: #221e3f;
+      stroke-width: 1;
+      rx: 5;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #c9d1d9;
+    }
+    .floating-terminal {
+      animation: term-float 4.2s infinite ease-in-out;
+    }
+    .floating-brackets {
+      animation: brackets-float 3.5s infinite ease-in-out;
+    }
+    @keyframes term-float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes brackets-float {
+      0%, 100% { transform: translateY(0px) scale(0.95); opacity: 0.7; }
+      50% { transform: translateY(-3px) scale(1.05); opacity: 1; }
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="388" height="128" x="1" y="1" class="card-border" />
+
+  <!-- Left Icon Container -->
+  <g transform="translate(15, 15)">
+    <!-- Background Circle -->
+    <rect width="80" height="100" rx="10" fill="rgba(99, 102, 241, 0.08)" stroke="rgba(99, 102, 241, 0.15)" stroke-width="1" />
+    
+    <!-- Under-shadow -->
+    <ellipse cx="40" cy="80" rx="20" ry="4" fill="rgba(0, 0, 0, 0.35)" />
+
+    <!-- 3D Isometric Terminal Block -->
+    <g class="floating-terminal" style="transform-origin: 40px 52px;">
+      <!-- Left Face (Darker) -->
+      <polygon points="22,42 40,50 40,72 22,64" fill="#141223" stroke="#6366F1" stroke-width="1.2" stroke-linejoin="round" />
+      
+      <!-- Perspective Green/Red Code Lines on Left Face -->
+      <line x1="25" y1="48" x2="35" y2="52" stroke="#10B981" stroke-width="1.2" stroke-linecap="round" />
+      <line x1="25" y1="54" x2="38" y2="60" stroke="#10B981" stroke-width="1.2" stroke-linecap="round" />
+      <line x1="25" y1="60" x2="32" y2="63" stroke="#FF3366" stroke-width="1.2" stroke-linecap="round" />
+
+      <!-- Right Face (Medium) -->
+      <polygon points="40,50 58,42 58,64 40,72" fill="#252142" stroke="#6366F1" stroke-width="1.2" stroke-linejoin="round" />
+      
+      <!-- Perspective Orange/Blue/White Code Lines on Right Face -->
+      <line x1="43" y1="55" x2="53" y2="51" stroke="#FFE082" stroke-width="1.2" stroke-linecap="round" />
+      <line x1="43" y1="61" x2="55" y2="56" stroke="#33CCFF" stroke-width="1.2" stroke-linecap="round" />
+      <line x1="43" y1="67" x2="50" y2="64" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" />
+
+      <!-- Top Face (Terminal Screen Header) -->
+      <polygon points="40,34 58,42 40,50 22,42" fill="#1c1a30" stroke="#6366F1" stroke-width="1.2" stroke-linejoin="round" />
+      
+      <!-- macOS Style Header Dots in 3D Isometric View -->
+      <circle cx="28" cy="40" r="1" fill="#FF3366" />
+      <circle cx="32" cy="41.8" r="1" fill="#FFCA28" />
+      <circle cx="36" cy="43.5" r="1" fill="#27C93F" />
+    </g>
+
+    <!-- Floating 3D Brackets Above (Animated) -->
+    <g class="floating-brackets" style="transform-origin: 40px 22px;">
+      <path d="M 28,26 L 25,22 L 28,18" fill="none" stroke="#A855F7" stroke-width="1.5" stroke-linecap="round" />
+      <path d="M 52,26 L 55,22 L 52,18" fill="none" stroke="#A855F7" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="42" y1="16" x2="38" y2="28" stroke="#33CCFF" stroke-width="1.5" stroke-linecap="round" filter="url(#glow)" />
+    </g>
+  </g>
+
+  <!-- Right Text Area -->
+  <text x="110" y="38" class="project-title">✨ Personal Portfolio</text>
+  <text x="110" y="58" class="project-desc">Interactive Showcase of Skills &amp; Projects</text>
+  <text x="110" y="74" class="project-desc">Highlights web assets with responsive, visual feedback.</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(110, 90)">
+    <rect width="45" height="20" class="pill-bg" />
+    <text x="22.5" y="13" text-anchor="middle" class="pill-text">React</text>
+  </g>
+  <g transform="translate(161, 90)">
+    <rect width="55" height="20" class="pill-bg" />
+    <text x="27.5" y="13" text-anchor="middle" class="pill-text">Tailwind</text>
+  </g>
+  <g transform="translate(222, 90)">
+    <rect width="40" height="20" class="pill-bg" />
+    <text x="20" y="13" text-anchor="middle" class="pill-text">Vite</text>
+  </g>
+  <g transform="translate(268, 90)">
+    <rect width="60" height="20" class="pill-bg" />
+    <text x="30" y="13" text-anchor="middle" class="pill-text">Deployed</text>
+  </g>
+</svg>
