@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=JyotirmoyLaha&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/JyotirmoyLaha?label=Followers&style=flat-square&color=0e75b6&logo=github" alt="Followers" />
+  <img src="https://img.shields.io/github/followers/JyotirmoyLaha?style=flat-square&color=0e75b6&logo=github" alt="Followers" />
 </p>
 
 <p align="center">
@@ -29,58 +29,49 @@
 
 ### 🚀 Featured Projects
 
-<table width="100%">
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">
-        <img src="assets/project_studyverse.svg" alt="StudyVerse" width="100%" />
-      </a>
-      <br/>
-      <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://studyverse-vlzh.onrender.com/" target="_blank">🌐 Live Demo</a>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">
-        <img src="assets/project_resume.svg" alt="AI Resume Analyzer" width="100%" />
-      </a>
-      <br/>
-      <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">💻 Frontend</a> &nbsp;•&nbsp; <a href="https://github.com/JyotirmoyLaha/ai-resume-analyzer-backend" target="_blank">⚙️ Backend</a> &nbsp;•&nbsp; <a href="https://ai-resume-analyzer-hhhb.onrender.com" target="_blank">🌐 Live Demo</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">
-        <img src="assets/project_mess.svg" alt="Mess Manager" width="100%" />
-      </a>
-      <br/>
-      <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://mess-maneger.onrender.com/" target="_blank">🌐 Live Demo</a>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">
-        <img src="assets/project_weather.svg" alt="J.SkyCast Weather" width="100%" />
-      </a>
-      <br/>
-      <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://j-weather.onrender.com" target="_blank">🌐 Live Demo</a>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" valign="top">
-      <br/>
-      <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">
-        <img src="assets/project_portfolio.svg" alt="Personal Portfolio" width="70%" />
-      </a>
-      <br/>
-      <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://jyotirmoy-portfolio.onrender.com" target="_blank">🌐 Live Demo</a>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">
+    <img src="assets/project_studyverse.svg" alt="StudyVerse" width="100%" />
+  </a>
+  <br/>
+  <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://studyverse-vlzh.onrender.com/" target="_blank">🌐 Live Demo</a>
+  <br/><br/>
+  
+  <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">
+    <img src="assets/project_resume.svg" alt="AI Resume Analyzer" width="100%" />
+  </a>
+  <br/>
+  <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">💻 Frontend</a> &nbsp;•&nbsp; <a href="https://github.com/JyotirmoyLaha/ai-resume-analyzer-backend" target="_blank">⚙️ Backend</a> &nbsp;•&nbsp; <a href="https://ai-resume-analyzer-hhhb.onrender.com" target="_blank">🌐 Live Demo</a>
+  <br/><br/>
+
+  <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">
+    <img src="assets/project_mess.svg" alt="Mess Manager" width="100%" />
+  </a>
+  <br/>
+  <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://mess-maneger.onrender.com/" target="_blank">🌐 Live Demo</a>
+  <br/><br/>
+
+  <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">
+    <img src="assets/project_weather.svg" alt="J.SkyCast Weather" width="100%" />
+  </a>
+  <br/>
+  <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://j-weather.onrender.com" target="_blank">🌐 Live Demo</a>
+  <br/><br/>
+
+  <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">
+    <img src="assets/project_portfolio.svg" alt="Personal Portfolio" width="100%" />
+  </a>
+  <br/>
+  <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://jyotirmoy-portfolio.onrender.com" target="_blank">🌐 Live Demo</a>
+</p>
 
 <p align="center">
   <img src="assets/divider.svg" alt="divider" width="100%" />
 </p>
 
-## 💻 Tech Stack
+## 💻 Tech Arsenal
 <p align="center">
-  <img src="assets/tech_stack.svg" alt="Tech Stack Grid" width="100%" />
+  <img src="assets/tech_stack.svg" alt="Tech Arsenal Grid" width="100%" />
 </p>
 
 <p align="center">
@@ -134,6 +125,4 @@
   <img src="assets/divider.svg" alt="divider" width="100%" />
 </p>
 
-<p align="center">
-  <img src="https://profile-counter.glitch.me/JyotirmoyLaha/count.svg" alt="Visitor Counter" />
-</p>
+<!-- Glitch visitor counter removed due to reliability issues. Views are tracked via dynamic Shields/Komarev count at the top. -->
