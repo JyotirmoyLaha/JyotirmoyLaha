@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 130" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 300" width="100%" height="300">
   <defs>
     <!-- Glow Filter -->
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
@@ -27,52 +27,83 @@
       fill: #0c0b16;
       stroke: #221e3f;
       stroke-width: 1.5;
-      rx: 12;
+      rx: 16;
       transition: all 0.3s ease;
     }
     .card-border:hover {
       stroke: #9D4EDE;
-    }
-    .project-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 800;
-      font-size: 15px;
-      fill: #ffffff;
-    }
-    .project-desc {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 10.5px;
-      fill: #8b949e;
-    }
-    .pill-bg {
-      fill: #141226;
-      stroke: #221e3f;
-      stroke-width: 1;
-      rx: 5;
-    }
-    .pill-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 600;
-      font-size: 9px;
-      fill: #c9d1d9;
     }
     .floating-box {
       animation: float 4.5s infinite ease-in-out;
     }
     @keyframes float {
       0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-4px); }
+      50% { transform: translateY(-8px); }
+    }
+    .tech-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 20px;
+      padding: 0 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 600;
+      color: #c9d1d9;
+      background-color: #141226;
+      border: 1px solid #221e3f;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      height: 18px;
+      padding: 0 6px;
+      border-radius: 3px;
+      font-size: 9px;
+      font-weight: bold;
+      color: #b7a6ff;
+      background-color: rgba(157, 78, 221, 0.1);
+      border: 1px solid rgba(157, 78, 221, 0.2);
+      margin-right: 6px;
     }
   </style>
 
   <!-- Card Background -->
-  <rect width="388" height="128" x="1" y="1" class="card-border" />
+  <rect width="848" height="298" x="1" y="1" class="card-border" />
 
-  <!-- Left Icon Container -->
-  <g transform="translate(15, 15)">
-    <!-- Background Circle -->
-    <rect width="80" height="100" rx="10" fill="rgba(157, 78, 221, 0.08)" stroke="rgba(157, 78, 221, 0.15)" stroke-width="1" />
-    
+  <!-- Vertical Divider -->
+  <line x1="520" y1="20" x2="520" y2="280" stroke="#221e3f" stroke-width="1.5" stroke-dasharray="4 4" />
+
+  <!-- Left Column: Details (foreignObject) -->
+  <foreignObject x="25" y="25" width="470" height="250">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: #c9d1d9;
+      user-select: none;
+    ">
+      <h3 style="color: #ffffff; font-size: 20px; margin: 0 0 10px 0; font-weight: 800; display: flex; align-items: center; gap: 8px;">
+        🧠 AI Resume Analyzer
+      </h3>
+      
+      <div style="margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 4px;">
+        <span class="badge">Generative AI</span>
+        <span class="badge">FastAPI Backend</span>
+        <span class="badge">React &amp; Vite</span>
+        <span class="badge">LLM Prompting</span>
+      </div>
+
+      <ul style="margin: 0; padding-left: 20px; font-size: 13px; line-height: 22px; color: #8b949e; list-style-type: square;">
+        <li style="margin-bottom: 8px;">Upload resumes and analyze them with advanced LLM APIs to receive dynamic feedback on keyword matching and formatting.</li>
+        <li style="margin-bottom: 8px;">Generates detailed match scores, missing keyword suggestions, and personalized recommendations.</li>
+        <li>Interactive AI Chatbot to converse with your analyzed resume and ask specific career-related questions.</li>
+      </ul>
+    </div>
+  </foreignObject>
+
+  <!-- Right Column: Animated 3D Graphic (scaled and translated) -->
+  <g transform="translate(585, -20) scale(2.2)">
     <!-- 3D Isometric Floating Clipboard Setup -->
     <g class="floating-box" style="transform-origin: 40px 50px;">
       <!-- Under-shadow -->
@@ -91,7 +122,6 @@
       <polygon points="40,42 44,40 42,39 38,41" fill="#c9d1d9" />
 
       <!-- Paper Document floating on top (3D plane) -->
-      <!-- We shift it slightly up (y-2) to make it float on the clipboard -->
       <polygon points="40,39 58,48 40,57 22,48" fill="url(#theme-grad)" opacity="0.85" />
       
       <!-- Text Lines on 3D Document -->
@@ -110,26 +140,21 @@
     </g>
   </g>
 
-  <!-- Right Text Area -->
-  <text x="110" y="38" class="project-title">🧠 AI Resume Analyzer</text>
-  <text x="110" y="58" class="project-desc">Rule-Based Resume Parser &amp; Skill Gap Finder</text>
-  <text x="110" y="74" class="project-desc">Analyzes candidates with weighted recruiter match logic.</text>
-
-  <!-- Tech Stack Pills -->
-  <g transform="translate(110, 90)">
-    <rect width="50" height="20" class="pill-bg" />
-    <text x="25" y="13" text-anchor="middle" class="pill-text">Python</text>
-  </g>
-  <g transform="translate(166, 90)">
-    <rect width="50" height="20" class="pill-bg" />
-    <text x="25" y="13" text-anchor="middle" class="pill-text">React</text>
-  </g>
-  <g transform="translate(222, 90)">
-    <rect width="50" height="20" class="pill-bg" />
-    <text x="25" y="13" text-anchor="middle" class="pill-text">FastAPI</text>
-  </g>
-  <g transform="translate(278, 90)">
-    <rect width="50" height="20" class="pill-bg" />
-    <text x="25" y="13" text-anchor="middle" class="pill-text">Regex NLP</text>
-  </g>
+  <!-- Right Column Bottom: Tech Stack Pills -->
+  <foreignObject x="545" y="210" width="280" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    ">
+      <span class="tech-pill">React</span>
+      <span class="tech-pill">Vite</span>
+      <span class="tech-pill">FastAPI</span>
+      <span class="tech-pill">Python</span>
+      <span class="tech-pill">Tailwind CSS</span>
+      <span class="tech-pill">Gemini API</span>
+      <span class="tech-pill">Llama3</span>
+    </div>
+  </foreignObject>
 </svg>
