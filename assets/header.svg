@@ -14,7 +14,7 @@
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="8" result="blur" />
       <feComponentTransfer in="blur" result="glow1">
-        <feFuncA type="linear" slope="0.7" />
+        <feFuncA type="linear" slope="0.75" />
       </feComponentTransfer>
       <feMerge>
         <feMergeNode in="glow1" />
@@ -22,17 +22,24 @@
       </feMerge>
     </filter>
 
-    <!-- Animated linear gradient for title -->
+    <!-- Animated linear gradient for title (Premium Purple & Teal) -->
     <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF3366">
-        <animate attributeName="stop-color" values="#FF3366; #9D4EDE; #33CCFF; #FF3366" dur="8s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#8B5CF6">
+        <animate attributeName="stop-color" values="#8B5CF6; #3B82F6; #00F2FE; #8B5CF6" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="50%" stop-color="#9D4EDE">
-        <animate attributeName="stop-color" values="#9D4EDE; #33CCFF; #FF3366; #9D4EDE" dur="8s" repeatCount="indefinite" />
+      <stop offset="50%" stop-color="#3B82F6">
+        <animate attributeName="stop-color" values="#3B82F6; #00F2FE; #8B5CF6; #3B82F6" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="100%" stop-color="#33CCFF">
-        <animate attributeName="stop-color" values="#33CCFF; #FF3366; #9D4EDE; #33CCFF" dur="8s" repeatCount="indefinite" />
+      <stop offset="100%" stop-color="#00F2FE">
+        <animate attributeName="stop-color" values="#00F2FE; #8B5CF6; #3B82F6; #00F2FE" dur="8s" repeatCount="indefinite" />
       </stop>
+    </linearGradient>
+
+    <!-- Border gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0.35"/>
     </linearGradient>
   </defs>
 
@@ -49,32 +56,56 @@
       font-size: 18px;
       letter-spacing: 7px;
     }
+    .particle {
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+      user-select: none;
+    }
   </style>
 
   <!-- Solid background -->
-  <rect width="100%" height="100%" fill="#0a0814" />
+  <rect width="798" height="258" x="1" y="1" fill="#0a0814" rx="16" />
 
   <!-- Animated mesh/grid background -->
-  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.8" />
+  <rect width="798" height="258" x="1" y="1" fill="url(#grid)" opacity="0.7" rx="16" />
 
   <!-- Glowing background light blobs -->
-  <!-- Blob 1: Pink/Red -->
-  <circle cx="150" cy="80" r="80" fill="#FF3366" opacity="0.18" filter="url(#blur)">
+  <circle cx="150" cy="80" r="85" fill="#8B5CF6" opacity="0.18" filter="url(#blur)">
     <animate attributeName="cx" values="150; 250; 100; 150" dur="16s" repeatCount="indefinite" />
     <animate attributeName="cy" values="80; 130; 50; 80" dur="16s" repeatCount="indefinite" />
   </circle>
 
-  <!-- Blob 2: Cyan/Blue -->
-  <circle cx="650" cy="180" r="90" fill="#33CCFF" opacity="0.18" filter="url(#blur)">
+  <circle cx="650" cy="180" r="95" fill="#00F2FE" opacity="0.15" filter="url(#blur)">
     <animate attributeName="cx" values="650; 550; 700; 650" dur="20s" repeatCount="indefinite" />
     <animate attributeName="cy" values="180; 120; 220; 180" dur="20s" repeatCount="indefinite" />
   </circle>
 
-  <!-- Blob 3: Violet -->
-  <circle cx="400" cy="130" r="75" fill="#9D4EDE" opacity="0.15" filter="url(#blur)">
-    <animate attributeName="cx" values="400; 450; 350; 400" dur="18s" repeatCount="indefinite" />
-    <animate attributeName="cy" values="130; 90; 170; 130" dur="18s" repeatCount="indefinite" />
-  </circle>
+  <!-- macOS Style Window Header buttons -->
+  <circle cx="30" cy="28" r="5.5" fill="#FF5F56" />
+  <circle cx="46" cy="28" r="5.5" fill="#FFBD2E" />
+  <circle cx="62" cy="28" r="5.5" fill="#27C93F" />
+
+  <!-- Floating Code Particles -->
+  <text x="80" y="90" fill="#8B5CF6" opacity="0.25" class="particle" font-size="14">
+    &lt;div&gt;
+    <animate attributeName="opacity" values="0.15; 0.5; 0.15" dur="7s" repeatCount="indefinite" />
+    <animate attributeName="y" values="90; 75; 90" dur="7s" repeatCount="indefinite" />
+  </text>
+  <text x="700" y="80" fill="#00F2FE" opacity="0.3" class="particle" font-size="16">
+    { json }
+    <animate attributeName="opacity" values="0.15; 0.6; 0.15" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y" values="80; 95; 80" dur="9s" repeatCount="indefinite" />
+  </text>
+  <text x="120" y="200" fill="#3B82F6" opacity="0.25" class="particle" font-size="15">
+    const coder = true;
+    <animate attributeName="opacity" values="0.1; 0.45; 0.1" dur="11s" repeatCount="indefinite" />
+    <animate attributeName="y" values="200; 185; 200" dur="11s" repeatCount="indefinite" />
+  </text>
+  <text x="660" y="210" fill="#8B5CF6" opacity="0.3" class="particle" font-size="16">
+    &lt;/&gt;
+    <animate attributeName="opacity" values="0.2; 0.65; 0.2" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="y" values="210; 225; 210" dur="8s" repeatCount="indefinite" />
+  </text>
 
   <!-- Main Title -->
   <text x="400" y="115" text-anchor="middle" fill="url(#title-grad)" filter="url(#glow)" class="font-title">
@@ -88,8 +119,11 @@
     <animate attributeName="opacity" values="0.7; 1; 0.7" dur="4s" repeatCount="indefinite" />
   </text>
 
+  <!-- 3D Glass Card Border Outline -->
+  <rect width="798" height="258" x="1" y="1" fill="none" stroke="url(#border-grad)" stroke-width="1.8" rx="16" />
+
   <!-- Glowing line at the bottom -->
-  <line x1="0" y1="258" x2="800" y2="258" stroke="url(#title-grad)" stroke-width="4" stroke-dasharray="150 250" opacity="0.8">
+  <line x1="16" y1="258" x2="784" y2="258" stroke="url(#title-grad)" stroke-width="4" stroke-dasharray="150 250" opacity="0.8">
     <animate attributeName="stroke-dashoffset" values="0; 800" dur="10s" repeatCount="indefinite" />
   </line>
 </svg>
