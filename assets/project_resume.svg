@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 130" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Theme Gradients -->
+    <linearGradient id="theme-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9D4EDE" />
+      <stop offset="100%" stop-color="#33CCFF" />
+    </linearGradient>
+
+    <!-- Clipboard gradient -->
+    <linearGradient id="clip-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1a3a" />
+      <stop offset="100%" stop-color="#2d2757" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .card-border {
+      fill: #0c0b16;
+      stroke: #221e3f;
+      stroke-width: 1.5;
+      rx: 12;
+      transition: all 0.3s ease;
+    }
+    .card-border:hover {
+      stroke: #9D4EDE;
+    }
+    .project-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      fill: #ffffff;
+    }
+    .project-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 10.5px;
+      fill: #8b949e;
+    }
+    .pill-bg {
+      fill: #141226;
+      stroke: #221e3f;
+      stroke-width: 1;
+      rx: 5;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #c9d1d9;
+    }
+    .floating-box {
+      animation: float 4.5s infinite ease-in-out;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="388" height="128" x="1" y="1" class="card-border" />
+
+  <!-- Left Icon Container -->
+  <g transform="translate(15, 15)">
+    <!-- Background Circle -->
+    <rect width="80" height="100" rx="10" fill="rgba(157, 78, 221, 0.08)" stroke="rgba(157, 78, 221, 0.15)" stroke-width="1" />
+    
+    <!-- 3D Isometric Floating Clipboard Setup -->
+    <g class="floating-box" style="transform-origin: 40px 50px;">
+      <!-- Under-shadow -->
+      <ellipse cx="40" cy="85" rx="22" ry="4" fill="rgba(0, 0, 0, 0.35)" />
+
+      <!-- Clipboard Base (3D Box) -->
+      <!-- Left side extrusion -->
+      <polygon points="18,48 18,51 40,62 40,59" fill="#151229" />
+      <!-- Right side extrusion -->
+      <polygon points="40,59 40,62 62,51 62,48" fill="#0d0a1b" />
+      <!-- Top Face -->
+      <polygon points="40,37 62,48 40,59 18,48" fill="url(#clip-grad)" stroke="#9D4EDE" stroke-width="0.8" />
+      
+      <!-- Metal Clip on top of clipboard -->
+      <polygon points="36,36 44,40 40,42 32,38" fill="#8b949e" />
+      <polygon points="40,42 44,40 42,39 38,41" fill="#c9d1d9" />
+
+      <!-- Paper Document floating on top (3D plane) -->
+      <!-- We shift it slightly up (y-2) to make it float on the clipboard -->
+      <polygon points="40,39 58,48 40,57 22,48" fill="url(#theme-grad)" opacity="0.85" />
+      
+      <!-- Text Lines on 3D Document -->
+      <line x1="28" y1="46" x2="42" y2="53" stroke="#ffffff" stroke-width="1.2" opacity="0.7" />
+      <line x1="32" y1="50" x2="48" y2="58" stroke="#ffffff" stroke-width="1.2" opacity="0.7" />
+      <line x1="30" y1="42" x2="38" y2="46" stroke="#ffffff" stroke-width="1.2" opacity="0.7" />
+
+      <!-- Animated Tilted Scanning Light Beam -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,-8; 0,14; 0,-8" dur="3.5s" repeatCount="indefinite" />
+        <!-- Glowing scan beam projection -->
+        <polygon points="18,48 62,48 40,62" fill="rgba(51, 204, 255, 0.15)" filter="url(#glow)" />
+        <!-- Scan line -->
+        <line x1="18" y1="48" x2="62" y2="48" stroke="#33CCFF" stroke-width="1.8" filter="url(#glow)" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Text Area -->
+  <text x="110" y="38" class="project-title">🧠 AI Resume Analyzer</text>
+  <text x="110" y="58" class="project-desc">Rule-Based Resume Parser &amp; Skill Gap Finder</text>
+  <text x="110" y="74" class="project-desc">Analyzes candidates with weighted recruiter match logic.</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(110, 90)">
+    <rect width="50" height="20" class="pill-bg" />
+    <text x="25" y="13" text-anchor="middle" class="pill-text">Python</text>
+  </g>
+  <g transform="translate(166, 90)">
+    <rect width="50" height="20" class="pill-bg" />
+    <text x="25" y="13" text-anchor="middle" class="pill-text">React</text>
+  </g>
+  <g transform="translate(222, 90)">
+    <rect width="50" height="20" class="pill-bg" />
+    <text x="25" y="13" text-anchor="middle" class="pill-text">FastAPI</text>
+  </g>
+  <g transform="translate(278, 90)">
+    <rect width="50" height="20" class="pill-bg" />
+    <text x="25" y="13" text-anchor="middle" class="pill-text">Regex NLP</text>
+  </g>
+</svg>
