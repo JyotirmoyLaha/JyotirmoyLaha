@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 130" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Theme Gradients -->
+    <linearGradient id="theme-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B8B" />
+      <stop offset="100%" stop-color="#FFB7C5" />
+    </linearGradient>
+    
+    <linearGradient id="page-grad-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5F7" />
+      <stop offset="100%" stop-color="#FFD3DC" />
+    </linearGradient>
+    
+    <linearGradient id="page-grad-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFE5EA" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .card-border {
+      fill: #0c0b16;
+      stroke: #221e3f;
+      stroke-width: 1.5;
+      rx: 12;
+      transition: all 0.3s ease;
+    }
+    .card-border:hover {
+      stroke: #FF6B8B;
+    }
+    .project-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      fill: #ffffff;
+    }
+    .project-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 10.5px;
+      fill: #8b949e;
+    }
+    .pill-bg {
+      fill: #141226;
+      stroke: #221e3f;
+      stroke-width: 1;
+      rx: 5;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #c9d1d9;
+    }
+    .star {
+      fill: #FFB7C5;
+      animation: blink 2.5s infinite ease-in-out;
+    }
+    .floating-book {
+      animation: float 4s infinite ease-in-out;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0.3; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="388" height="128" x="1" y="1" class="card-border" />
+
+  <!-- Left Icon Container -->
+  <g transform="translate(15, 15)">
+    <!-- Background Circle -->
+    <rect width="80" height="100" rx="10" fill="rgba(255, 107, 139, 0.08)" stroke="rgba(255, 107, 139, 0.15)" stroke-width="1" />
+    
+    <!-- Zen Crescent Moon -->
+    <path d="M 32,25 A 11,11 0 0,0 49,38 A 12,12 0 0,1 32,25" fill="url(#theme-grad)" filter="url(#glow)" />
+    
+    <!-- Floating Sakura Stars -->
+    <polygon points="50,17 51.5,20 55,20 52,22 53.5,25 50,23 46.5,25 48,22 45,20 48.5,20" class="star" style="transform-origin: 50px 21px; animation-delay: 0s;" />
+    <polygon points="23,45 24,47 26.5,47 24.5,48.5 25.5,51 23,49.5 20.5,51 21.5,48.5 19.5,47 22,47" class="star" style="transform-origin: 23px 48px; animation-delay: 1.2s;" />
+
+    <!-- 3D Isometric Open Book -->
+    <g class="floating-book" style="transform-origin: 40px 65px;">
+      <!-- Under-book Shadow -->
+      <ellipse cx="40" cy="88" rx="20" ry="3.5" fill="rgba(0, 0, 0, 0.3)" />
+
+      <!-- Book Cover Left -->
+      <polygon points="40,66 18,53 18,71 40,84" fill="#C73E5B" />
+      <!-- Book Cover Right -->
+      <polygon points="40,66 62,53 62,71 40,84" fill="#E85A7A" />
+      
+      <!-- Page thickness Left (pink block) -->
+      <polygon points="38,65 19,54 19,70 38,81" fill="#FFA5B5" />
+      <!-- Page thickness Right (pink block) -->
+      <polygon points="42,65 61,54 61,70 42,81" fill="#FFC0CB" />
+
+      <!-- Top Page Left -->
+      <polygon points="38,62 19,51 19,67 38,78" fill="url(#page-grad-left)" />
+      <!-- Top Page Right -->
+      <polygon points="42,62 61,51 61,67 42,78" fill="url(#page-grad-right)" />
+
+      <!-- Spine/Center line -->
+      <line x1="40" y1="62" x2="40" y2="79" stroke="#E85A7A" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- Right Text Area -->
+  <text x="110" y="38" class="project-title">🌌 StudyVerse</text>
+  <text x="110" y="58" class="project-desc">Ambient Spatial Glass Study Journal &amp; Life Tracker</text>
+  <text x="110" y="74" class="project-desc">Featuring Zen atmospheric audio and 3D glass visuals.</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(110, 90)">
+    <rect width="65" height="20" class="pill-bg" />
+    <text x="32.5" y="13" text-anchor="middle" class="pill-text">JavaScript</text>
+  </g>
+  <g transform="translate(181, 90)">
+    <rect width="60" height="20" class="pill-bg" />
+    <text x="30" y="13" text-anchor="middle" class="pill-text">Firebase</text>
+  </g>
+  <g transform="translate(247, 90)">
+    <rect width="60" height="20" class="pill-bg" />
+    <text x="30" y="13" text-anchor="middle" class="pill-text">Ambient UI</text>
+  </g>
+</svg>
