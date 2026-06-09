@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg" alt="Jyotirmoy Laha - Web Developer" width="100%" />
+  <img src="assets/header.svg?v=3" alt="Jyotirmoy Laha - Web Developer" width="100%" />
 </p>
 
 <p align="center">
@@ -13,68 +13,68 @@
 </p>
 
 <p align="center">
-  <img src="assets/divider.svg" alt="divider" width="100%" />
+  <img src="assets/divider.svg?v=3" alt="divider" width="100%" />
 </p>
 
 ### 👨‍💻 About Me
 
 <p align="center">
-  <img src="assets/about_me.svg" alt="About Me Console" width="100%" />
+  <img src="assets/about_me.svg?v=3" alt="About Me Console" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/divider.svg" alt="divider" width="100%" />
+  <img src="assets/divider.svg?v=3" alt="divider" width="100%" />
 </p>
 
 ### 🚀 Featured Projects
 
 <p align="center">
   <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">
-    <img src="assets/project_studyverse.svg" alt="StudyVerse" width="100%" />
+    <img src="assets/project_studyverse.svg?v=3" alt="StudyVerse" width="100%" />
   </a>
   <br/>
   <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://studyverse-vlzh.onrender.com/" target="_blank">🌐 Live Demo</a>
   <br/><br/>
   
   <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">
-    <img src="assets/project_resume.svg" alt="AI Resume Analyzer" width="100%" />
+    <img src="assets/project_resume.svg?v=3" alt="AI Resume Analyzer" width="100%" />
   </a>
   <br/>
   <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">💻 Frontend</a> &nbsp;•&nbsp; <a href="https://github.com/JyotirmoyLaha/ai-resume-analyzer-backend" target="_blank">⚙️ Backend</a> &nbsp;•&nbsp; <a href="https://ai-resume-analyzer-hhhb.onrender.com" target="_blank">🌐 Live Demo</a>
   <br/><br/>
 
   <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">
-    <img src="assets/project_mess.svg" alt="Mess Manager" width="100%" />
+    <img src="assets/project_mess.svg?v=3" alt="Mess Manager" width="100%" />
   </a>
   <br/>
   <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://mess-maneger.onrender.com/" target="_blank">🌐 Live Demo</a>
   <br/><br/>
 
   <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">
-    <img src="assets/project_weather.svg" alt="J.SkyCast Weather" width="100%" />
+    <img src="assets/project_weather.svg?v=3" alt="J.SkyCast Weather" width="100%" />
   </a>
   <br/>
   <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://j-weather.onrender.com" target="_blank">🌐 Live Demo</a>
   <br/><br/>
 
   <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">
-    <img src="assets/project_portfolio.svg" alt="Personal Portfolio" width="100%" />
+    <img src="assets/project_portfolio.svg?v=3" alt="Personal Portfolio" width="100%" />
   </a>
   <br/>
   <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://jyotirmoy-portfolio.onrender.com" target="_blank">🌐 Live Demo</a>
 </p>
 
 <p align="center">
-  <img src="assets/divider.svg" alt="divider" width="100%" />
+  <img src="assets/divider.svg?v=3" alt="divider" width="100%" />
 </p>
 
 ## 💻 Tech Arsenal
 <p align="center">
-  <img src="assets/tech_stack.svg" alt="Tech Arsenal Grid" width="100%" />
+  <img src="assets/tech_stack.svg?v=3" alt="Tech Arsenal Grid" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/divider.svg" alt="divider" width="100%" />
+  <img src="assets/divider.svg?v=3" alt="divider" width="100%" />
 </p>
 
 ## 📊 GitHub Analytics
@@ -104,7 +104,7 @@
 </table>
 
 <p align="center">
-  <img src="assets/divider.svg" alt="divider" width="100%" />
+  <img src="assets/divider.svg?v=3" alt="divider" width="100%" />
 </p>
 
 ### ✍️ Random Dev Quote
@@ -113,7 +113,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/divider.svg" alt="divider" width="100%" />
+  <img src="assets/divider.svg?v=3" alt="divider" width="100%" />
 </p>
 
 <div align="center">
@@ -121,7 +121,7 @@
 </div>
 
 <p align="center">
-  <img src="assets/divider.svg" alt="divider" width="100%" />
+  <img src="assets/divider.svg?v=3" alt="divider" width="100%" />
 </p>
 
 <!-- Glitch visitor counter removed due to reliability issues. Views are tracked via dynamic Shields/Komarev count at the top. -->
