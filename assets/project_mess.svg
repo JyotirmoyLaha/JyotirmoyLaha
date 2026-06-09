@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 130" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Theme Gradients -->
+    <linearGradient id="theme-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .card-border {
+      fill: #0c0b16;
+      stroke: #221e3f;
+      stroke-width: 1.5;
+      rx: 12;
+      transition: all 0.3s ease;
+    }
+    .card-border:hover {
+      stroke: #10B981;
+    }
+    .project-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      fill: #ffffff;
+    }
+    .project-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 10.5px;
+      fill: #8b949e;
+    }
+    .pill-bg {
+      fill: #141226;
+      stroke: #221e3f;
+      stroke-width: 1;
+      rx: 5;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #c9d1d9;
+    }
+    .floating-coin {
+      animation: coin-float 2.8s infinite ease-in-out;
+    }
+    @keyframes coin-float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="388" height="128" x="1" y="1" class="card-border" />
+
+  <!-- Left Icon Container -->
+  <g transform="translate(15, 15)">
+    <!-- Background Circle -->
+    <rect width="80" height="100" rx="10" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.15)" stroke-width="1" />
+    
+    <!-- 3D Stack of Gold Coins -->
+    <!-- Shadow for stack -->
+    <ellipse cx="28" cy="86" rx="15" ry="4" fill="rgba(0,0,0,0.3)" />
+
+    <!-- Coin 1 (Bottom) -->
+    <path d="M 14,80 L 14,84 A 14,4 0 0,0 42,84 L 42,80 Z" fill="#D35400" />
+    <ellipse cx="28" cy="80" rx="14" ry="4" fill="#F5B041" />
+
+    <!-- Coin 2 (Middle) -->
+    <path d="M 14,73 L 14,77 A 14,4 0 0,0 42,77 L 42,73 Z" fill="#D35400" />
+    <ellipse cx="28" cy="73" rx="14" ry="4" fill="#FBBF24" />
+
+    <!-- Coin 3 (Top) -->
+    <path d="M 14,66 L 14,70 A 14,4 0 0,0 42,70 L 42,66 Z" fill="#D35400" />
+    <ellipse cx="28" cy="66" rx="14" ry="4" fill="#FFE082" />
+
+    <!-- 3D Glass Vault Safe -->
+    <!-- Vault Shadow -->
+    <ellipse cx="56" cy="83" rx="14" ry="4.5" fill="rgba(0,0,0,0.25)" />
+
+    <!-- Vault Left Face -->
+    <polygon points="42,56 42,78 56,84 56,62" fill="rgba(16, 185, 129, 0.05)" stroke="#10B981" stroke-width="1.2" stroke-linejoin="round" />
+    <!-- Vault Right Face -->
+    <polygon points="56,62 56,84 70,78 70,56" fill="rgba(16, 185, 129, 0.1)" stroke="#10B981" stroke-width="1.2" stroke-linejoin="round" />
+    <!-- Vault Top Face -->
+    <polygon points="56,48 70,56 56,62 42,56" fill="rgba(16, 185, 129, 0.08)" stroke="#10B981" stroke-width="1.2" stroke-linejoin="round" />
+    
+    <!-- Vault Combination Lock Dial (Isometric Ellipse) -->
+    <ellipse cx="49" cy="70" rx="3.5" ry="5.5" fill="none" stroke="#10B981" stroke-width="1" transform="rotate(-15 49 70)" />
+    <line x1="49" y1="67" x2="49" y2="73" stroke="#10B981" stroke-width="0.8" />
+
+    <!-- Floating 3D Coin (Animated) -->
+    <g class="floating-coin" style="transform-origin: 50px 32px;">
+      <!-- Coin side -->
+      <path d="M 42,28 L 42,32 A 8,2.5 0 0,0 58,32 L 58,28 Z" fill="#D35400" />
+      <!-- Coin top -->
+      <ellipse cx="50" cy="28" rx="8" ry="2.5" fill="#FFE082" stroke="#F5B041" stroke-width="0.5" filter="url(#glow)" />
+    </g>
+  </g>
+
+  <!-- Right Text Area -->
+  <text x="110" y="38" class="project-title">📋 Mess Manager</text>
+  <text x="110" y="58" class="project-desc">Real-Time Hostel Expense Tracker &amp; Budgeter</text>
+  <text x="110" y="74" class="project-desc">PWA featuring Google Auth and offline capabilities.</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(110, 90)">
+    <rect width="65" height="20" class="pill-bg" />
+    <text x="32.5" y="13" text-anchor="middle" class="pill-text">JavaScript</text>
+  </g>
+  <g transform="translate(181, 90)">
+    <rect width="55" height="20" class="pill-bg" />
+    <text x="27.5" y="13" text-anchor="middle" class="pill-text">Firebase</text>
+  </g>
+  <g transform="translate(242, 90)">
+    <rect width="50" height="20" class="pill-bg" />
+    <text x="25" y="13" text-anchor="middle" class="pill-text">HTML5</text>
+  </g>
+  <g transform="translate(298, 90)">
+    <rect width="45" height="20" class="pill-bg" />
+    <text x="22.5" y="13" text-anchor="middle" class="pill-text">PWA</text>
+  </g>
+</svg>
