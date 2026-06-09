@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 130" width="100%" height="100%">
+  <defs>
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Theme Gradients -->
+    <linearGradient id="theme-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <!-- 3D Sun Radial Shading Gradient -->
+    <radialGradient id="sun-sphere-grad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="60%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    .card-border {
+      fill: #0c0b16;
+      stroke: #221e3f;
+      stroke-width: 1.5;
+      rx: 12;
+      transition: all 0.3s ease;
+    }
+    .card-border:hover {
+      stroke: #38BDF8;
+    }
+    .project-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      fill: #ffffff;
+    }
+    .project-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 10.5px;
+      fill: #8b949e;
+    }
+    .pill-bg {
+      fill: #141226;
+      stroke: #221e3f;
+      stroke-width: 1;
+      rx: 5;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 9px;
+      fill: #c9d1d9;
+    }
+    .cloud-group {
+      animation: drift 5s infinite ease-in-out;
+    }
+    @keyframes drift {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(3px, -2px); }
+    }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="388" height="128" x="1" y="1" class="card-border" />
+
+  <!-- Left Icon Container -->
+  <g transform="translate(15, 15)">
+    <!-- Background Circle -->
+    <rect width="80" height="100" rx="10" fill="rgba(56, 189, 248, 0.08)" stroke="rgba(56, 189, 248, 0.15)" stroke-width="1" />
+    
+    <!-- 3D Sun (Behind Cloud) -->
+    <!-- Sun Shadow -->
+    <ellipse cx="50" cy="46" rx="11" ry="5.5" fill="rgba(0, 0, 0, 0.25)" />
+
+    <!-- 3D Sun Sphere -->
+    <g transform="translate(50, 32)">
+      <!-- Under-glow -->
+      <circle cx="0" cy="0" r="14" fill="#FBBF24" opacity="0.3" filter="url(#glow)" />
+      <!-- 3D Shaded Sphere -->
+      <circle cx="0" cy="0" r="11" fill="url(#sun-sphere-grad)" />
+      
+      <!-- Rotating Rays (SMIL-based rotation centers perfectly around 0,0 local coordinates) -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite" />
+        <line x1="0" y1="-14" x2="0" y2="-18" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="0" y1="14" x2="0" y2="18" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="-14" y1="0" x2="-18" y2="0" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="14" y1="0" x2="18" y2="0" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="-10" y1="-10" x2="-13" y2="-13" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="10" y1="10" x2="13" y2="13" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="-10" y1="10" x2="-13" y2="13" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
+        <line x1="10" y1="-10" x2="13" y2="-13" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
+      </g>
+    </g>
+
+    <!-- Layered 3D Cloud (Front) -->
+    <g class="cloud-group" style="transform-origin: 40px 60px;">
+      <!-- Cloud Shaded Bottom Extrusion -->
+      <path d="M 20,62 C 16,62 14,59 14,55 C 14,50 19,47 25,47 C 27,42 33,40 38,43 C 43,43 47,46 47,51 C 47,55 43,62 36,62 Z" fill="rgba(2, 132, 199, 0.5)" />
+      
+      <!-- Cloud Top Highlight Face -->
+      <path d="M 20,59 C 16,59 14,56 14,52 C 14,47 19,44 25,44 C 27,39 33,37 38,40 C 43,40 47,43 47,48 C 47,52 43,59 36,59 Z" fill="#ffffff" fill-opacity="0.95" filter="url(#glow)" />
+    </g>
+
+    <!-- Animated Rain Drops (falling from cloud) -->
+    <g>
+      <animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" values="-2,-6; 2,8" dur="2s" repeatCount="indefinite" />
+      <!-- Rain line 1 -->
+      <line x1="26" y1="65" x2="23" y2="72" stroke="#33CCFF" stroke-width="1.8" stroke-linecap="round" filter="url(#glow)" />
+      <!-- Rain line 2 -->
+      <line x1="36" y1="65" x2="33" y2="72" stroke="#33CCFF" stroke-width="1.8" stroke-linecap="round" filter="url(#glow)" />
+    </g>
+  </g>
+
+  <!-- Right Text Area -->
+  <text x="110" y="38" class="project-title">☀️ J.SkyCast Weather</text>
+  <text x="110" y="58" class="project-desc">Zero-Dependency Glassmorphism Weather Dashboard</text>
+  <text x="110" y="74" class="project-desc">Provides real-time air quality index &amp; weather forecasts.</text>
+
+  <!-- Tech Stack Pills -->
+  <g transform="translate(110, 90)">
+    <rect width="65" height="20" class="pill-bg" />
+    <text x="32.5" y="13" text-anchor="middle" class="pill-text">JavaScript</text>
+  </g>
+  <g transform="translate(181, 90)">
+    <rect width="70" height="20" class="pill-bg" />
+    <text x="35" y="13" text-anchor="middle" class="pill-text">Weather API</text>
+  </g>
+  <g transform="translate(257, 90)">
+    <rect width="55" height="20" class="pill-bg" />
+    <text x="27.5" y="13" text-anchor="middle" class="pill-text">Glass UI</text>
+  </g>
+</svg>
