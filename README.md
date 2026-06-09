@@ -17,11 +17,10 @@
 </p>
 
 ### 👨‍💻 About Me
-* 🎓 **BCA Student (2nd Year)** with a strong foundation in Python, Data Structures & Algorithms, and Web Development.
-* 🚀 **Builder Mindset** — Passionate about building real-world projects, not just college assignments.
-* 🧠 **Philosophy** — I believe in learning by building, breaking things, and rebuilding them better.
-* ⚡ **Fun Fact** — I don’t just learn tech — I build with it, break it, and rebuild it better.
-* 💬 **Pronouns** — He / Him
+
+<p align="center">
+  <img src="assets/about_me.svg" alt="About Me Console" width="100%" />
+</p>
 
 <p align="center">
   <img src="assets/divider.svg" alt="divider" width="100%" />
