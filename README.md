@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=JyotirmoyLaha&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile Views" />
-  <img src="https://flat.badgen.net/github/followers/JyotirmoyLaha?color=0e75b6&icon=github" alt="Followers" />
+  <img src="https://img.shields.io/badge/dynamic/json?color=0e75b6&label=followers&query=count&url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fgithub%2FJyotirmoyLaha&style=flat-square&logo=github" alt="Followers" />
 </p>
 
 <p align="center">
