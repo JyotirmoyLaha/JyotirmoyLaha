@@ -116,10 +116,10 @@
 <table width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api?username=JyotirmoyLaha&theme=tokyonight&hide_border=true&include_all_commits=false&count_private=true" height="195px" />
+      <img src="https://github-readme-stats.vercel.app/api?username=JyotirmoyLaha&theme=tokyonight&hide_border=true&include_all_commits=false&count_private=true" height="195" />
     </td>
     <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JyotirmoyLaha&theme=tokyonight&hide_border=true&layout=compact" height="195px" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JyotirmoyLaha&theme=tokyonight&hide_border=true&layout=compact" height="195" />
     </td>
   </tr>
   <tr>
@@ -128,11 +128,11 @@
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center" valign="middle">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JyotirmoyLaha&theme=tokyonight" height="220px" />
+    <td width="50%" align="center" valign="top">
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JyotirmoyLaha&theme=tokyonight" height="220" />
     </td>
-    <td width="50%" align="center" valign="middle">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&bg_color=0c0b16&color=a29bfe&line=9D4EDE&point=33CCFF&area=true&area_color=9D4EDE&title_color=33CCFF" height="220px" />
+    <td width="50%" align="center" valign="top">
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&bg_color=0c0b16&color=a29bfe&line=9D4EDE&point=33CCFF&area=true&area_color=9D4EDE&title_color=33CCFF" height="220" />
     </td>
   </tr>
 </table>
