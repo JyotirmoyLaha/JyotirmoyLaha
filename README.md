@@ -33,35 +33,69 @@
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse.svg?v=3" alt="StudyVerse" width="100%" />
   </a>
   <br/>
-  <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://studyverse-vlzh.onrender.com/" target="_blank">🌐 Live Demo</a>
+  <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">
+    <img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://studyverse-vlzh.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-0e75b6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" />
+  </a>
   <br/><br/>
   
   <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume.svg?v=3" alt="AI Resume Analyzer" width="100%" />
   </a>
   <br/>
-  <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">💻 Frontend</a> &nbsp;•&nbsp; <a href="https://github.com/JyotirmoyLaha/ai-resume-analyzer-backend" target="_blank">⚙️ Backend</a> &nbsp;•&nbsp; <a href="https://ai-resume-analyzer-hhhb.onrender.com" target="_blank">🌐 Live Demo</a>
+  <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">
+    <img src="https://img.shields.io/badge/Frontend-181717?style=for-the-badge&logo=react&logoColor=white" alt="Frontend Code" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/JyotirmoyLaha/ai-resume-analyzer-backend" target="_blank">
+    <img src="https://img.shields.io/badge/Backend-181717?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Backend Code" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://ai-resume-analyzer-hhhb.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-0e75b6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" />
+  </a>
   <br/><br/>
 
   <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess.svg?v=3" alt="Mess Manager" width="100%" />
   </a>
   <br/>
-  <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://mess-maneger.onrender.com/" target="_blank">🌐 Live Demo</a>
+  <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">
+    <img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://mess-maneger.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-0e75b6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" />
+  </a>
   <br/><br/>
 
   <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather.svg?v=3" alt="J.SkyCast Weather" width="100%" />
   </a>
   <br/>
-  <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://j-weather.onrender.com" target="_blank">🌐 Live Demo</a>
+  <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">
+    <img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://j-weather.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-0e75b6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" />
+  </a>
   <br/><br/>
 
   <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio.svg?v=3" alt="Personal Portfolio" width="100%" />
   </a>
   <br/>
-  <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">💻 Code</a> &nbsp;•&nbsp; <a href="https://jyotirmoy-portfolio.onrender.com" target="_blank">🌐 Live Demo</a>
+  <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">
+    <img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://jyotirmoy-portfolio.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-0e75b6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" />
+  </a>
 </p>
 
 <p align="center">
