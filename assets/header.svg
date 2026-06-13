@@ -58,11 +58,7 @@
     }
   </style>
 
-  <!-- Solid background -->
-  <rect width="800" height="260" fill="#07050f" rx="16" />
 
-  <!-- Animated mesh/grid background -->
-  <rect width="800" height="260" fill="url(#grid)" opacity="0.5" rx="16" />
 
   <!-- Glowing background light blobs -->
   <circle cx="150" cy="80" r="85" fill="#8B5CF6" opacity="0.18" filter="url(#blur)">
