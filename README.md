@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/header.svg?v=5" alt="Jyotirmoy Laha - Web Developer" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/header.svg?t=20260613" alt="Jyotirmoy Laha - Web Developer" width="100%" />
 </p>
 
 <p align="center">
@@ -13,27 +13,27 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=5" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?t=20260613" alt="divider" width="100%" />
 </p>
 
 ### 👨‍💻 About Me
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me.svg?v=5" alt="About Me Console" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me.svg?t=20260613" alt="About Me Console" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=5" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?t=20260613" alt="divider" width="100%" />
 </p>
 
 ### 🚀 Featured Projects
 
 <p align="center">
   <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse.svg?v=5" alt="StudyVerse" width="100%" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse.svg?t=20260613" alt="StudyVerse" width="100%" />
   </a>
   <br/>
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow.svg?v=5" alt="StudyVerse Workflow" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow.svg?t=20260613" alt="StudyVerse Workflow" width="100%" />
   <br/>
   <a href="https://github.com/JyotirmoyLaha/studyverse" target="_blank">
     <img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" />
@@ -45,10 +45,10 @@
   <br/><br/>
   
   <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume.svg?v=5" alt="AI Resume Analyzer" width="100%" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume.svg?t=20260613" alt="AI Resume Analyzer" width="100%" />
   </a>
   <br/>
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow.svg?v=5" alt="AI Resume Analyzer Workflow" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow.svg?t=20260613" alt="AI Resume Analyzer Workflow" width="100%" />
   <br/>
   <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">
     <img src="https://img.shields.io/badge/Frontend-181717?style=for-the-badge&logo=react&logoColor=white" alt="Frontend Code" />
@@ -64,10 +64,10 @@
   <br/><br/>
 
   <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess.svg?v=5" alt="Mess Manager" width="100%" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess.svg?t=20260613" alt="Mess Manager" width="100%" />
   </a>
   <br/>
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow.svg?v=5" alt="Mess Manager Workflow" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow.svg?t=20260613" alt="Mess Manager Workflow" width="100%" />
   <br/>
   <a href="https://github.com/JyotirmoyLaha/mess-maneger" target="_blank">
     <img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" />
@@ -79,10 +79,10 @@
   <br/><br/>
 
   <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather.svg?v=5" alt="J.SkyCast Weather" width="100%" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather.svg?t=20260613" alt="J.SkyCast Weather" width="100%" />
   </a>
   <br/>
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow.svg?v=5" alt="J.SkyCast Weather Workflow" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow.svg?t=20260613" alt="J.SkyCast Weather Workflow" width="100%" />
   <br/>
   <a href="https://github.com/JyotirmoyLaha/j.weather" target="_blank">
     <img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" />
@@ -94,10 +94,10 @@
   <br/><br/>
 
   <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio.svg?v=5" alt="Personal Portfolio" width="100%" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio.svg?t=20260613" alt="Personal Portfolio" width="100%" />
   </a>
   <br/>
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow.svg?v=5" alt="Personal Portfolio Workflow" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow.svg?t=20260613" alt="Personal Portfolio Workflow" width="100%" />
   <br/>
   <a href="https://github.com/JyotirmoyLaha/j.portfolio" target="_blank">
     <img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code" />
@@ -109,16 +109,16 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=5" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?t=20260613" alt="divider" width="100%" />
 </p>
 
 ## 💻 Tech Arsenal
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack.svg?v=5" alt="Tech Arsenal Grid" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack.svg?t=20260613" alt="Tech Arsenal Grid" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=5" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?t=20260613" alt="divider" width="100%" />
 </p>
 
 ## 📊 GitHub Analytics
@@ -148,7 +148,7 @@
 </table>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=5" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?t=20260613" alt="divider" width="100%" />
 </p>
 
 ### ✍️ Random Dev Quote
@@ -157,7 +157,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=5" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?t=20260613" alt="divider" width="100%" />
 </p>
 
 <div align="center">
@@ -165,7 +165,7 @@
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=5" alt="divider" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?t=20260613" alt="divider" width="100%" />
 </p>
 
 <!-- Glitch visitor counter removed due to reliability issues. Views are tracked via dynamic Shields/Komarev count at the top. -->
