@@ -271,6 +271,13 @@
     <text x="27.5" y="15" text-anchor="middle" class="pill-text">HTTPX</text>
   </g>
 
+  <!-- MySQL -->
+  <g class="tech-pill" transform="translate(748, 199)">
+    <title>MySQL Database</title>
+    <rect width="60" height="22" rx="4" fill="#0891b2" />
+    <text x="30" y="15" text-anchor="middle" class="pill-text">MYSQL</text>
+  </g>
+
 
   <!-- ===================== ROW 4: FRONTEND & MOBILE ===================== -->
   <text x="100" y="262" text-anchor="middle" class="category-text">Frontend &amp;</text>
