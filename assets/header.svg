@@ -35,11 +35,11 @@
       </stop>
     </linearGradient>
 
-    <!-- Border gradient -->
-    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+    <!-- Orbit line gradient -->
+    <linearGradient id="orbit-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.3"/>
       <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0.3"/>
     </linearGradient>
   </defs>
 
@@ -56,18 +56,13 @@
       font-size: 18px;
       letter-spacing: 7px;
     }
-    .particle {
-      font-family: "Courier New", Courier, monospace;
-      font-weight: bold;
-      user-select: none;
-    }
   </style>
 
   <!-- Solid background -->
-  <rect width="798" height="258" x="1" y="1" fill="#0a0814" rx="16" />
+  <rect width="800" height="260" fill="#07050f" rx="16" />
 
   <!-- Animated mesh/grid background -->
-  <rect width="798" height="258" x="1" y="1" fill="url(#grid)" opacity="0.7" rx="16" />
+  <rect width="800" height="260" fill="url(#grid)" opacity="0.5" rx="16" />
 
   <!-- Glowing background light blobs -->
   <circle cx="150" cy="80" r="85" fill="#8B5CF6" opacity="0.18" filter="url(#blur)">
@@ -80,98 +75,152 @@
     <animate attributeName="cy" values="180; 120; 220; 180" dur="20s" repeatCount="indefinite" />
   </circle>
 
-  <!-- macOS Style Window Header buttons -->
-  <circle cx="30" cy="28" r="5.5" fill="#FF5F56" />
-  <circle cx="46" cy="28" r="5.5" fill="#FFBD2E" />
-  <circle cx="62" cy="28" r="5.5" fill="#27C93F" />
+  <!-- Orbit Track Behind the text -->
+  <path d="M 120,130 A 280,80 0 0,0 680,130 A 280,80 0 0,0 120,130" fill="none" stroke="url(#orbit-grad)" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.5"/>
 
-  <!-- Floating Code Particles -->
-  <text x="80" y="90" fill="#8B5CF6" opacity="0.25" class="particle" font-size="14">
-    &lt;div&gt;
-    <animate attributeName="opacity" values="0.15; 0.5; 0.15" dur="7s" repeatCount="indefinite" />
-    <animate attributeName="y" values="90; 75; 90" dur="7s" repeatCount="indefinite" />
-  </text>
-  <text x="700" y="80" fill="#00F2FE" opacity="0.3" class="particle" font-size="16">
-    { json }
-    <animate attributeName="opacity" values="0.15; 0.6; 0.15" dur="9s" repeatCount="indefinite" />
-    <animate attributeName="y" values="80; 95; 80" dur="9s" repeatCount="indefinite" />
-  </text>
-  <text x="120" y="200" fill="#3B82F6" opacity="0.25" class="particle" font-size="15">
-    const coder = true;
-    <animate attributeName="opacity" values="0.1; 0.45; 0.1" dur="11s" repeatCount="indefinite" />
-    <animate attributeName="y" values="200; 185; 200" dur="11s" repeatCount="indefinite" />
-  </text>
-  <text x="660" y="210" fill="#8B5CF6" opacity="0.3" class="particle" font-size="16">
-    &lt;/&gt;
-    <animate attributeName="opacity" values="0.2; 0.65; 0.2" dur="8s" repeatCount="indefinite" />
-    <animate attributeName="y" values="210; 225; 210" dur="8s" repeatCount="indefinite" />
-  </text>
+  <!-- Orbiting Icons -->
+  
+  <!-- 1. JavaScript -->
+  <g>
+    <animateMotion dur="20s" repeatCount="indefinite" path="M 120,130 A 280,80 0 0,0 680,130 A 280,80 0 0,0 120,130" rotate="none" begin="0s" />
+    <g>
+      <animate attributeName="opacity" values="0.65; 0.3; 0.65; 1.0; 0.65" dur="20s" repeatCount="indefinite" begin="0s" />
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.9; 0.6; 0.9; 1.2; 0.9" dur="20s" repeatCount="indefinite" begin="0s" />
+        <g transform="translate(-16, -16)">
+          <rect width="32" height="32" rx="6" fill="#F7DF1E"/>
+          <path d="M22 24c-.7.5-1.5.8-2.3.8-1.2 0-2-.6-2-1.9h1.9c0 .7.3 1 .9 1 .5 0 .7-.3.7-.7v-6.9h2v7.1c0 1.2-.5 1.6-1.2 1.6zm7.2-.6c-.5.7-1.4 1.4-2.8 1.4-1.7 0-2.6-1.1-2.6-2.6h1.9c0 .8.5 1.3 1.2 1.3.6 0 1-.3 1-.8 0-.5-.4-.7-1.1-.9l-.8-.2c-1.3-.3-2.1-1-2.1-2.2 0-1.4 1.1-2.3 2.5-2.3 1.3 0 2.1.6 2.6 1.4l-1.4.9c-.3-.5-.7-.8-1.2-.8-.5 0-.8.3-.8.7 0 .4.3.6 1 .8l.8.2c1.4.4 2.2 1 2.2 2.3 0 1.5-1 2.3-2.8 2.3z" fill="#000000"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 2. Python -->
+  <g>
+    <animateMotion dur="20s" repeatCount="indefinite" path="M 120,130 A 280,80 0 0,0 680,130 A 280,80 0 0,0 120,130" rotate="none" begin="-2.5s" />
+    <g>
+      <animate attributeName="opacity" values="0.65; 0.3; 0.65; 1.0; 0.65" dur="20s" repeatCount="indefinite" begin="-2.5s" />
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.9; 0.6; 0.9; 1.2; 0.9" dur="20s" repeatCount="indefinite" begin="-2.5s" />
+        <g transform="scale(0.667) translate(-24, -24)">
+          <path d="M24 2c-6.6 0-6.1 2.9-6.1 2.9v3.2h6.2v.9h-8.7c-5.8 0-6.4 4.8-6.4 4.8s-.6 5.5 0 6.6c.5 1 2 1 2 1h1.7v-2.4c0-2.4 2-4.5 4.5-4.5h6.2c1.9 0 3.3-1.4 3.3-3.3V4.9c0-1.9-1.5-2.9-2.7-2.9zm-3.3 2.1a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z" fill="#3776AB"/>
+          <path d="M24 46c6.6 0 6.1-2.9 6.1-2.9v-3.2h-6.2v-.9h8.7s5.8 0 6.4-4.8c.6-1.1.6-5.5.6-6.6-.5-1-2-1-2-1h-1.7v2.4c0 2.4-2 4.5-4.5 4.5h-6.2c-1.9 0-3.3 1.4-3.3 3.3v6.3c0 1.9 1.5 2.9 2.7 2.9zm3.3-2.1a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4z" fill="#FFE052"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 3. Tailwind CSS -->
+  <g>
+    <animateMotion dur="20s" repeatCount="indefinite" path="M 120,130 A 280,80 0 0,0 680,130 A 280,80 0 0,0 120,130" rotate="none" begin="-5s" />
+    <g>
+      <animate attributeName="opacity" values="0.65; 0.3; 0.65; 1.0; 0.65" dur="20s" repeatCount="indefinite" begin="-5s" />
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.9; 0.6; 0.9; 1.2; 0.9" dur="20s" repeatCount="indefinite" begin="-5s" />
+        <g transform="scale(0.667) translate(-24, -24)">
+          <path d="M24 10.5c-4.8 0-7.7 2.4-8.7 7.2 2.9-2.9 5.8-3.4 8.7-1.5 1.7 1.2 2.9 2.5 4.3 4 2.2 2.4 4.8 5.3 10.1 5.3 4.8 0 7.7-2.4 8.7-7.2-2.9 2.9-5.8 3.4-8.7 1.5-1.7-1.2-2.9-2.5-4.3-4-2.2-2.4-4.8-5.3-10.1-5.3zm-11 11c-4.8 0-7.7 2.4-8.7 7.2 2.9-2.9 5.8-3.4 8.7-1.5 1.7 1.2 2.9 2.5 4.3 4 2.2 2.4 4.8 5.3 10.1 5.3 4.8 0 7.7-2.4 8.7-7.2-2.9 2.9-5.8 3.4-8.7 1.5-1.7-1.2-2.9-2.5-4.3-4-2.2-2.4-4.8-5.3-10.1-5.3z" fill="#38BDF8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 4. Firebase -->
+  <g>
+    <animateMotion dur="20s" repeatCount="indefinite" path="M 120,130 A 280,80 0 0,0 680,130 A 280,80 0 0,0 120,130" rotate="none" begin="-7.5s" />
+    <g>
+      <animate attributeName="opacity" values="0.65; 0.3; 0.65; 1.0; 0.65" dur="20s" repeatCount="indefinite" begin="-7.5s" />
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.9; 0.6; 0.9; 1.2; 0.9" dur="20s" repeatCount="indefinite" begin="-7.5s" />
+        <g transform="scale(0.667) translate(-24, -24)">
+          <path d="M8.2 35.2L22.6 6c.4-.9 1.7-.9 2.1 0l4.1 7.8L8.2 35.2z" fill="#FFC229"/>
+          <path d="M30.5 17.5l-6.8-13c-.4-.9-1.7-.9-2.1 0L7.3 37.1l23.2-19.6z" fill="#FFA000"/>
+          <path d="M7.3 37.1l.4.5 32.1-4c.9-.1 1.3-1.1.6-1.7L30.5 17.5 7.3 37.1z" fill="#F44336"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 5. FastAPI -->
+  <g>
+    <animateMotion dur="20s" repeatCount="indefinite" path="M 120,130 A 280,80 0 0,0 680,130 A 280,80 0 0,0 120,130" rotate="none" begin="-10s" />
+    <g>
+      <animate attributeName="opacity" values="0.65; 0.3; 0.65; 1.0; 0.65" dur="20s" repeatCount="indefinite" begin="-10s" />
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.9; 0.6; 0.9; 1.2; 0.9" dur="20s" repeatCount="indefinite" begin="-10s" />
+        <g transform="scale(0.667) translate(-24, -24)">
+          <rect x="4" y="4" width="40" height="40" rx="8" fill="#009688"/>
+          <path d="M25 8L13 26h10l-2 14 14-18h-10l2-12z" fill="#FFFFFF"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 6. HTML5 -->
+  <g>
+    <animateMotion dur="20s" repeatCount="indefinite" path="M 120,130 A 280,80 0 0,0 680,130 A 280,80 0 0,0 120,130" rotate="none" begin="-12.5s" />
+    <g>
+      <animate attributeName="opacity" values="0.65; 0.3; 0.65; 1.0; 0.65" dur="20s" repeatCount="indefinite" begin="-12.5s" />
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.9; 0.6; 0.9; 1.2; 0.9" dur="20s" repeatCount="indefinite" begin="-12.5s" />
+        <g transform="scale(0.667) translate(-24, -24)">
+          <path d="M5 3l4 35 15 4 15-4 4-35h-38z" fill="#E34F26"/>
+          <path d="M24 6v33l12-3 3-30h-15z" fill="#F16529"/>
+          <path d="M24 18h7l-.5 5.5h-6.5v4.5h6l-1 9-5 1.5v-20.5z" fill="#EBEBEB"/>
+          <path d="M24 13h12.5l-.5 5h-12v-5z" fill="#FFFFFF"/>
+          <path d="M24 18v5h-6.5l-.3-3h6.8z" fill="#FFFFFF"/>
+          <path d="M24 13v5h-11.5l.7-8h10.8z" fill="#FFFFFF"/>
+          <path d="M24 27.5l-5-1.5-.3-3h-5l.5 6.5 9.8 2.7v-4.7z" fill="#FFFFFF"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 7. CSS3 -->
+  <g>
+    <animateMotion dur="20s" repeatCount="indefinite" path="M 120,130 A 280,80 0 0,0 680,130 A 280,80 0 0,0 120,130" rotate="none" begin="-15s" />
+    <g>
+      <animate attributeName="opacity" values="0.65; 0.3; 0.65; 1.0; 0.65" dur="20s" repeatCount="indefinite" begin="-15s" />
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.9; 0.6; 0.9; 1.2; 0.9" dur="20s" repeatCount="indefinite" begin="-15s" />
+        <g transform="scale(0.667) translate(-24, -24)">
+          <path d="M5 3l4 35 15 4 15-4 4-35H5z" fill="#1572B6"/>
+          <path d="M24 6v33l12-3.3 3.3-29.7H24z" fill="#33A9DC"/>
+          <path d="M24 13h11.2l-.3 3.3h-10.9v4.5h10.4l-.8 9-9.6 2.6v-4.7l4.7-1.3.3-3.6H24v-4.5H18.7l-.3-3.3H24v-4.5h-5.8l-.3-3.3H24v4.5z" fill="#FFFFFF"/>
+          <path d="M24 17.5H18.7l-.3-3.3H24v3.3z" fill="#EBEBEB" opacity="0.8"/>
+          <path d="M24 26.5v4.7l-4.7-1.3-.3-3H14l.6 6.8 9.4 2.6v-9.8z" fill="#EBEBEB" opacity="0.8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 8. Git -->
+  <g>
+    <animateMotion dur="20s" repeatCount="indefinite" path="M 120,130 A 280,80 0 0,0 680,130 A 280,80 0 0,0 120,130" rotate="none" begin="-17.5s" />
+    <g>
+      <animate attributeName="opacity" values="0.65; 0.3; 0.65; 1.0; 0.65" dur="20s" repeatCount="indefinite" begin="-17.5s" />
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0.9; 0.6; 0.9; 1.2; 0.9" dur="20s" repeatCount="indefinite" begin="-17.5s" />
+        <g transform="scale(0.667) translate(-24, -24)">
+          <rect x="6" y="6" width="36" height="36" rx="8" transform="rotate(45 24 24)" fill="#F05032"/>
+          <path d="M24 15v15M24 22.5c-1.5 0-3 .5-5.5 2" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="24" cy="15" r="3.5" fill="#FFFFFF"/>
+          <circle cx="18.5" cy="24.5" r="3.5" fill="#FFFFFF"/>
+          <circle cx="24" cy="30" r="3.5" fill="#FFFFFF"/>
+        </g>
+      </g>
+    </g>
+  </g>
 
   <!-- Main Title -->
-  <text x="400" y="115" text-anchor="middle" fill="url(#title-grad)" filter="url(#glow)" class="font-title">
+  <text x="400" y="125" text-anchor="middle" fill="url(#title-grad)" filter="url(#glow)" class="font-title">
     Jyotirmoy Laha
   </text>
 
   <!-- Subtitle -->
-  <text x="400" y="172" text-anchor="middle" fill="#a29bfe" class="font-subtitle">
+  <text x="400" y="178" text-anchor="middle" fill="#a29bfe" class="font-subtitle">
     WEB DEVELOPER
     <animate attributeName="fill" values="#a29bfe; #ffffff; #a29bfe" dur="4s" repeatCount="indefinite" />
     <animate attributeName="opacity" values="0.7; 1; 0.7" dur="4s" repeatCount="indefinite" />
   </text>
 
-  <!-- 3D Glass Card Border Outline -->
-  <rect width="798" height="258" x="1" y="1" fill="none" stroke="url(#border-grad)" stroke-width="1.8" rx="16" />
-
-  <!-- Glowing line at the bottom -->
-  <line x1="16" y1="258" x2="784" y2="258" stroke="url(#title-grad)" stroke-width="4" stroke-dasharray="150 250" opacity="0.8">
-    <animate attributeName="stroke-dashoffset" values="0; 800" dur="10s" repeatCount="indefinite" />
-  </line>
-  <!-- Floating Petals & Coding Particles Overlay (Aesthetic Theme) -->
-  <g id="readme-theme-overlay" opacity="0.8">
-    <!-- Cherry Blossom Petal 1 (Drifts diagonally, rotates) -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FFB7C5" opacity="0.2">
-      <animateTransform attributeName="transform" type="translate" values="-20,40; 870,200" dur="18s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="12s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Cherry Blossom Petal 2 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FFB7C5" opacity="0.18">
-      <animateTransform attributeName="transform" type="translate" values="120,-20; 880,110" dur="22s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="45; 405" dur="15s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Cherry Blossom Petal 3 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FF8DA1" opacity="0.15">
-      <animateTransform attributeName="transform" type="translate" values="-50,140; 830,280" dur="20s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="90; 450" dur="18s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Cherry Blossom Petal 4 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FFB7C5" opacity="0.22">
-      <animateTransform attributeName="transform" type="translate" values="280,-30; 780,260" dur="25s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="10; 730" dur="24s" repeatCount="indefinite" additive="sum" />
-    </path>
-
-    <!-- Coding Particles (HTML, JS braces, sparks) -->
-    <text x="0" y="0" fill="#00F2FE" font-family="monospace" font-size="11" font-weight="bold" opacity="0.14">
-      &lt;/&gt;
-      <animateTransform attributeName="transform" type="translate" values="40,250; 810,30" dur="26s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; -360" dur="16s" repeatCount="indefinite" additive="sum" />
-    </text>
-    <text x="0" y="0" fill="#8B5CF6" font-family="monospace" font-size="13" font-weight="bold" opacity="0.12">
-      {{
-      <animateTransform attributeName="transform" type="translate" values="180,290; 790,60" dur="28s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="20s" repeatCount="indefinite" additive="sum" />
-    </text>
-    <text x="0" y="0" fill="#3B82F6" font-family="monospace" font-size="12" font-weight="bold" opacity="0.15">
-      ( )
-      <animateTransform attributeName="transform" type="translate" values="10,100; 840,10" dur="23s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="30; 390" dur="14s" repeatCount="indefinite" additive="sum" />
-    </text>
-    
-    <!-- Coding Sparkle Dots -->
-    <circle cx="0" cy="0" r="1.5" fill="#00F2FE" opacity="0.25">
-      <animateTransform attributeName="transform" type="translate" values="-30,60; 860,160" dur="19s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="0" cy="0" r="1.2" fill="#8B5CF6" opacity="0.3">
-      <animateTransform attributeName="transform" type="translate" values="140,-10; 810,220" dur="24s" repeatCount="indefinite" />
-    </circle>
-  </g>
 </svg>
