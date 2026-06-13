@@ -326,22 +326,15 @@
   </g>
 
   <!-- Line 2: Mobile/Front pills -->
-  <!-- Responsive Design -->
-  <g class="tech-pill" transform="translate(220, 271)">
-    <title>Responsive Web Layout</title>
-    <rect width="135" height="22" rx="4" fill="#16a34a" />
-    <text x="67.5" y="15" text-anchor="middle" class="pill-text">RESPONSIVE DESIGN</text>
-  </g>
-
   <!-- AsyncStorage -->
-  <g class="tech-pill" transform="translate(363, 271)">
+  <g class="tech-pill" transform="translate(220, 271)">
     <title>React Native AsyncStorage client cache</title>
     <rect width="115" height="22" rx="4" fill="#b45309" />
     <text x="57.5" y="15" text-anchor="middle" class="pill-text">ASYNCSTORAGE</text>
   </g>
 
   <!-- SecureStore -->
-  <g class="tech-pill" transform="translate(486, 271)">
+  <g class="tech-pill" transform="translate(343, 271)">
     <title>Expo SecureStore client encryption</title>
     <rect width="100" height="22" rx="4" fill="#db2777" />
     <text x="50" y="15" text-anchor="middle" class="pill-text">SECURESTORE</text>
@@ -400,13 +393,6 @@
     <title>Apple App Attest client device attestation</title>
     <rect width="90" height="22" rx="4" fill="#db2777" />
     <text x="45" y="15" text-anchor="middle" class="pill-text">APP ATTEST</text>
-  </g>
-
-  <!-- Asyncio -->
-  <g class="tech-pill" transform="translate(436, 343)">
-    <title>Python Asyncio non-blocking event loop</title>
-    <rect width="65" height="22" rx="4" fill="#4f46e5" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">ASYNCIO</text>
   </g>
 
 
