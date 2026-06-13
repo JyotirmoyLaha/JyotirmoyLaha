@@ -82,16 +82,16 @@
       </h3>
       
       <div style="margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 4px;">
-        <span class="badge">Hostel Tech</span>
-        <span class="badge">Express &amp; Node</span>
-        <span class="badge">MongoDB</span>
-        <span class="badge">Automated Billing</span>
+        <span class="badge">Firebase Client</span>
+        <span class="badge">Tailwind CSS</span>
+        <span class="badge">jsPDF Engine</span>
+        <span class="badge">Access Control</span>
       </div>
 
       <ul style="margin: 0; padding-left: 20px; font-size: 13px; line-height: 22px; color: #8b949e; list-style-type: square;">
-        <li style="margin-bottom: 8px;">Streamlined hostel and mess tracking system for managing daily meals, deposits, refunds, and active members.</li>
-        <li style="margin-bottom: 8px;">Automated cost calculation algorithm computes cost-per-meal and individual balances in real time.</li>
-        <li>Responsive dashboard for administrators to approve deposits, track inventory expenses, and view member logs.</li>
+        <li style="margin-bottom: 8px;">Multi-user mess tracker with Google Sign-in and custom whitelisted Firestore access control.</li>
+        <li style="margin-bottom: 8px;">Shared budget dashboard showing total funds, current balance, spent totals, and progress indicators.</li>
+        <li>Admin-managed member ledger, automated carry-forward history, and client-side A4 PDF exports.</li>
       </ul>
     </div>
   </foreignObject>
@@ -146,13 +146,13 @@
       flex-wrap: wrap;
       align-items: center;
     ">
-      <span class="tech-pill">Node.js</span>
-      <span class="tech-pill">Express</span>
-      <span class="tech-pill">MongoDB</span>
-      <span class="tech-pill">EJS</span>
-      <span class="tech-pill">HTML5</span>
-      <span class="tech-pill">CSS3</span>
-      <span class="tech-pill">Bootstrap</span>
+      <span class="tech-pill">Tailwind CSS</span>
+      <span class="tech-pill">JS</span>
+      <span class="tech-pill">Firebase</span>
+      <span class="tech-pill">Firestore</span>
+      <span class="tech-pill">jsPDF</span>
+      <span class="tech-pill">Google Auth</span>
+      <span class="tech-pill">Lucide Icons</span>
     </div>
   </foreignObject>
   <!-- Floating Petals & Coding Particles Overlay (Aesthetic Theme) -->
