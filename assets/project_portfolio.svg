@@ -89,16 +89,16 @@
       </h3>
       
       <div style="margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 4px;">
-        <span class="badge">Developer Portfolio</span>
-        <span class="badge">React &amp; Vite</span>
-        <span class="badge">CSS Grid Layouts</span>
-        <span class="badge">Form Handling</span>
+        <span class="badge">Vanilla SPA</span>
+        <span class="badge">Tailwind CSS</span>
+        <span class="badge">FastAPI Bot</span>
+        <span class="badge">NPM CLI Card</span>
       </div>
 
       <ul style="margin: 0; padding-left: 20px; font-size: 13px; line-height: 22px; color: #8b949e; list-style-type: square;">
-        <li style="margin-bottom: 8px;">Interactive web developer portfolio showcasing personal details, core skills, featured projects, and accomplishments.</li>
-        <li style="margin-bottom: 8px;">Premium layout built using modern CSS grid/flexbox paradigms and fluid glassmorphic UI widgets.</li>
-        <li>Integrated and validated contact form with direct links to GitHub repositories and LinkedIn profiles.</li>
+        <li style="margin-bottom: 8px;">Interactive Single Page Application portfolio featuring Vanilla JS Hash routing and smooth scrolling.</li>
+        <li style="margin-bottom: 8px;">Premium 3D parallax card with real-time cursor-tracking, sheen overlay, and canvas particle splash.</li>
+        <li>Self-contained AI chatbot assistant (FastAPI + Groq Llama) and interactive NPM terminal business card.</li>
       </ul>
     </div>
   </foreignObject>
@@ -151,12 +151,12 @@
       flex-wrap: wrap;
       align-items: center;
     ">
-      <span class="tech-pill">React</span>
-      <span class="tech-pill">Vite</span>
-      <span class="tech-pill">CSS Grid</span>
-      <span class="tech-pill">HTML5</span>
+      <span class="tech-pill">Tailwind CSS</span>
       <span class="tech-pill">JS</span>
-      <span class="tech-pill">HSL Themes</span>
+      <span class="tech-pill">FastAPI</span>
+      <span class="tech-pill">Groq AI</span>
+      <span class="tech-pill">NPM / CLI</span>
+      <span class="tech-pill">Lenis / AOS</span>
     </div>
   </foreignObject>
   <!-- Floating Petals & Coding Particles Overlay (Aesthetic Theme) -->
