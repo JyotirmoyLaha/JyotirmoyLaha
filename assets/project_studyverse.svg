@@ -100,16 +100,16 @@
       </h3>
       
       <div style="margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 4px;">
-        <span class="badge">Ambient Spatial Journal</span>
-        <span class="badge">Study Dashboard</span>
-        <span class="badge">MongoDB</span>
-        <span class="badge">UX Focus</span>
+        <span class="badge">Zen Journal</span>
+        <span class="badge">Firebase Auth</span>
+        <span class="badge">Cloud Firestore</span>
+        <span class="badge">Sakura Particles</span>
       </div>
 
       <ul style="margin: 0; padding-left: 20px; font-size: 13px; line-height: 22px; color: #8b949e; list-style-type: square;">
-        <li style="margin-bottom: 8px;">Integrated study tracker featuring customizable study rooms, real-time widgets, and collaborative tools.</li>
-        <li style="margin-bottom: 8px;">Built-in productivity utilities including interactive flashcards, Pomodoro timers, and dynamic task boards.</li>
-        <li>Secure user accounts with session persistence and database state management using MongoDB and Express.</li>
+        <li style="margin-bottom: 8px;">Zen-inspired daily study &amp; life journal featuring real-time syncing and custom light/dark theme support.</li>
+        <li style="margin-bottom: 8px;">Dynamic stat counters tracking study logs, life logs, saved images, and active daily streaks.</li>
+        <li>Secure user accounts via Google Sign-In with client-side image attachments and compression.</li>
       </ul>
     </div>
   </foreignObject>
@@ -156,13 +156,13 @@
       flex-wrap: wrap;
       align-items: center;
     ">
-      <span class="tech-pill">EJS</span>
-      <span class="tech-pill">Node.js</span>
-      <span class="tech-pill">Express</span>
-      <span class="tech-pill">MongoDB</span>
-      <span class="tech-pill">Tailwind CSS</span>
+      <span class="tech-pill">HTML5</span>
       <span class="tech-pill">CSS3</span>
       <span class="tech-pill">JS</span>
+      <span class="tech-pill">Firebase</span>
+      <span class="tech-pill">Firestore</span>
+      <span class="tech-pill">Google Auth</span>
+      <span class="tech-pill">Canvas API</span>
     </div>
   </foreignObject>
   <!-- Floating Petals & Coding Particles Overlay (Aesthetic Theme) -->
