@@ -126,7 +126,7 @@
 <table width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api?username=JyotirmoyLaha&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=1800&v=1" height="195" />
+      <img src="https://github-readme-stats.vercel.app/api?username=JyotirmoyLaha&theme=tokyonight&hide_border=true&include_all_commits=false&count_private=true&cache_seconds=1800&v=1" height="195" />
     </td>
     <td width="50%" align="center" valign="top">
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JyotirmoyLaha&theme=tokyonight&hide_border=true&layout=compact&cache_seconds=1800&v=1" height="195" />
