@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 376" width="100%" height="376">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 316" width="100%" height="316">
   <style>
     .table-bg {
       fill: #0d1117;
@@ -38,7 +38,7 @@
   </style>
 
   <!-- Table Body Background -->
-  <rect width="850" height="376" fill="#0d1117" rx="8" />
+  <rect width="850" height="316" fill="#0d1117" rx="8" />
 
   <!-- Header Background (Rounded top corners) -->
   <path d="M8,0.5 h834 a8,8 0 0 1 8,8 v26.5 h-850 v-26.5 a8,8 0 0 1 8,-8 z" fill="#161b22" />
@@ -48,17 +48,17 @@
   <text x="525" y="22" text-anchor="middle" class="header-text">Technologies</text>
 
   <!-- Vertical Divider Line -->
-  <line x1="200" y1="0" x2="200" y2="375" class="grid-line" />
+  <line x1="200" y1="0" x2="200" y2="315" class="grid-line" />
 
   <!-- Horizontal Grid Lines -->
   <line x1="0" y1="35" x2="850" y2="35" class="grid-line" />
   <line x1="0" y1="87" x2="850" y2="87" class="grid-line" />
-  <line x1="0" y1="159" x2="850" y2="159" class="grid-line" />
-  <line x1="0" y1="231" x2="850" y2="231" class="grid-line" />
-  <line x1="0" y1="303" x2="850" y2="303" class="grid-line" />
+  <line x1="0" y1="139" x2="850" y2="139" class="grid-line" />
+  <line x1="0" y1="211" x2="850" y2="211" class="grid-line" />
+  <line x1="0" y1="263" x2="850" y2="263" class="grid-line" />
 
   <!-- Outer Rounded Border Outline -->
-  <rect x="0.5" y="0.5" width="849" height="374" fill="none" stroke="#30363d" stroke-width="1" rx="8" />
+  <rect x="0.5" y="0.5" width="849" height="315" fill="none" stroke="#30363d" stroke-width="1" rx="8" />
 
   <!-- ===================== ROW 1: LANGUAGES & CORE TOOLS ===================== -->
   <text x="100" y="56" text-anchor="middle" class="category-text">Languages &amp;</text>
@@ -122,275 +122,202 @@
 
 
   <!-- ===================== ROW 2: PQC & CRYPTOGRAPHY ===================== -->
-  <text x="100" y="118" text-anchor="middle" class="category-text">PQC &amp;</text>
-  <text x="100" y="132" text-anchor="middle" class="category-text">Cryptography</text>
+  <text x="100" y="108" text-anchor="middle" class="category-text">PQC &amp;</text>
+  <text x="100" y="122" text-anchor="middle" class="category-text">Cryptography</text>
 
-  <!-- liboqs -->
-  <g class="tech-pill" transform="translate(220, 97)">
-    <title>liboqs (Open Quantum Safe)</title>
-    <rect width="65" height="22" rx="4" fill="#db2777" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">LIBOQS</text>
+  <!-- PQC -->
+  <g class="tech-pill" transform="translate(220, 102)">
+    <title>Post-Quantum Cryptography</title>
+    <rect width="45" height="22" rx="4" fill="#db2777" />
+    <text x="22.5" y="15" text-anchor="middle" class="pill-text">PQC</text>
   </g>
 
   <!-- Utimaco HSM -->
-  <g class="tech-pill" transform="translate(293, 97)">
-    <title>Utimaco HSM (PKCS#11)</title>
+  <g class="tech-pill" transform="translate(273, 102)">
+    <title>Utimaco Hardware Security Module</title>
     <rect width="95" height="22" rx="4" fill="#4f46e5" />
     <text x="47.5" y="15" text-anchor="middle" class="pill-text">UTIMACO HSM</text>
   </g>
 
+  <!-- PKCS#11 -->
+  <g class="tech-pill" transform="translate(376, 102)">
+    <title>PKCS#11 Cryptographic Token Interface</title>
+    <rect width="70" height="22" rx="4" fill="#16a34a" />
+    <text x="35" y="15" text-anchor="middle" class="pill-text">PKCS#11</text>
+  </g>
+
   <!-- AES-256-GCM -->
-  <g class="tech-pill" transform="translate(396, 97)">
+  <g class="tech-pill" transform="translate(454, 102)">
     <title>AES-256-GCM authenticated encryption</title>
     <rect width="95" height="22" rx="4" fill="#b45309" />
     <text x="47.5" y="15" text-anchor="middle" class="pill-text">AES-256-GCM</text>
   </g>
 
   <!-- X25519 -->
-  <g class="tech-pill" transform="translate(499, 97)">
+  <g class="tech-pill" transform="translate(557, 102)">
     <title>X25519 Ephemeral Key Exchange</title>
     <rect width="65" height="22" rx="4" fill="#0891b2" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">X25519</text>
   </g>
 
   <!-- ED25519 -->
-  <g class="tech-pill" transform="translate(220, 127)">
-    <title>Ed25519 Verdict Signatures</title>
+  <g class="tech-pill" transform="translate(630, 102)">
+    <title>Ed25519 digital signature scheme</title>
     <rect width="65" height="22" rx="4" fill="#2563eb" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">ED25519</text>
   </g>
 
-  <!-- PKCS#11 -->
-  <g class="tech-pill" transform="translate(293, 127)">
-    <title>PKCS#11 Cryptographic Token Interface</title>
-    <rect width="70" height="22" rx="4" fill="#16a34a" />
-    <text x="35" y="15" text-anchor="middle" class="pill-text">PKCS#11</text>
-  </g>
-
-  <!-- FERNET -->
-  <g class="tech-pill" transform="translate(371, 127)">
-    <title>Fernet Envelope Encryption</title>
-    <rect width="65" height="22" rx="4" fill="#dc2626" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">FERNET</text>
-  </g>
-
-  <!-- PBKDF2 -->
-  <g class="tech-pill" transform="translate(444, 127)">
-    <title>PBKDF2 SHA-256 Key Derivation</title>
-    <rect width="70" height="22" rx="4" fill="#4f46e5" />
-    <text x="35" y="15" text-anchor="middle" class="pill-text">PBKDF2</text>
-  </g>
-
 
   <!-- ===================== ROW 3: BACKEND & DATABASES ===================== -->
-  <text x="100" y="190" text-anchor="middle" class="category-text">Backend &amp;</text>
-  <text x="100" y="204" text-anchor="middle" class="category-text">Databases</text>
+  <text x="100" y="170" text-anchor="middle" class="category-text">Backend &amp;</text>
+  <text x="100" y="184" text-anchor="middle" class="category-text">Databases</text>
 
   <!-- FastAPI -->
-  <g class="tech-pill" transform="translate(220, 169)">
+  <g class="tech-pill" transform="translate(220, 149)">
     <title>FastAPI Web Framework</title>
     <rect width="65" height="22" rx="4" fill="#009688" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">FASTAPI</text>
   </g>
 
   <!-- Flask -->
-  <g class="tech-pill" transform="translate(293, 169)">
+  <g class="tech-pill" transform="translate(293, 149)">
     <title>Flask microframework</title>
     <rect width="55" height="22" rx="4" fill="#4caf50" />
     <text x="27.5" y="15" text-anchor="middle" class="pill-text">FLASK</text>
   </g>
 
+  <!-- Node.js -->
+  <g class="tech-pill" transform="translate(356, 149)">
+    <title>Node.js runtime environment</title>
+    <rect width="65" height="22" rx="4" fill="#16a34a" />
+    <text x="32.5" y="15" text-anchor="middle" class="pill-text">NODE.JS</text>
+  </g>
+
+  <!-- Express.js -->
+  <g class="tech-pill" transform="translate(429, 149)">
+    <title>Express.js backend framework</title>
+    <rect width="85" height="22" rx="4" fill="#1f2937" />
+    <text x="42.5" y="15" text-anchor="middle" class="pill-text">EXPRESS.JS</text>
+  </g>
+
+  <!-- Firebase -->
+  <g class="tech-pill" transform="translate(522, 149)">
+    <title>Firebase application development platform</title>
+    <rect width="70" height="22" rx="4" fill="#ea580c" />
+    <text x="35" y="15" text-anchor="middle" class="pill-text">FIREBASE</text>
+  </g>
+
   <!-- PostgreSQL -->
-  <g class="tech-pill" transform="translate(356, 169)">
+  <g class="tech-pill" transform="translate(220, 179)">
     <title>PostgreSQL Database</title>
     <rect width="90" height="22" rx="4" fill="#336791" />
     <text x="45" y="15" text-anchor="middle" class="pill-text">POSTGRESQL</text>
   </g>
 
-  <!-- SQLAlchemy -->
-  <g class="tech-pill" transform="translate(454, 169)">
-    <title>SQLAlchemy ORM</title>
-    <rect width="95" height="22" rx="4" fill="#dc2626" />
-    <text x="47.5" y="15" text-anchor="middle" class="pill-text">SQLALCHEMY</text>
-  </g>
-
-  <!-- Alembic -->
-  <g class="tech-pill" transform="translate(557, 169)">
-    <title>Alembic DB Migrations</title>
-    <rect width="70" height="22" rx="4" fill="#b45309" />
-    <text x="35" y="15" text-anchor="middle" class="pill-text">ALEMBIC</text>
-  </g>
-
-  <!-- Uvicorn -->
-  <g class="tech-pill" transform="translate(635, 169)">
-    <title>Uvicorn ASGI Web Server</title>
-    <rect width="70" height="22" rx="4" fill="#7c3aed" />
-    <text x="35" y="15" text-anchor="middle" class="pill-text">UVICORN</text>
-  </g>
-
-  <!-- Line 2: Backend pills -->
-  <!-- Gunicorn -->
-  <g class="tech-pill" transform="translate(220, 199)">
-    <title>Gunicorn WSGI Server</title>
-    <rect width="80" height="22" rx="4" fill="#16a34a" />
-    <text x="40" y="15" text-anchor="middle" class="pill-text">GUNICORN</text>
-  </g>
-
-  <!-- REST APIs -->
-  <g class="tech-pill" transform="translate(308, 199)">
-    <title>REST APIs Endpoints</title>
-    <rect width="80" height="22" rx="4" fill="#2563eb" />
-    <text x="40" y="15" text-anchor="middle" class="pill-text">REST APIS</text>
-  </g>
-
-  <!-- pdfplumber -->
-  <g class="tech-pill" transform="translate(396, 199)">
-    <title>pdfplumber NLP Parsing</title>
-    <rect width="90" height="22" rx="4" fill="#b45309" />
-    <text x="45" y="15" text-anchor="middle" class="pill-text">PDFPLUMBER</text>
-  </g>
-
-  <!-- Groq AI -->
-  <g class="tech-pill" transform="translate(494, 199)">
-    <title>Groq LLM AI Copilot</title>
-    <rect width="65" height="22" rx="4" fill="#7c3aed" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">GROQ AI</text>
-  </g>
-
-  <!-- BeautifulSoup -->
-  <g class="tech-pill" transform="translate(567, 199)">
-    <title>BeautifulSoup Web Scraper</title>
-    <rect width="110" height="22" rx="4" fill="#4f46e5" />
-    <text x="55" y="15" text-anchor="middle" class="pill-text">BEAUTIFULSOUP</text>
-  </g>
-
-  <!-- HTTPX -->
-  <g class="tech-pill" transform="translate(685, 199)">
-    <title>HTTPX Client request pool</title>
-    <rect width="55" height="22" rx="4" fill="#0891b2" />
-    <text x="27.5" y="15" text-anchor="middle" class="pill-text">HTTPX</text>
-  </g>
-
   <!-- MySQL -->
-  <g class="tech-pill" transform="translate(748, 199)">
+  <g class="tech-pill" transform="translate(318, 179)">
     <title>MySQL Database</title>
     <rect width="60" height="22" rx="4" fill="#0891b2" />
     <text x="30" y="15" text-anchor="middle" class="pill-text">MYSQL</text>
   </g>
 
+  <!-- REST APIs -->
+  <g class="tech-pill" transform="translate(386, 179)">
+    <title>Representational State Transfer APIs</title>
+    <rect width="80" height="22" rx="4" fill="#2563eb" />
+    <text x="40" y="15" text-anchor="middle" class="pill-text">REST APIS</text>
+  </g>
+
+  <!-- Groq AI -->
+  <g class="tech-pill" transform="translate(474, 179)">
+    <title>Groq AI inference platform</title>
+    <rect width="65" height="22" rx="4" fill="#7c3aed" />
+    <text x="32.5" y="15" text-anchor="middle" class="pill-text">GROQ AI</text>
+  </g>
+
 
   <!-- ===================== ROW 4: FRONTEND & MOBILE ===================== -->
-  <text x="100" y="262" text-anchor="middle" class="category-text">Frontend &amp;</text>
-  <text x="100" y="276" text-anchor="middle" class="category-text">Mobile</text>
+  <text x="100" y="232" text-anchor="middle" class="category-text">Frontend &amp;</text>
+  <text x="100" y="246" text-anchor="middle" class="category-text">Mobile</text>
+
+  <!-- React -->
+  <g class="tech-pill" transform="translate(220, 226)">
+    <title>React library for web user interfaces</title>
+    <rect width="60" height="22" rx="4" fill="#0891b2" />
+    <text x="30" y="15" text-anchor="middle" class="pill-text">REACT</text>
+  </g>
 
   <!-- React Native -->
-  <g class="tech-pill" transform="translate(220, 241)">
-    <title>React Native Framework</title>
-    <rect width="95" height="22" rx="4" fill="#0891b2" />
+  <g class="tech-pill" transform="translate(288, 226)">
+    <title>React Native mobile framework</title>
+    <rect width="95" height="22" rx="4" fill="#2563eb" />
     <text x="47.5" y="15" text-anchor="middle" class="pill-text">REACT NATIVE</text>
   </g>
 
   <!-- Expo -->
-  <g class="tech-pill" transform="translate(323, 241)">
-    <title>Expo CLI toolchain</title>
+  <g class="tech-pill" transform="translate(391, 226)">
+    <title>Expo framework and platform</title>
     <rect width="45" height="22" rx="4" fill="#1f2937" />
     <text x="22.5" y="15" text-anchor="middle" class="pill-text">EXPO</text>
   </g>
 
   <!-- Vite -->
-  <g class="tech-pill" transform="translate(376, 241)">
+  <g class="tech-pill" transform="translate(444, 226)">
     <title>Vite build tool</title>
     <rect width="45" height="22" rx="4" fill="#7c3aed" />
     <text x="22.5" y="15" text-anchor="middle" class="pill-text">VITE</text>
   </g>
 
   <!-- Tailwind CSS -->
-  <g class="tech-pill" transform="translate(429, 241)">
-    <title>Tailwind CSS styling</title>
+  <g class="tech-pill" transform="translate(497, 226)">
+    <title>Tailwind CSS styling library</title>
     <rect width="95" height="22" rx="4" fill="#2563eb" />
     <text x="47.5" y="15" text-anchor="middle" class="pill-text">TAILWIND CSS</text>
   </g>
 
-  <!-- Axios -->
-  <g class="tech-pill" transform="translate(532, 241)">
-    <title>Axios network client</title>
-    <rect width="55" height="22" rx="4" fill="#4f46e5" />
-    <text x="27.5" y="15" text-anchor="middle" class="pill-text">AXIOS</text>
-  </g>
-
-  <!-- React Router -->
-  <g class="tech-pill" transform="translate(595, 241)">
-    <title>React Router dynamic routing</title>
-    <rect width="105" height="22" rx="4" fill="#dc2626" />
-    <text x="52.5" y="15" text-anchor="middle" class="pill-text">REACT ROUTER</text>
-  </g>
-
-  <!-- Line 2: Mobile/Front pills -->
-  <!-- AsyncStorage -->
-  <g class="tech-pill" transform="translate(220, 271)">
-    <title>React Native AsyncStorage client cache</title>
-    <rect width="115" height="22" rx="4" fill="#b45309" />
-    <text x="57.5" y="15" text-anchor="middle" class="pill-text">ASYNCSTORAGE</text>
-  </g>
-
-  <!-- SecureStore -->
-  <g class="tech-pill" transform="translate(343, 271)">
-    <title>Expo SecureStore client encryption</title>
-    <rect width="100" height="22" rx="4" fill="#db2777" />
-    <text x="50" y="15" text-anchor="middle" class="pill-text">SECURESTORE</text>
-  </g>
-
 
   <!-- ===================== ROW 5: TOOLS & DEPLOYMENT ===================== -->
-  <text x="100" y="334" text-anchor="middle" class="category-text">Tools &amp;</text>
-  <text x="100" y="348" text-anchor="middle" class="category-text">Deployment</text>
+  <text x="100" y="284" text-anchor="middle" class="category-text">Tools &amp;</text>
+  <text x="100" y="298" text-anchor="middle" class="category-text">Deployment</text>
 
   <!-- Postman -->
-  <g class="tech-pill" transform="translate(220, 313)">
+  <g class="tech-pill" transform="translate(220, 278)">
     <title>Postman API platform</title>
     <rect width="70" height="22" rx="4" fill="#b45309" />
     <text x="35" y="15" text-anchor="middle" class="pill-text">POSTMAN</text>
   </g>
 
-  <!-- Pytest -->
-  <g class="tech-pill" transform="translate(298, 313)">
-    <title>Pytest test suite</title>
-    <rect width="60" height="22" rx="4" fill="#16a34a" />
-    <text x="30" y="15" text-anchor="middle" class="pill-text">PYTEST</text>
-  </g>
-
   <!-- Render -->
-  <g class="tech-pill" transform="translate(366, 313)">
+  <g class="tech-pill" transform="translate(298, 278)">
     <title>Render cloud hosting</title>
     <rect width="65" height="22" rx="4" fill="#2563eb" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">RENDER</text>
   </g>
 
   <!-- Netlify -->
-  <g class="tech-pill" transform="translate(439, 313)">
-    <title>Netlify static host</title>
+  <g class="tech-pill" transform="translate(371, 278)">
+    <title>Netlify web hosting</title>
     <rect width="65" height="22" rx="4" fill="#0891b2" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">NETLIFY</text>
   </g>
 
   <!-- SSL Pinning -->
-  <g class="tech-pill" transform="translate(512, 313)">
+  <g class="tech-pill" transform="translate(444, 278)">
     <title>SSL certificate public key pinning</title>
     <rect width="90" height="22" rx="4" fill="#dc2626" />
     <text x="45" y="15" text-anchor="middle" class="pill-text">SSL PINNING</text>
   </g>
 
-  <!-- Line 2: Tools pills -->
   <!-- Play Integrity -->
-  <g class="tech-pill" transform="translate(220, 343)">
-    <title>Google Play Integrity client attestation</title>
+  <g class="tech-pill" transform="translate(542, 278)">
+    <title>Google Play Integrity API</title>
     <rect width="110" height="22" rx="4" fill="#7c3aed" />
     <text x="55" y="15" text-anchor="middle" class="pill-text">PLAY INTEGRITY</text>
   </g>
 
   <!-- App Attest -->
-  <g class="tech-pill" transform="translate(338, 343)">
-    <title>Apple App Attest client device attestation</title>
+  <g class="tech-pill" transform="translate(660, 278)">
+    <title>Apple App Attest API</title>
     <rect width="90" height="22" rx="4" fill="#db2777" />
     <text x="45" y="15" text-anchor="middle" class="pill-text">APP ATTEST</text>
   </g>
