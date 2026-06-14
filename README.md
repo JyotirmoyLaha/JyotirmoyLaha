@@ -123,26 +123,11 @@
 
 ## 📊 GitHub Analytics
 
-<table width="100%">
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api?username=JyotirmoyLaha&theme=tokyonight&hide_border=true&include_all_commits=false&count_private=true&cache_seconds=1800&v=1" height="195" />
-    </td>
-    <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JyotirmoyLaha&theme=tokyonight&hide_border=true&layout=compact&cache_seconds=1800&v=1" height="195" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" valign="top">
-      <img src="https://streak-stats.demolab.com/?user=JyotirmoyLaha&theme=tokyonight&hide_border=true&cache_seconds=1800&v=1" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" valign="top">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&theme=tokyo-night&area=true&hide_border=true&cache_seconds=1800&v=1" width="100%" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=JyotirmoyLaha&theme=tokyonight&hide_border=true&cache_seconds=1800&v=1" alt="GitHub Streak Stats" />
+  <br/><br/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&theme=tokyo-night&area=true&hide_border=true&cache_seconds=1800&v=1" alt="GitHub Activity Graph" width="100%" />
+</p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?t=20260613" alt="divider" width="100%" />
