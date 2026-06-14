@@ -122,74 +122,68 @@
 
   <!-- Right Column: Animated 3D Graphic (scaled and translated) -->
   <g transform="translate(585, -20) scale(2.2)">
-    <!-- 3D Isometric Floating Clipboard Setup -->
+    <!-- 3D Isometric Floating Scanner Setup -->
     <g class="floating-box" style="transform-origin: 40px 50px;">
       <!-- Under-shadow -->
-      <ellipse cx="40" cy="85" rx="20" ry="3.5" fill="rgba(0, 0, 0, 0.4)" />
+      <ellipse cx="40" cy="85" rx="28" ry="4" fill="rgba(0, 0, 0, 0.4)" />
 
-      <!-- Clipboard Base (3D Box) -->
+      <!-- Scanner Base plate -->
       <!-- Left side extrusion -->
-      <polygon points="16,48 16,51 40,63 40,60" fill="#110e24" />
+      <polygon points="15,68 15,72 40,84 40,80" fill="#110e24" />
       <!-- Right side extrusion -->
-      <polygon points="40,60 40,63 64,51 64,48" fill="#0b0818" />
-      <!-- Top Face with Glowing Border -->
-      <polygon points="40,36 64,48 40,60 16,48" fill="#121026" fill-opacity="0.9" stroke="url(#neon-glow-grad)" stroke-width="1.2" />
+      <polygon points="40,80 40,84 65,72 65,68" fill="#0b0818" />
+      <!-- Top face with Glowing Border -->
+      <polygon points="15,68 40,56 65,68 40,80" fill="#1b1738" stroke="url(#neon-glow-grad)" stroke-width="1" />
       
-      <!-- Detailed Metal Clip on top of clipboard -->
-      <!-- Clip Shadow -->
-      <polygon points="32,38 48,34 40,30 24,34" fill="rgba(0, 0, 0, 0.3)" />
-      <!-- Clip Plate -->
-      <polygon points="30,36 40,41 50,36 40,31" fill="#718096" stroke="#4a5568" stroke-width="0.5" />
-      <polygon points="32,35 40,39 48,35 40,31" fill="#a0aec0" />
-      <!-- Center Bracket Accent -->
-      <polygon points="37,34.5 43,37.5 40,39 34,36" fill="#edf2f7" />
-      <!-- Screw Pivot -->
-      <ellipse cx="40" cy="35" rx="1.2" ry="0.6" fill="#4a5568" />
-      <ellipse cx="40" cy="34.7" rx="0.9" ry="0.45" fill="#cbd5e0" />
+      <!-- Slot for paper feed -->
+      <polygon points="24,69.5 56,58.8 54,60.8 26,71.5" fill="#05030d" />
 
-      <!-- Paper Document floating slightly on top (3D plane) -->
-      <!-- Paper Shadow -->
-      <polygon points="22,48.5 40,57.5 58,48.5 40,39.5" fill="rgba(0, 0, 0, 0.2)" />
-      <!-- Paper Body -->
-      <polygon points="22,47 40,56 58,47 40,38" fill="url(#paper-grad)" stroke="#ffffff" stroke-width="0.5" />
-      
-      <!-- Resume Header Section Details -->
-      <!-- Mini Profile Avatar Placeholder (Isometric Ellipse) -->
-      <ellipse cx="32" cy="43.5" rx="2.5" ry="1.25" fill="#3b82f6" opacity="0.8" />
-      <!-- Name Header Lines -->
-      <line x1="37" y1="42.5" x2="47" y2="47.5" stroke="#1e293b" stroke-width="1.4" stroke-linecap="round" />
-      <line x1="37" y1="45" x2="43" y2="48" stroke="#64748b" stroke-width="0.8" stroke-linecap="round" />
-      
-      <!-- Text Lines on 3D Document representing resume fields -->
-      <line x1="26" y1="48.5" x2="38" y2="54.5" stroke="#94a3b8" stroke-width="0.8" stroke-linecap="round" />
-      <line x1="26" y1="51" x2="33" y2="54.5" stroke="#94a3b8" stroke-width="0.8" stroke-linecap="round" />
-      <line x1="37" y1="51.5" x2="54" y2="60" stroke="#94a3b8" stroke-width="0.8" stroke-linecap="round" />
-      
-      <!-- Green checkmarks representing parsed skills -->
-      <circle cx="49" cy="49.5" r="0.8" fill="#10b981" filter="url(#glow)" />
-      <circle cx="53" cy="51.5" r="0.8" fill="#10b981" filter="url(#glow)" />
+      <!-- Glass support back plate stand (behind paper) -->
+      <polygon points="23,30 57,19 57,62 23,73" fill="rgba(24, 21, 51, 0.6)" stroke="#3e3570" stroke-width="0.8" />
 
-      <!-- Floating Code/Data Particles rising from paper -->
-      <circle cx="28" cy="49" r="0.6" fill="#22d3ee" opacity="0">
-        <animate attributeName="cy" values="49; 30" dur="2.5s" repeatCount="indefinite" />
+      <!-- Upright Paper Document (3D plane) -->
+      <polygon points="25,35 55,25 55,60 25,70" fill="url(#paper-grad)" stroke="#ffffff" stroke-width="0.5" />
+      
+      <!-- Resume Details on Vertical Paper -->
+      <!-- Profile Avatar placeholder (vertical ellipse) -->
+      <ellipse cx="32" cy="42" rx="2" ry="3" fill="#3b82f6" opacity="0.8" />
+      <!-- Name Header Lines (slanted parallel to top edge) -->
+      <line x1="36" y1="40" x2="48" y2="36" stroke="#1e293b" stroke-width="1.4" stroke-linecap="round" />
+      <line x1="36" y1="43" x2="44" y2="40.3" stroke="#64748b" stroke-width="0.8" stroke-linecap="round" />
+      
+      <!-- Text Lines representing resume fields -->
+      <line x1="28" y1="48" x2="52" y2="40" stroke="#94a3b8" stroke-width="0.8" stroke-linecap="round" />
+      <line x1="28" y1="52" x2="42" y2="47.3" stroke="#94a3b8" stroke-width="0.8" stroke-linecap="round" />
+      <line x1="28" y1="56" x2="52" y2="48" stroke="#94a3b8" stroke-width="0.8" stroke-linecap="round" />
+      <line x1="28" y1="60" x2="46" y2="54" stroke="#94a3b8" stroke-width="0.8" stroke-linecap="round" />
+      
+      <!-- Green parsed skill points -->
+      <circle cx="46" cy="45" r="0.8" fill="#10b981" filter="url(#glow)" />
+      <circle cx="50" cy="52" r="0.8" fill="#10b981" filter="url(#glow)" />
+
+      <!-- Floating Code/Data Particles rising vertically -->
+      <circle cx="30" cy="60" r="0.6" fill="#22d3ee" opacity="0">
+        <animate attributeName="cy" values="60; 20" dur="2.5s" repeatCount="indefinite" />
         <animate attributeName="opacity" values="0; 0.8; 0" dur="2.5s" repeatCount="indefinite" />
       </circle>
-      <circle cx="50" cy="51" r="0.6" fill="#a855f7" opacity="0">
-        <animate attributeName="cy" values="51; 32" dur="3s" repeatCount="indefinite" />
+      <circle cx="42" cy="50" r="0.6" fill="#a855f7" opacity="0">
+        <animate attributeName="cy" values="50; 15" dur="3s" repeatCount="indefinite" />
         <animate attributeName="opacity" values="0; 0.7; 0" dur="3s" repeatCount="indefinite" />
       </circle>
-      <circle cx="42" cy="45" r="0.5" fill="#22d3ee" opacity="0">
-        <animate attributeName="cy" values="45; 25" dur="2.2s" repeatCount="indefinite" />
+      <circle cx="48" cy="45" r="0.5" fill="#22d3ee" opacity="0">
+        <animate attributeName="cy" values="45; 10" dur="2.2s" repeatCount="indefinite" />
         <animate attributeName="opacity" values="0; 0.9; 0" dur="2.2s" repeatCount="indefinite" />
       </circle>
 
       <!-- Animated Holographic Scanning Laser Beam -->
       <g>
-        <animateTransform attributeName="transform" type="translate" values="0,-8; 0,16; 0,-8" dur="4s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="translate" values="0,-10; 0,25; 0,-10" dur="4.5s" repeatCount="indefinite" />
+        <!-- Emitter Bar -->
+        <line x1="30" y1="10" x2="50" y2="3.3" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" filter="url(#glow)" />
         <!-- Volumetric Holographic Fan Light -->
-        <polygon points="40,15 16,48 64,48" fill="url(#cyan-beam-grad)" opacity="0.65" />
+        <polygon points="30,10 50,3.3 55,35 25,45" fill="url(#cyan-beam-grad)" opacity="0.4" />
         <!-- Glowing Laser Scan Line -->
-        <line x1="16" y1="48" x2="64" y2="48" stroke="#22d3ee" stroke-width="1.8" filter="url(#glow)" />
+        <line x1="25" y1="45" x2="55" y2="35" stroke="#22d3ee" stroke-width="1.8" filter="url(#glow)" />
       </g>
     </g>
   </g>
