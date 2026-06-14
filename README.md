@@ -114,7 +114,7 @@
 
 ## 💻 Tech Arsenal
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack.svg?t=20260613" alt="Tech Arsenal Grid" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack.svg?t=20260614" alt="Tech Arsenal Grid" width="100%" />
 </p>
 
 <p align="center">
