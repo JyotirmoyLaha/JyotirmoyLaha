@@ -138,11 +138,8 @@
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center" valign="top">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JyotirmoyLaha&theme=tokyonight&cache_seconds=1800&v=1" height="220" />
-    </td>
-    <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&bg_color=0c0b16&color=a29bfe&line=9D4EDE&point=33CCFF&area=true&area_color=9D4EDE&title_color=33CCFF&cache_seconds=1800&v=1" height="220" />
+    <td colspan="2" align="center" valign="top">
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&theme=tokyo-night&area=true&hide_border=true&cache_seconds=1800&v=1" width="100%" />
     </td>
   </tr>
 </table>
