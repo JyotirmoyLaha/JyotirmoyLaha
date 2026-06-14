@@ -2,3 +2,4 @@
 scratch/fetch_logos.js
 scratch/update_header.js
 scratch/base64_logos.json
+scratch/validate_svg.js
