@@ -45,7 +45,7 @@
   <br/><br/>
   
   <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend" target="_blank">
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume.svg?t=20260613" alt="AI Resume Analyzer" width="100%" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume.svg?t=20260614" alt="AI Resume Analyzer" width="100%" />
   </a>
   <br/>
   <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow.svg?t=20260613" alt="AI Resume Analyzer Workflow" width="100%" />
