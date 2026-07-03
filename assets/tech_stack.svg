@@ -1,374 +1,176 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 316" width="100%" height="316">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 150" width="100%" height="150">
   <style>
-    .table-bg {
-      fill: #0d1117;
+    .banner-bg {
+      fill: #060913;
     }
     .grid-line {
-      stroke: #30363d;
+      stroke: #1e293b;
       stroke-width: 1;
     }
-    .header-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-weight: 600;
-      font-size: 12px;
-      fill: #8b949e;
-      letter-spacing: 0.5px;
-    }
     .category-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-weight: 600;
-      font-size: 11px;
-      fill: #c9d1d9;
+      font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, monospace;
+      font-weight: 700;
+      font-size: 10px;
+      fill: #64748b;
+      letter-spacing: 1.5px;
+    }
+    .pill-bg {
+      fill: #0b1120;
+      stroke: #1e293b;
+      stroke-width: 1;
+      transition: stroke 0.2s ease, fill 0.2s ease;
     }
     .pill-text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-weight: 700;
-      font-size: 9px;
-      fill: #ffffff;
-      letter-spacing: 0.5px;
+      font-weight: 600;
+      font-size: 11px;
     }
     .tech-pill {
       cursor: pointer;
-      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), filter 0.2s ease;
     }
-    .tech-pill:hover {
-      transform: scale(1.08) translateY(-1px);
-      filter: drop-shadow(0 2px 6px rgba(255, 255, 255, 0.25));
+    .tech-pill:hover .pill-bg {
+      stroke: #475569;
+      fill: #0f172a;
     }
   </style>
 
-  <!-- Table Body Background -->
-  <rect width="850" height="316" fill="#0d1117" rx="8" />
-
-  <!-- Header Background (Rounded top corners) -->
-  <path d="M8,0.5 h834 a8,8 0 0 1 8,8 v26.5 h-850 v-26.5 a8,8 0 0 1 8,-8 z" fill="#161b22" />
-
-  <!-- Header Texts -->
-  <text x="100" y="22" text-anchor="middle" class="header-text">Category</text>
-  <text x="525" y="22" text-anchor="middle" class="header-text">Technologies</text>
+  <!-- Background Card -->
+  <rect width="850" height="150" rx="8" class="banner-bg" stroke="#1e293b" stroke-width="1" />
 
   <!-- Vertical Divider Line -->
-  <line x1="200" y1="0" x2="200" y2="315" class="grid-line" />
+  <line x1="110" y1="0" x2="110" y2="150" class="grid-line" />
 
   <!-- Horizontal Grid Lines -->
-  <line x1="0" y1="35" x2="850" y2="35" class="grid-line" />
-  <line x1="0" y1="87" x2="850" y2="87" class="grid-line" />
-  <line x1="0" y1="139" x2="850" y2="139" class="grid-line" />
-  <line x1="0" y1="211" x2="850" y2="211" class="grid-line" />
-  <line x1="0" y1="263" x2="850" y2="263" class="grid-line" />
+  <line x1="0" y1="50" x2="850" y2="50" class="grid-line" />
+  <line x1="0" y1="100" x2="850" y2="100" class="grid-line" />
 
-  <!-- Outer Rounded Border Outline -->
-  <rect x="0.5" y="0.5" width="849" height="315" fill="none" stroke="#30363d" stroke-width="1" rx="8" />
-
-  <!-- ===================== ROW 1: LANGUAGES & CORE TOOLS ===================== -->
-  <text x="100" y="56" text-anchor="middle" class="category-text">Languages &amp;</text>
-  <text x="100" y="70" text-anchor="middle" class="category-text">Core Tools</text>
-
-  <!-- Python -->
-  <g class="tech-pill" transform="translate(220, 50)">
-    <title>Python programming language</title>
-    <rect width="65" height="22" rx="4" fill="#b45309" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">PYTHON</text>
-  </g>
-
-  <!-- JavaScript -->
-  <g class="tech-pill" transform="translate(293, 50)">
-    <title>JavaScript programming language</title>
-    <rect width="90" height="22" rx="4" fill="#eab308" />
-    <text x="45" y="15" text-anchor="middle" class="pill-text" fill="#000000">JAVASCRIPT</text>
-  </g>
-
-  <!-- C -->
-  <g class="tech-pill" transform="translate(391, 50)">
-    <title>C programming language</title>
-    <rect width="35" height="22" rx="4" fill="#4f46e5" />
-    <text x="17.5" y="15" text-anchor="middle" class="pill-text">C</text>
-  </g>
-
-  <!-- HTML5 -->
-  <g class="tech-pill" transform="translate(434, 50)">
-    <title>HTML5 markup language</title>
-    <rect width="60" height="22" rx="4" fill="#dc2626" />
-    <text x="30" y="15" text-anchor="middle" class="pill-text">HTML5</text>
-  </g>
-
-  <!-- CSS3 -->
-  <g class="tech-pill" transform="translate(502, 50)">
-    <title>CSS3 style sheets</title>
-    <rect width="60" height="22" rx="4" fill="#2563eb" />
-    <text x="30" y="15" text-anchor="middle" class="pill-text">CSS3</text>
-  </g>
-
-  <!-- SQL -->
-  <g class="tech-pill" transform="translate(570, 50)">
-    <title>Structured Query Language</title>
-    <rect width="45" height="22" rx="4" fill="#0891b2" />
-    <text x="22.5" y="15" text-anchor="middle" class="pill-text">SQL</text>
-  </g>
-
-  <!-- Git -->
-  <g class="tech-pill" transform="translate(623, 50)">
-    <title>Git version control</title>
-    <rect width="45" height="22" rx="4" fill="#ea580c" />
-    <text x="22.5" y="15" text-anchor="middle" class="pill-text">GIT</text>
-  </g>
-
-  <!-- GitHub -->
-  <g class="tech-pill" transform="translate(676, 50)">
-    <title>GitHub repository hosting</title>
-    <rect width="65" height="22" rx="4" fill="#1f2937" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">GITHUB</text>
-  </g>
-
-
-  <!-- ===================== ROW 2: PQC & CRYPTOGRAPHY ===================== -->
-  <text x="100" y="108" text-anchor="middle" class="category-text">PQC &amp;</text>
-  <text x="100" y="122" text-anchor="middle" class="category-text">Cryptography</text>
-
-  <!-- PQC -->
-  <g class="tech-pill" transform="translate(220, 102)">
-    <title>Post-Quantum Cryptography</title>
-    <rect width="45" height="22" rx="4" fill="#db2777" />
-    <text x="22.5" y="15" text-anchor="middle" class="pill-text">PQC</text>
-  </g>
-
-  <!-- Utimaco HSM -->
-  <g class="tech-pill" transform="translate(273, 102)">
-    <title>Utimaco Hardware Security Module</title>
-    <rect width="95" height="22" rx="4" fill="#4f46e5" />
-    <text x="47.5" y="15" text-anchor="middle" class="pill-text">UTIMACO HSM</text>
-  </g>
-
-  <!-- PKCS#11 -->
-  <g class="tech-pill" transform="translate(376, 102)">
-    <title>PKCS#11 Cryptographic Token Interface</title>
-    <rect width="70" height="22" rx="4" fill="#16a34a" />
-    <text x="35" y="15" text-anchor="middle" class="pill-text">PKCS#11</text>
-  </g>
-
-  <!-- AES-256-GCM -->
-  <g class="tech-pill" transform="translate(454, 102)">
-    <title>AES-256-GCM authenticated encryption</title>
-    <rect width="95" height="22" rx="4" fill="#b45309" />
-    <text x="47.5" y="15" text-anchor="middle" class="pill-text">AES-256-GCM</text>
-  </g>
-
-  <!-- X25519 -->
-  <g class="tech-pill" transform="translate(557, 102)">
-    <title>X25519 Ephemeral Key Exchange</title>
-    <rect width="65" height="22" rx="4" fill="#0891b2" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">X25519</text>
-  </g>
-
-  <!-- ED25519 -->
-  <g class="tech-pill" transform="translate(630, 102)">
-    <title>Ed25519 digital signature scheme</title>
-    <rect width="65" height="22" rx="4" fill="#2563eb" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">ED25519</text>
-  </g>
-
-
-  <!-- ===================== ROW 3: BACKEND & DATABASES ===================== -->
-  <text x="100" y="170" text-anchor="middle" class="category-text">Backend &amp;</text>
-  <text x="100" y="184" text-anchor="middle" class="category-text">Databases</text>
-
-  <!-- FastAPI -->
-  <g class="tech-pill" transform="translate(220, 149)">
-    <title>FastAPI Web Framework</title>
-    <rect width="65" height="22" rx="4" fill="#009688" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">FASTAPI</text>
-  </g>
-
-  <!-- Flask -->
-  <g class="tech-pill" transform="translate(293, 149)">
-    <title>Flask microframework</title>
-    <rect width="55" height="22" rx="4" fill="#4caf50" />
-    <text x="27.5" y="15" text-anchor="middle" class="pill-text">FLASK</text>
-  </g>
-
-  <!-- Node.js -->
-  <g class="tech-pill" transform="translate(356, 149)">
-    <title>Node.js runtime environment</title>
-    <rect width="65" height="22" rx="4" fill="#16a34a" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">NODE.JS</text>
-  </g>
-
-  <!-- Express.js -->
-  <g class="tech-pill" transform="translate(429, 149)">
-    <title>Express.js backend framework</title>
-    <rect width="85" height="22" rx="4" fill="#1f2937" />
-    <text x="42.5" y="15" text-anchor="middle" class="pill-text">EXPRESS.JS</text>
-  </g>
-
-  <!-- Firebase -->
-  <g class="tech-pill" transform="translate(522, 149)">
-    <title>Firebase application development platform</title>
-    <rect width="70" height="22" rx="4" fill="#ea580c" />
-    <text x="35" y="15" text-anchor="middle" class="pill-text">FIREBASE</text>
-  </g>
-
-  <!-- PostgreSQL -->
-  <g class="tech-pill" transform="translate(220, 179)">
-    <title>PostgreSQL Database</title>
-    <rect width="90" height="22" rx="4" fill="#336791" />
-    <text x="45" y="15" text-anchor="middle" class="pill-text">POSTGRESQL</text>
-  </g>
-
-  <!-- MySQL -->
-  <g class="tech-pill" transform="translate(318, 179)">
-    <title>MySQL Database</title>
-    <rect width="60" height="22" rx="4" fill="#0891b2" />
-    <text x="30" y="15" text-anchor="middle" class="pill-text">MYSQL</text>
-  </g>
-
-  <!-- REST APIs -->
-  <g class="tech-pill" transform="translate(386, 179)">
-    <title>Representational State Transfer APIs</title>
-    <rect width="80" height="22" rx="4" fill="#2563eb" />
-    <text x="40" y="15" text-anchor="middle" class="pill-text">REST APIS</text>
-  </g>
-
-  <!-- Groq AI -->
-  <g class="tech-pill" transform="translate(474, 179)">
-    <title>Groq AI inference platform</title>
-    <rect width="65" height="22" rx="4" fill="#7c3aed" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">GROQ AI</text>
-  </g>
-
-
-  <!-- ===================== ROW 4: FRONTEND & MOBILE ===================== -->
-  <text x="100" y="232" text-anchor="middle" class="category-text">Frontend &amp;</text>
-  <text x="100" y="246" text-anchor="middle" class="category-text">Mobile</text>
+  <!-- ===================== ROW 1: FRONTEND ===================== -->
+  <!-- Category -->
+  <circle cx="16" cy="25" r="3" fill="#00F2FE" />
+  <text x="28" y="29" class="category-text">FRONTEND</text>
 
   <!-- React -->
-  <g class="tech-pill" transform="translate(220, 226)">
-    <title>React library for web user interfaces</title>
-    <rect width="60" height="22" rx="4" fill="#0891b2" />
-    <text x="30" y="15" text-anchor="middle" class="pill-text">REACT</text>
+  <g class="tech-pill" transform="translate(125, 12)">
+    <rect width="62" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#00F2FE" />
+    <text x="14" y="17" class="pill-text" fill="#38BDF8">React</text>
   </g>
 
-  <!-- React Native -->
-  <g class="tech-pill" transform="translate(288, 226)">
-    <title>React Native mobile framework</title>
-    <rect width="95" height="22" rx="4" fill="#2563eb" />
-    <text x="47.5" y="15" text-anchor="middle" class="pill-text">REACT NATIVE</text>
-  </g>
-
-  <!-- Expo -->
-  <g class="tech-pill" transform="translate(391, 226)">
-    <title>Expo framework and platform</title>
-    <rect width="45" height="22" rx="4" fill="#1f2937" />
-    <text x="22.5" y="15" text-anchor="middle" class="pill-text">EXPO</text>
+  <!-- TypeScript -->
+  <g class="tech-pill" transform="translate(195, 12)">
+    <rect width="90" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#38BDF8" />
+    <text x="14" y="17" class="pill-text" fill="#93C5FD">TypeScript</text>
   </g>
 
   <!-- Vite -->
-  <g class="tech-pill" transform="translate(444, 226)">
-    <title>Vite build tool</title>
-    <rect width="45" height="22" rx="4" fill="#7c3aed" />
-    <text x="22.5" y="15" text-anchor="middle" class="pill-text">VITE</text>
+  <g class="tech-pill" transform="translate(293, 12)">
+    <rect width="52" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#A855F7" />
+    <text x="14" y="17" class="pill-text" fill="#C084FC">Vite</text>
   </g>
 
   <!-- Tailwind CSS -->
-  <g class="tech-pill" transform="translate(497, 226)">
-    <title>Tailwind CSS styling library</title>
-    <rect width="95" height="22" rx="4" fill="#2563eb" />
-    <text x="47.5" y="15" text-anchor="middle" class="pill-text">TAILWIND CSS</text>
+  <g class="tech-pill" transform="translate(353, 12)">
+    <rect width="104" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#00F2FE" />
+    <text x="14" y="17" class="pill-text" fill="#38BDF8">Tailwind CSS</text>
+  </g>
+
+  <!-- Three.js -->
+  <g class="tech-pill" transform="translate(465, 12)">
+    <rect width="76" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#FFFFFF" />
+    <text x="14" y="17" class="pill-text" fill="#FDE047">Three.js</text>
+  </g>
+
+  <!-- Framer Motion -->
+  <g class="tech-pill" transform="translate(549, 12)">
+    <rect width="108" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#F43F5E" />
+    <text x="14" y="17" class="pill-text" fill="#FDA4AF">Framer Motion</text>
+  </g>
+
+  <!-- Lenis & AOS -->
+  <g class="tech-pill" transform="translate(665, 12)">
+    <rect width="96" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#10B981" />
+    <text x="14" y="17" class="pill-text" fill="#34D399">Lenis &amp; AOS</text>
   </g>
 
 
-  <!-- ===================== ROW 5: TOOLS & DEPLOYMENT ===================== -->
-  <text x="100" y="284" text-anchor="middle" class="category-text">Tools &amp;</text>
-  <text x="100" y="298" text-anchor="middle" class="category-text">Deployment</text>
+  <!-- ===================== ROW 2: BACKEND ===================== -->
+  <!-- Category -->
+  <circle cx="16" cy="75" r="3" fill="#A855F7" />
+  <text x="28" y="79" class="category-text">BACKEND</text>
 
-  <!-- Postman -->
-  <g class="tech-pill" transform="translate(220, 278)">
-    <title>Postman API platform</title>
-    <rect width="70" height="22" rx="4" fill="#b45309" />
-    <text x="35" y="15" text-anchor="middle" class="pill-text">POSTMAN</text>
+  <!-- Python 3 -->
+  <g class="tech-pill" transform="translate(125, 62)">
+    <rect width="76" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#38BDF8" />
+    <text x="14" y="17" class="pill-text" fill="#60A5FA">Python 3</text>
   </g>
 
-  <!-- Render -->
-  <g class="tech-pill" transform="translate(298, 278)">
-    <title>Render cloud hosting</title>
-    <rect width="65" height="22" rx="4" fill="#2563eb" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">RENDER</text>
+  <!-- FastAPI -->
+  <g class="tech-pill" transform="translate(209, 62)">
+    <rect width="72" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#10B981" />
+    <text x="14" y="17" class="pill-text" fill="#34D399">FastAPI</text>
   </g>
 
-  <!-- Netlify -->
-  <g class="tech-pill" transform="translate(371, 278)">
-    <title>Netlify web hosting</title>
-    <rect width="65" height="22" rx="4" fill="#0891b2" />
-    <text x="32.5" y="15" text-anchor="middle" class="pill-text">NETLIFY</text>
+  <!-- SQLAlchemy -->
+  <g class="tech-pill" transform="translate(289, 62)">
+    <rect width="94" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#EF4444" />
+    <text x="14" y="17" class="pill-text" fill="#FCA5A5">SQLAlchemy</text>
   </g>
 
-  <!-- SSL Pinning -->
-  <g class="tech-pill" transform="translate(444, 278)">
-    <title>SSL certificate public key pinning</title>
-    <rect width="90" height="22" rx="4" fill="#dc2626" />
-    <text x="45" y="15" text-anchor="middle" class="pill-text">SSL PINNING</text>
-  </g>
-
-  <!-- Play Integrity -->
-  <g class="tech-pill" transform="translate(542, 278)">
-    <title>Google Play Integrity API</title>
-    <rect width="110" height="22" rx="4" fill="#7c3aed" />
-    <text x="55" y="15" text-anchor="middle" class="pill-text">PLAY INTEGRITY</text>
-  </g>
-
-  <!-- App Attest -->
-  <g class="tech-pill" transform="translate(660, 278)">
-    <title>Apple App Attest API</title>
-    <rect width="90" height="22" rx="4" fill="#db2777" />
-    <text x="45" y="15" text-anchor="middle" class="pill-text">APP ATTEST</text>
+  <!-- Groq AI -->
+  <g class="tech-pill" transform="translate(391, 62)">
+    <rect width="74" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#EC4899" />
+    <text x="14" y="17" class="pill-text" fill="#FBCFE8">Groq AI</text>
   </g>
 
 
-  <!-- =================== FLOATING PARTICLES OVERLAY =================== -->
-  <g id="readme-theme-overlay" opacity="0.8">
-    <!-- Cherry Blossom Petal 1 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FFB7C5" opacity="0.12">
-      <animateTransform attributeName="transform" type="translate" values="-20,40; 870,260" dur="18s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="12s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Cherry Blossom Petal 2 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FFB7C5" opacity="0.1">
-      <animateTransform attributeName="transform" type="translate" values="120,-20; 880,180" dur="22s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="45; 405" dur="15s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Cherry Blossom Petal 3 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FF8DA1" opacity="0.08">
-      <animateTransform attributeName="transform" type="translate" values="-50,160; 830,340" dur="20s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="90; 450" dur="18s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Cherry Blossom Petal 4 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FFB7C5" opacity="0.12">
-      <animateTransform attributeName="transform" type="translate" values="280,-30; 780,340" dur="25s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="10; 730" dur="24s" repeatCount="indefinite" additive="sum" />
-    </path>
+  <!-- ===================== ROW 3: CLI ===================== -->
+  <!-- Category -->
+  <circle cx="16" cy="125" r="3" fill="#EAB308" />
+  <text x="28" y="129" class="category-text">CLI</text>
 
-    <!-- Coding Particles -->
-    <text x="0" y="0" fill="#00F2FE" font-family="monospace" font-size="11" font-weight="bold" opacity="0.1">
-      &lt;/&gt;
-      <animateTransform attributeName="transform" type="translate" values="40,280; 810,30" dur="26s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; -360" dur="16s" repeatCount="indefinite" additive="sum" />
-    </text>
-    <text x="0" y="0" fill="#8B5CF6" font-family="monospace" font-size="13" font-weight="bold" opacity="0.08">
-      {{
-      <animateTransform attributeName="transform" type="translate" values="180,300; 790,60" dur="28s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="20s" repeatCount="indefinite" additive="sum" />
-    </text>
-    <text x="0" y="0" fill="#3B82F6" font-family="monospace" font-size="12" font-weight="bold" opacity="0.1">
-      ( )
-      <animateTransform attributeName="transform" type="translate" values="10,120; 840,10" dur="23s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="30; 390" dur="14s" repeatCount="indefinite" additive="sum" />
-    </text>
-
-    <!-- Sparkle Dots -->
-    <circle cx="0" cy="0" r="1.5" fill="#00F2FE" opacity="0.15">
-      <animateTransform attributeName="transform" type="translate" values="-30,80; 860,280" dur="19s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="0" cy="0" r="1.2" fill="#8B5CF6" opacity="0.18">
-      <animateTransform attributeName="transform" type="translate" values="140,-10; 810,300" dur="24s" repeatCount="indefinite" />
-    </circle>
+  <!-- Node.js -->
+  <g class="tech-pill" transform="translate(125, 112)">
+    <rect width="72" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#84CC16" />
+    <text x="14" y="17" class="pill-text" fill="#A3E635">Node.js</text>
   </g>
+
+  <!-- NPM -->
+  <g class="tech-pill" transform="translate(205, 112)">
+    <rect width="50" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#EF4444" />
+    <text x="14" y="17" class="pill-text" fill="#FCA5A5">NPM</text>
+  </g>
+
+  <!-- ANSI FX -->
+  <g class="tech-pill" transform="translate(263, 112)">
+    <rect width="74" height="26" rx="5" class="pill-bg" />
+    <path d="M 5,0 A 5,5 0 0 0 0,5 L 0,21 A 5,5 0 0 0 5,26 L 5,0 Z" fill="#A855F7" />
+    <text x="14" y="17" class="pill-text" fill="#C084FC">ANSI FX</text>
+  </g>
+
+
+  <!-- =================== FUTURISTIC SCHEMATIC ON THE RIGHT =================== -->
+  <g stroke="#1e293b" stroke-width="1.2" fill="none" opacity="0.65" transform="translate(10, 0)">
+    <!-- Top trace with purple node -->
+    <path d="M 790,25 L 815,25 L 825,35 L 825,75" />
+    <!-- Middle trace with green node -->
+    <path d="M 775,60 L 795,60 L 805,70 L 805,110 L 790,125 L 775,125" />
+    <!-- Outer trace -->
+    <path d="M 825,65 L 835,75 L 835,135 L 815,135" />
+    <!-- Connector dots -->
+    <circle cx="795" cy="60" r="3" fill="#10B981" stroke="none" />
+    <circle cx="815" cy="25" r="3" fill="#A855F7" stroke="none" />
+  </g>
+
 </svg>
