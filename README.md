@@ -19,7 +19,7 @@
 ### 👨‍💻 About Me
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me.svg?t=20260801" alt="About Me Console" width="100%" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me.svg?t=20260801b" alt="About Me Console" width="100%" />
 </p>
 
 <p align="center">
