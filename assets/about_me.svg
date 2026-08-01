@@ -71,8 +71,8 @@
     
     @keyframes type-line2 {
       0%, 6% { width: 0; }
-      18% { width: 80ch; }
-      90% { width: 80ch; }
+      18% { width: 45ch; }
+      90% { width: 45ch; }
       94%, 100% { width: 0; }
     }
     @keyframes blink-line2 {
@@ -156,7 +156,7 @@
       </div>
       <!-- Line 2: BCA Student -->
       <div style="margin-bottom: 6px;">
-        <span class="term-text line2 content-text">🎓 BCA Student (2nd Year) with a strong foundation in Python, DSA, and Web Dev.</span>
+        <span class="term-text line2 content-text">🎓 BCA Student (3rd Year) — AI/ML & Web Dev.</span>
       </div>
       <!-- Line 3: Builder Mindset -->
       <div style="margin-bottom: 6px;">
