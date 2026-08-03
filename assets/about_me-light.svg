@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="850" height="240" role="img" aria-label="About Me terminal: BCA student, builder mindset, philosophy, fun fact, pronouns">
   <defs>
     <linearGradient id="am-card" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117" />
-      <stop offset="100%" stop-color="#0f1420" />
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f6f8fa" />
     </linearGradient>
 
     <linearGradient id="am-edge" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.75" />
-      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0.75" />
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#2563eb" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.75" />
     </linearGradient>
 
     <filter id="am-soft" x="-60%" y="-60%" width="220%" height="220%">
@@ -41,74 +41,74 @@
   </defs>
 
   <!-- ambient glow -->
-  <circle cx="120" cy="70" r="80" fill="#8B5CF6" opacity="0.10" filter="url(#am-soft)" />
-  <circle cx="720" cy="180" r="90" fill="#00F2FE" opacity="0.08" filter="url(#am-soft)" />
+  <circle cx="120" cy="70" r="80" fill="#7c3aed" opacity="0.10" filter="url(#am-soft)" />
+  <circle cx="720" cy="180" r="90" fill="#0891b2" opacity="0.08" filter="url(#am-soft)" />
 
   <!-- card -->
-  <rect x="0.75" y="0.75" width="848.5" height="238.5" rx="14" fill="url(#am-card)" stroke="#30363d" stroke-width="1.5" />
+  <rect x="0.75" y="0.75" width="848.5" height="238.5" rx="14" fill="url(#am-card)" stroke="#d0d7de" stroke-width="1.5" />
 
   <!-- title bar -->
-  <path d="M0.75,14 A13.25,13.25 0 0 1 14,0.75 L836,0.75 A13.25,13.25 0 0 1 849.25,14 L849.25,33 L0.75,33 Z" fill="#161b22" />
-  <line x1="0.75" y1="33" x2="849.25" y2="33" stroke="#30363d" stroke-width="1" />
+  <path d="M0.75,14 A13.25,13.25 0 0 1 14,0.75 L836,0.75 A13.25,13.25 0 0 1 849.25,14 L849.25,33 L0.75,33 Z" fill="#f6f8fa" />
+  <line x1="0.75" y1="33" x2="849.25" y2="33" stroke="#d0d7de" stroke-width="1" />
 
   <circle cx="22" cy="17" r="4.5" fill="#FF5F56" />
   <circle cx="38" cy="17" r="4.5" fill="#FFBD2E" />
   <circle cx="54" cy="17" r="4.5" fill="#27C93F" />
 
-  <text x="425" y="21.5" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="11.5" font-weight="600" letter-spacing="0.6" fill="#8b949e">about_me.sh</text>
+  <text x="425" y="21.5" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="11.5" font-weight="600" letter-spacing="0.6" fill="#59636e">about_me.sh</text>
 
   <!-- accent edge under the title bar -->
   <rect x="0.75" y="33" width="848.5" height="1.2" fill="url(#am-edge)" opacity="0.65" />
 
   <!-- ── line 1: command ── -->
   <g clip-path="url(#am-w1)">
-    <text x="32" y="64" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#8B5CF6" font-weight="700">jyotirmoy@laha</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#3B82F6">~</tspan><tspan fill="#8b949e">$ </tspan><tspan fill="#00F2FE">cat about_me.txt</tspan></text>
+    <text x="32" y="64" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#7c3aed" font-weight="700">jyotirmoy@laha</tspan><tspan fill="#59636e">:</tspan><tspan fill="#2563eb">~</tspan><tspan fill="#59636e">$ </tspan><tspan fill="#0891b2">cat about_me.txt</tspan></text>
   </g>
 
   <!-- ── line 2 ── -->
   <g clip-path="url(#am-w2)">
-    <rect x="34" y="88" width="7" height="7" rx="1.5" fill="#8B5CF6" transform="rotate(45 37.5 91.5)" />
-    <text x="52" y="96" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">BCA Student</tspan><tspan fill="#8b949e"> (3rd Year) — foundations in AI/ML &amp; Web Dev.</tspan></text>
+    <rect x="34" y="88" width="7" height="7" rx="1.5" fill="#7c3aed" transform="rotate(45 37.5 91.5)" />
+    <text x="52" y="96" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#1f2328" font-weight="700">BCA Student</tspan><tspan fill="#59636e"> (3rd Year) — foundations in AI/ML &amp; Web Dev.</tspan></text>
   </g>
 
   <!-- ── line 3 ── -->
   <g clip-path="url(#am-w3)">
-    <rect x="34" y="116" width="7" height="7" rx="1.5" fill="#3B82F6" transform="rotate(45 37.5 119.5)" />
-    <text x="52" y="124" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">Builder Mindset</tspan><tspan fill="#8b949e"> — I ship real-world projects, not tutorials.</tspan></text>
+    <rect x="34" y="116" width="7" height="7" rx="1.5" fill="#2563eb" transform="rotate(45 37.5 119.5)" />
+    <text x="52" y="124" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#1f2328" font-weight="700">Builder Mindset</tspan><tspan fill="#59636e"> — I ship real-world projects, not tutorials.</tspan></text>
   </g>
 
   <!-- ── line 4 ── -->
   <g clip-path="url(#am-w4)">
-    <rect x="34" y="144" width="7" height="7" rx="1.5" fill="#00F2FE" transform="rotate(45 37.5 147.5)" />
-    <text x="52" y="152" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">Philosophy</tspan><tspan fill="#8b949e"> — Learn by building, breaking, and rebuilding better.</tspan></text>
+    <rect x="34" y="144" width="7" height="7" rx="1.5" fill="#0891b2" transform="rotate(45 37.5 147.5)" />
+    <text x="52" y="152" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#1f2328" font-weight="700">Philosophy</tspan><tspan fill="#59636e"> — Learn by building, breaking, and rebuilding better.</tspan></text>
   </g>
 
   <!-- ── line 5 ── -->
   <g clip-path="url(#am-w5)">
-    <rect x="34" y="172" width="7" height="7" rx="1.5" fill="#8B5CF6" transform="rotate(45 37.5 175.5)" />
-    <text x="52" y="180" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">Fun Fact</tspan><tspan fill="#8b949e"> — I don't just learn tech; I build with it and break it.</tspan></text>
+    <rect x="34" y="172" width="7" height="7" rx="1.5" fill="#7c3aed" transform="rotate(45 37.5 175.5)" />
+    <text x="52" y="180" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#1f2328" font-weight="700">Fun Fact</tspan><tspan fill="#59636e"> — I don't just learn tech; I build with it and break it.</tspan></text>
   </g>
 
   <!-- ── line 6 ── -->
   <g clip-path="url(#am-w6)">
-    <rect x="34" y="200" width="7" height="7" rx="1.5" fill="#3B82F6" transform="rotate(45 37.5 203.5)" />
-    <text x="52" y="208" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">Pronouns</tspan><tspan fill="#8b949e"> — He / Him</tspan></text>
+    <rect x="34" y="200" width="7" height="7" rx="1.5" fill="#2563eb" transform="rotate(45 37.5 203.5)" />
+    <text x="52" y="208" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="13.5" xml:space="preserve"><tspan fill="#1f2328" font-weight="700">Pronouns</tspan><tspan fill="#59636e"> — He / Him</tspan></text>
   </g>
 
   <!-- blinking cursor after the last line -->
-  <rect x="214" y="198" width="8" height="14" fill="#00F2FE" opacity="0">
+  <rect x="214" y="198" width="8" height="14" fill="#0891b2" opacity="0">
     <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0" keyTimes="0;0.539;0.56;0.60;0.64;0.68;0.72;0.76;0.80;0.84;0.88;0.93" dur="18s" repeatCount="indefinite" />
   </rect>
 
   <!-- ambient drifting sparks -->
   <g opacity="0.75">
-    <circle cx="0" cy="0" r="1.5" fill="#00F2FE" opacity="0.35">
+    <circle cx="0" cy="0" r="1.5" fill="#0891b2" opacity="0.35">
       <animateTransform attributeName="transform" type="translate" values="-30,60; 880,150" dur="21s" repeatCount="indefinite" />
     </circle>
-    <circle cx="0" cy="0" r="1.2" fill="#8B5CF6" opacity="0.4">
+    <circle cx="0" cy="0" r="1.2" fill="#7c3aed" opacity="0.4">
       <animateTransform attributeName="transform" type="translate" values="140,-15; 830,215" dur="26s" repeatCount="indefinite" />
     </circle>
-    <circle cx="0" cy="0" r="1" fill="#3B82F6" opacity="0.35">
+    <circle cx="0" cy="0" r="1" fill="#2563eb" opacity="0.35">
       <animateTransform attributeName="transform" type="translate" values="-120,200; 870,40" dur="24s" repeatCount="indefinite" />
     </circle>
   </g>

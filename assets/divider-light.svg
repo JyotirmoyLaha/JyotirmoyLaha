@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 24" width="850" height="24" role="img" aria-label="section divider">
+  <defs>
+    <filter id="d-glow" x="-10%" y="-200%" width="120%" height="500%">
+      <feGaussianBlur stdDeviation="3" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- userSpaceOnUse is required: these are painted onto horizontal/vertical
+         lines, whose object bounding box is zero in one axis. With the default
+         objectBoundingBox units the gradient degenerates and nothing paints. -->
+    <linearGradient id="d-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="850" y2="0">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0" />
+      <stop offset="18%" stop-color="#7c3aed" stop-opacity="0.9">
+        <animate attributeName="stop-color" values="#7c3aed;#2563eb;#0891b2;#7c3aed" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#2563eb" stop-opacity="1">
+        <animate attributeName="stop-color" values="#2563eb;#0891b2;#7c3aed;#2563eb" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="82%" stop-color="#0891b2" stop-opacity="0.9">
+        <animate attributeName="stop-color" values="#0891b2;#7c3aed;#2563eb;#0891b2" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- soft underglow -->
+  <rect x="20" y="10.2" width="810" height="3.6" fill="url(#d-grad)" opacity="0.45" filter="url(#d-glow)" />
+
+  <!-- crisp hairline -->
+  <rect x="8" y="11.3" width="834" height="1.4" fill="url(#d-grad)" />
+
+  <!-- HUD ticks -->
+  <rect x="69.5" y="7" width="1.2" height="10" fill="#7c3aed" opacity="0.55" />
+  <rect x="779.5" y="7" width="1.2" height="10" fill="#0891b2" opacity="0.55" />
+
+  <!-- centre node -->
+  <circle cx="425" cy="12" r="5" fill="none" stroke="#0891b2" stroke-width="1.2" filter="url(#d-glow)">
+    <animate attributeName="r" values="4.5;9;4.5" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.9;0.25;0.9" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="stroke" values="#0891b2;#7c3aed;#2563eb;#0891b2" dur="8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="425" cy="12" r="2.4" fill="#1f2328" />
+
+  <circle cx="405" cy="12" r="1.7" fill="#0891b2" opacity="0.85" />
+  <circle cx="445" cy="12" r="1.7" fill="#7c3aed" opacity="0.85" />
+  <circle cx="388" cy="12" r="1.1" fill="#0891b2" opacity="0.45" />
+  <circle cx="462" cy="12" r="1.1" fill="#7c3aed" opacity="0.45" />
+
+  <!-- travelling sparks -->
+  <circle cx="0" cy="12" r="1.4" fill="#0891b2" opacity="0.5">
+    <animate attributeName="cx" values="-20;870" dur="11s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="0" cy="12" r="1.1" fill="#7c3aed" opacity="0.45">
+    <animate attributeName="cx" values="-260;870" dur="15s" repeatCount="indefinite" />
+  </circle>
+</svg>

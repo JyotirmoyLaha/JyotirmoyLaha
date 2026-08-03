@@ -1,78 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 24" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 24" width="850" height="24" role="img" aria-label="section divider">
   <defs>
-    <!-- Blur filter for neon glow -->
-    <filter id="glow" x="-10%" y="-100%" width="120%" height="300%">
-      <feGaussianBlur stdDeviation="3.5" result="blur" />
+    <filter id="d-glow" x="-10%" y="-200%" width="120%" height="500%">
+      <feGaussianBlur stdDeviation="3" result="b" />
       <feMerge>
-        <feMergeNode in="blur" />
+        <feMergeNode in="b" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <!-- Color shifting linear gradient with fading edges -->
-    <linearGradient id="divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0">
-        <animate attributeName="stop-color" values="#8B5CF6; #3B82F6; #00F2FE; #8B5CF6" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="15%" stop-color="#8B5CF6" stop-opacity="0.85">
-        <animate attributeName="stop-color" values="#8B5CF6; #3B82F6; #00F2FE; #8B5CF6" dur="6s" repeatCount="indefinite" />
+    <!-- userSpaceOnUse is required: these are painted onto horizontal/vertical
+         lines, whose object bounding box is zero in one axis. With the default
+         objectBoundingBox units the gradient degenerates and nothing paints. -->
+    <linearGradient id="d-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="850" y2="0">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0" />
+      <stop offset="18%" stop-color="#8B5CF6" stop-opacity="0.9">
+        <animate attributeName="stop-color" values="#8B5CF6;#3B82F6;#00F2FE;#8B5CF6" dur="8s" repeatCount="indefinite" />
       </stop>
       <stop offset="50%" stop-color="#3B82F6" stop-opacity="1">
-        <animate attributeName="stop-color" values="#3B82F6; #00F2FE; #8B5CF6; #3B82F6" dur="6s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#3B82F6;#00F2FE;#8B5CF6;#3B82F6" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="85%" stop-color="#00F2FE" stop-opacity="0.85">
-        <animate attributeName="stop-color" values="#00F2FE; #8B5CF6; #3B82F6; #00F2FE" dur="6s" repeatCount="indefinite" />
+      <stop offset="82%" stop-color="#00F2FE" stop-opacity="0.9">
+        <animate attributeName="stop-color" values="#00F2FE;#8B5CF6;#3B82F6;#00F2FE" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0">
-        <animate attributeName="stop-color" values="#00F2FE; #8B5CF6; #3B82F6; #00F2FE" dur="6s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0" />
     </linearGradient>
   </defs>
 
-  <!-- Thick background neon glow line -->
-  <line x1="30" y1="12" x2="770" y2="12" stroke="url(#divider-grad)" stroke-width="4.5" opacity="0.3" filter="url(#glow)" />
+  <!-- soft underglow -->
+  <rect x="20" y="10.2" width="810" height="3.6" fill="url(#d-grad)" opacity="0.45" filter="url(#d-glow)" />
 
-  <!-- Thin sharp foreground line -->
-  <line x1="10" y1="12" x2="790" y2="12" stroke="url(#divider-grad)" stroke-width="1.2" stroke-linecap="round" />
+  <!-- crisp hairline -->
+  <rect x="8" y="11.3" width="834" height="1.4" fill="url(#d-grad)" />
 
-  <!-- High-Tech HUD Tick Marks -->
-  <line x1="60" y1="7" x2="60" y2="17" stroke="url(#divider-grad)" stroke-width="1" opacity="0.8" />
-  <line x1="740" y1="7" x2="740" y2="17" stroke="url(#divider-grad)" stroke-width="1" opacity="0.8" />
+  <!-- HUD ticks -->
+  <rect x="69.5" y="7" width="1.2" height="10" fill="#8B5CF6" opacity="0.55" />
+  <rect x="779.5" y="7" width="1.2" height="10" fill="#00F2FE" opacity="0.55" />
 
-  <!-- Central Pulsing Geometric Element -->
-  <!-- Outer Pulsing Ring -->
-  <circle cx="400" cy="12" r="5" fill="none" stroke="#ffffff" stroke-width="1.2" filter="url(#glow)">
-    <animate attributeName="r" values="5; 9; 5" dur="4s" repeatCount="indefinite" />
-    <animate attributeName="stroke" values="#ffffff; #00F2FE; #8B5CF6; #ffffff" dur="8s" repeatCount="indefinite" />
+  <!-- centre node -->
+  <circle cx="425" cy="12" r="5" fill="none" stroke="#00F2FE" stroke-width="1.2" filter="url(#d-glow)">
+    <animate attributeName="r" values="4.5;9;4.5" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.9;0.25;0.9" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="stroke" values="#00F2FE;#8B5CF6;#3B82F6;#00F2FE" dur="8s" repeatCount="indefinite" />
   </circle>
-  
-  <!-- Central White Core -->
-  <circle cx="400" cy="12" r="2.5" fill="#ffffff" />
-  
-  <!-- Symmetrical Dots -->
-  <circle cx="382" cy="12" r="1.8" fill="#00F2FE" opacity="0.9" />
-  <circle cx="418" cy="12" r="1.8" fill="#8B5CF6" opacity="0.9" />
-  <circle cx="366" cy="12" r="1.2" fill="#00F2FE" opacity="0.5" />
-  <circle cx="434" cy="12" r="1.2" fill="#8B5CF6" opacity="0.5" />
-  <!-- Floating Petals & Sparks Overlay (Narrow) -->
-  <g id="readme-theme-overlay-narrow" opacity="0.8">
-    <!-- Sliding Petal 1 -->
-    <path d="M 0,0 C -2,-3 -4,-2 -4,1 C -3,4 0,5 0,5 C 0,5 3,4 4,1 C 4,-2 2,-3 0,0 Z" fill="#FFB7C5" opacity="0.25">
-      <animateTransform attributeName="transform" type="translate" values="-30,6; 830,6" dur="14s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="8s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Sliding Petal 2 -->
-    <path d="M 0,0 C -2,-3 -4,-2 -4,1 C -3,4 0,5 0,5 C 0,5 3,4 4,1 C 4,-2 2,-3 0,0 Z" fill="#FF8DA1" opacity="0.2">
-      <animateTransform attributeName="transform" type="translate" values="-150,14; 850,14" dur="18s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="45; 405" dur="10s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Sliding Spark 1 -->
-    <circle cx="0" cy="0" r="1.2" fill="#00F2FE" opacity="0.3">
-      <animateTransform attributeName="transform" type="translate" values="-80,10; 820,10" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <!-- Sliding Spark 2 -->
-    <circle cx="0" cy="0" r="1" fill="#8B5CF6" opacity="0.35">
-      <animateTransform attributeName="transform" type="translate" values="-200,8; 840,8" dur="16s" repeatCount="indefinite" />
-    </circle>
-  </g>
+  <circle cx="425" cy="12" r="2.4" fill="#e6edf3" />
+
+  <circle cx="405" cy="12" r="1.7" fill="#00F2FE" opacity="0.85" />
+  <circle cx="445" cy="12" r="1.7" fill="#8B5CF6" opacity="0.85" />
+  <circle cx="388" cy="12" r="1.1" fill="#00F2FE" opacity="0.45" />
+  <circle cx="462" cy="12" r="1.1" fill="#8B5CF6" opacity="0.45" />
+
+  <!-- travelling sparks -->
+  <circle cx="0" cy="12" r="1.4" fill="#00F2FE" opacity="0.5">
+    <animate attributeName="cx" values="-20;870" dur="11s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="0" cy="12" r="1.1" fill="#8B5CF6" opacity="0.45">
+    <animate attributeName="cx" values="-260;870" dur="15s" repeatCount="indefinite" />
+  </circle>
 </svg>

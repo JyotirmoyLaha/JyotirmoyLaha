@@ -1,217 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 300" width="100%" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="850" height="180" role="img" aria-label="J.SkyCast Weather — live weather forecast app with geolocation">
   <defs>
-    <!-- Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3.5" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    
-    <!-- Theme Gradients -->
-    <linearGradient id="theme-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#0284C7" />
+    <linearGradient id="wx-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#0f1420"/>
     </linearGradient>
-
-    <!-- 3D Sun Radial Shading Gradient -->
-    <radialGradient id="sun-sphere-grad" cx="35%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#FFE082" />
-      <stop offset="60%" stop-color="#FBBF24" />
-      <stop offset="100%" stop-color="#D97706" />
-    </radialGradient>
+    <linearGradient id="wx-spine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#00F2FE" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="wx-rule" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="wx-soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
   </defs>
 
-  <style>
-    .card-border {
-      fill: #0c0b16;
-      stroke: #221e3f;
-      stroke-width: 1.5;
-      rx: 16;
-      transition: all 0.3s ease;
-    }
-    .card-border:hover {
-      stroke: #38BDF8;
-    }
-    .cloud-group {
-      animation: drift 5s infinite ease-in-out;
-    }
-    @keyframes drift {
-      0%, 100% { transform: translate(0px, 0px); }
-      50% { transform: translate(3px, -2px); }
-    }
-    .tech-pill {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      height: 20px;
-      padding: 0 8px;
-      border-radius: 4px;
-      font-size: 10px;
-      font-weight: 600;
-      color: #c9d1d9;
-      background-color: #141226;
-      border: 1px solid #221e3f;
-      margin-right: 5px;
-      margin-bottom: 5px;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      height: 18px;
-      padding: 0 6px;
-      border-radius: 3px;
-      font-size: 9px;
-      font-weight: bold;
-      color: #38bdf8;
-      background-color: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-      margin-right: 6px;
-    }
-  </style>
+  <!-- card -->
+  <rect x="0.75" y="0.75" width="848.5" height="178.5" rx="14" fill="url(#wx-bg)" stroke="#30363d" stroke-width="1.5"/>
 
-  <!-- Card Background -->
-  <rect width="848" height="298" x="1" y="1" class="card-border" />
+  <!-- ambient wash behind the artwork -->
+  <circle cx="726" cy="90" r="70" fill="#00F2FE" opacity="0.10" filter="url(#wx-soft)"/>
 
-  <!-- Vertical Divider -->
-  <line x1="520" y1="20" x2="520" y2="280" stroke="#221e3f" stroke-width="1.5" stroke-dasharray="4 4" />
+  <!-- accent spine -->
+  <rect x="0.75" y="18" width="3" height="144" rx="1.5" fill="url(#wx-spine)"/>
 
-  <!-- Left Column: Details (foreignObject) -->
-  <foreignObject x="25" y="25" width="470" height="250">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-      color: #c9d1d9;
-      user-select: none;
-    ">
-      <h3 style="color: #ffffff; font-size: 20px; margin: 0 0 10px 0; font-weight: 800; display: flex; align-items: center; gap: 8px;">
-        ☀️ J.SkyCast Weather
-      </h3>
-      
-      <div style="margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 4px;">
-        <span class="badge">Vanilla JS</span>
-        <span class="badge">WeatherAPI</span>
-        <span class="badge">Glassmorphic UI</span>
-        <span class="badge">SVG Graphing</span>
-      </div>
+  <!-- title -->
+  <rect x="28" y="34" width="8" height="8" rx="1.6" fill="#00F2FE" transform="rotate(45 32 38)"/>
+  <text x="48" y="43" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="20" font-weight="800" letter-spacing="0.1" fill="#e6edf3">J.SkyCast Weather</text>
 
-      <ul style="margin: 0; padding-left: 20px; font-size: 13px; line-height: 22px; color: #8b949e; list-style-type: square;">
-        <li style="margin-bottom: 8px;">Real-time weather forecast dashboard with location search and GPS geolocation tracking.</li>
-        <li style="margin-bottom: 8px;">Aesthetic glassmorphic interface showing AQI pollutants (CO, NO2, O3) and UV indexes.</li>
-        <li>Interactive sun trajectory arc widget and 7-day forecast strip with custom SVG line graphs.</li>
-      </ul>
-    </div>
-  </foreignObject>
-
-  <!-- Right Column: Animated 3D Graphic (scaled and translated) -->
-  <g transform="translate(585, -20) scale(2.2)">
-    <!-- 3D Sun (Behind Cloud) -->
-    <!-- Sun Shadow -->
-    <ellipse cx="50" cy="46" rx="11" ry="5.5" fill="rgba(0, 0, 0, 0.25)" />
-
-    <!-- 3D Sun Sphere -->
-    <g transform="translate(50, 32)">
-      <!-- Under-glow -->
-      <circle cx="0" cy="0" r="14" fill="#FBBF24" opacity="0.3" filter="url(#glow)" />
-      <!-- 3D Shaded Sphere -->
-      <circle cx="0" cy="0" r="11" fill="url(#sun-sphere-grad)" />
-      
-      <!-- Rotating Rays (SMIL-based rotation centers perfectly around 0,0 local coordinates) -->
-      <g>
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite" />
-        <line x1="0" y1="-14" x2="0" y2="-18" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
-        <line x1="0" y1="14" x2="0" y2="18" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
-        <line x1="-14" y1="0" x2="-18" y2="0" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
-        <line x1="14" y1="0" x2="18" y2="0" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
-        <line x1="-10" y1="-10" x2="-13" y2="-13" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
-        <line x1="10" y1="10" x2="13" y2="13" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
-        <line x1="-10" y1="10" x2="-13" y2="13" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
-        <line x1="10" y1="-10" x2="13" y2="-13" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" />
-      </g>
-    </g>
-
-    <!-- Layered 3D Cloud (Front) -->
-    <g class="cloud-group" style="transform-origin: 40px 60px;">
-      <!-- Cloud Shaded Bottom Extrusion -->
-      <path d="M 20,62 C 16,62 14,59 14,55 C 14,50 19,47 25,47 C 27,42 33,40 38,43 C 43,43 47,46 47,51 C 47,55 43,62 36,62 Z" fill="rgba(2, 132, 199, 0.5)" />
-      
-      <!-- Cloud Top Highlight Face -->
-      <path d="M 20,59 C 16,59 14,56 14,52 C 14,47 19,44 25,44 C 27,39 33,37 38,40 C 43,40 47,43 47,48 C 47,52 43,59 36,59 Z" fill="#ffffff" fill-opacity="0.95" filter="url(#glow)" />
-    </g>
-
-    <!-- Animated Rain Drops (falling from cloud) -->
-    <g>
-      <animate attributeName="opacity" values="0; 1; 0" dur="2s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="translate" values="-2,-6; 2,8" dur="2s" repeatCount="indefinite" />
-      <!-- Rain line 1 -->
-      <line x1="26" y1="65" x2="23" y2="72" stroke="#33CCFF" stroke-width="1.8" stroke-linecap="round" filter="url(#glow)" />
-      <!-- Rain line 2 -->
-      <line x1="36" y1="65" x2="33" y2="72" stroke="#33CCFF" stroke-width="1.8" stroke-linecap="round" filter="url(#glow)" />
-    </g>
+  <!-- status pill — kept inside the text column so it can never collide
+       with the artwork panel on the right -->
+  <g transform="translate(522, 27)">
+    <rect width="78" height="21" rx="10.5" fill="#161b22" stroke="#00F2FE" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="14" cy="10.5" r="3.2" fill="#3fb950">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="25" y="14.5" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9.5" font-weight="700" letter-spacing="1.1" fill="#8b949e">LIVE</text>
   </g>
 
-  <!-- Right Column Bottom: Tech Stack Pills -->
-  <foreignObject x="545" y="210" width="280" height="75">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-    ">
-      <span class="tech-pill">HTML5</span>
-      <span class="tech-pill">CSS3</span>
-      <span class="tech-pill">JS</span>
-      <span class="tech-pill">WeatherAPI</span>
-      <span class="tech-pill">SVG Graph</span>
-      <span class="tech-pill">US-EPA AQI</span>
-    </div>
-  </foreignObject>
-  <!-- Floating Petals & Coding Particles Overlay (Aesthetic Theme) -->
-  <g id="readme-theme-overlay" opacity="0.8">
-    <!-- Cherry Blossom Petal 1 (Drifts diagonally, rotates) -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FFB7C5" opacity="0.2">
-      <animateTransform attributeName="transform" type="translate" values="-20,40; 870,200" dur="18s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="12s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Cherry Blossom Petal 2 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FFB7C5" opacity="0.18">
-      <animateTransform attributeName="transform" type="translate" values="120,-20; 880,110" dur="22s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="45; 405" dur="15s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Cherry Blossom Petal 3 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FF8DA1" opacity="0.15">
-      <animateTransform attributeName="transform" type="translate" values="-50,140; 830,280" dur="20s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="90; 450" dur="18s" repeatCount="indefinite" additive="sum" />
-    </path>
-    <!-- Cherry Blossom Petal 4 -->
-    <path d="M 0,0 C -3,-5 -8,-3 -7,2 C -5,7 0,10 0,10 C 0,10 5,7 7,2 C 8,-3 3,-5 0,0 Z" fill="#FFB7C5" opacity="0.22">
-      <animateTransform attributeName="transform" type="translate" values="280,-30; 780,260" dur="25s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="10; 730" dur="24s" repeatCount="indefinite" additive="sum" />
-    </path>
+  <!-- rule -->
+  <rect x="28" y="57" width="572" height="1.1" fill="url(#wx-rule)"/>
 
-    <!-- Coding Particles (HTML, JS braces, sparks) -->
-    <text x="0" y="0" fill="#00F2FE" font-family="monospace" font-size="11" font-weight="bold" opacity="0.14">
-      &lt;/&gt;
-      <animateTransform attributeName="transform" type="translate" values="40,250; 810,30" dur="26s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; -360" dur="16s" repeatCount="indefinite" additive="sum" />
-    </text>
-    <text x="0" y="0" fill="#8B5CF6" font-family="monospace" font-size="13" font-weight="bold" opacity="0.12">
-      {{
-      <animateTransform attributeName="transform" type="translate" values="180,290; 790,60" dur="28s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="20s" repeatCount="indefinite" additive="sum" />
-    </text>
-    <text x="0" y="0" fill="#3B82F6" font-family="monospace" font-size="12" font-weight="bold" opacity="0.15">
-      ( )
-      <animateTransform attributeName="transform" type="translate" values="10,100; 840,10" dur="23s" repeatCount="indefinite" />
-      <animateTransform attributeName="transform" type="rotate" values="30; 390" dur="14s" repeatCount="indefinite" additive="sum" />
-    </text>
-    
-    <!-- Coding Sparkle Dots -->
-    <circle cx="0" cy="0" r="1.5" fill="#00F2FE" opacity="0.25">
-      <animateTransform attributeName="transform" type="translate" values="-30,60; 860,160" dur="19s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="0" cy="0" r="1.2" fill="#8B5CF6" opacity="0.3">
-      <animateTransform attributeName="transform" type="translate" values="140,-10; 810,220" dur="24s" repeatCount="indefinite" />
-    </circle>
+  <!-- column separator -->
+  <line x1="626" y1="30" x2="626" y2="150" stroke="#30363d" stroke-width="1" stroke-dasharray="3 5" opacity="0.8"/>
+
+  <!-- description -->
+  <text x="28" y="83" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">Live conditions and multi-day forecasts from geolocation or search,</text>
+  <text x="28" y="103" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#8b949e">with dynamic backdrops that respond to the current weather state.</text>
+
+  <!-- tech pills -->
+    <g transform="translate(28, 120)">
+      <rect width="53" height="22" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="26.5" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#c9d1d9">HTML5</text>
+    </g>
+    <g transform="translate(88, 120)">
+      <rect width="46" height="22" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="23" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#c9d1d9">CSS3</text>
+    </g>
+    <g transform="translate(141, 120)">
+      <rect width="86" height="22" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="43" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#c9d1d9">JavaScript</text>
+    </g>
+    <g transform="translate(234, 120)">
+      <rect width="93" height="22" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="46.5" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#c9d1d9">Weather API</text>
+    </g>
+    <g transform="translate(334, 120)">
+      <rect width="93" height="22" rx="5" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+      <text x="46.5" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#c9d1d9">Geolocation</text>
+    </g>
+
+  <!-- artwork -->
+  <g transform="translate(676, 38)">
+    <!-- sun -->
+    <g transform="translate(30, 26)">
+      <circle r="15" fill="#fbbf24" opacity="0.95"/>
+      <g stroke="#fbbf24" stroke-width="2.2" stroke-linecap="round" opacity="0.8">
+        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="26s" repeatCount="indefinite"/>
+        <line x1="0" y1="-22" x2="0" y2="-27"/>
+        <line x1="0" y1="22" x2="0" y2="27"/>
+        <line x1="-22" y1="0" x2="-27" y2="0"/>
+        <line x1="22" y1="0" x2="27" y2="0"/>
+        <line x1="-15.5" y1="-15.5" x2="-19" y2="-19"/>
+        <line x1="15.5" y1="15.5" x2="19" y2="19"/>
+        <line x1="-15.5" y1="15.5" x2="-19" y2="19"/>
+        <line x1="15.5" y1="-15.5" x2="19" y2="-19"/>
+      </g>
+    </g>
+    <!-- cloud -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 5,-4; 0,0" dur="6s" repeatCount="indefinite"/>
+      <path d="M40,74 A17,17 0 0,1 57,57 A21,21 0 0,1 96,52 A16,16 0 0,1 100,74 Z" fill="#38bdf8" opacity="0.28"/>
+      <path d="M40,74 A17,17 0 0,1 57,57 A21,21 0 0,1 96,52 A16,16 0 0,1 100,74 Z" fill="none" stroke="#38bdf8" stroke-width="1.6" opacity="0.9"/>
+    </g>
+    <!-- rain -->
+    <g stroke="#00F2FE" stroke-width="2.2" stroke-linecap="round">
+      <line x1="54" y1="82" x2="50" y2="94" opacity="0.8">
+        <animate attributeName="opacity" values="0;0.9;0" dur="1.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="70" y1="82" x2="66" y2="94" opacity="0.8">
+        <animate attributeName="opacity" values="0;0.9;0" dur="1.5s" begin="-0.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="86" y1="82" x2="82" y2="94" opacity="0.8">
+        <animate attributeName="opacity" values="0;0.9;0" dur="1.5s" begin="-1s" repeatCount="indefinite"/>
+      </line>
+    </g>
+    <!-- temp readout -->
+    <text x="70" y="118" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="15" font-weight="700" fill="#e6edf3">28°C</text>
   </g>
 </svg>

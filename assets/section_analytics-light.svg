@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 48" width="850" height="48" role="img" aria-label="GitHub Analytics">
+  <defs>
+    <linearGradient id="sn-rule" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#2563eb" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="sn-txt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f2328" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="7" width="34" height="34" rx="10" fill="#f6f8fa" stroke="#7c3aed" stroke-opacity="0.55" stroke-width="1.2" />
+  <!-- glyph: bar chart -->
+  <g stroke-linecap="round">
+    <rect x="10" y="24" width="4" height="10" rx="1.6" fill="#7c3aed">
+      <animate attributeName="height" values="10;6;10" dur="3.2s" repeatCount="indefinite" />
+      <animate attributeName="y" values="24;28;24" dur="3.2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="16" y="18" width="4" height="16" rx="1.6" fill="#2563eb">
+      <animate attributeName="height" values="16;11;16" dur="3.2s" begin="-1s" repeatCount="indefinite" />
+      <animate attributeName="y" values="18;23;18" dur="3.2s" begin="-1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="22" y="13" width="4" height="21" rx="1.6" fill="#0891b2">
+      <animate attributeName="height" values="21;15;21" dur="3.2s" begin="-2s" repeatCount="indefinite" />
+      <animate attributeName="y" values="13;19;13" dur="3.2s" begin="-2s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <text x="48" y="31" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="800" letter-spacing="0.2" fill="url(#sn-txt)">GitHub Analytics</text>
+
+  <text x="849" y="30" text-anchor="end" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="10.5" letter-spacing="2.2" fill="#59636e">04 / SIGNAL</text>
+
+  <rect x="0" y="46" width="850" height="1.1" fill="url(#sn-rule)" />
+</svg>
