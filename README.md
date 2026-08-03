@@ -124,8 +124,6 @@
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=JyotirmoyLaha&theme=tokyonight&hide_border=true&cache_seconds=1800&v=1" alt="GitHub Streak Stats" />
-  <br/><br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&theme=tokyo-night&area=true&hide_border=true&cache_seconds=1800&v=1" alt="GitHub Activity Graph" width="100%" />
 </p>
 
