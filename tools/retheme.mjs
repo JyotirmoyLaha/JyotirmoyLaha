@@ -17,14 +17,12 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const A = join(ROOT, 'assets');
 
-const FILES = [
-  'project_studyverse_flow.svg',
-  'project_resume_flow.svg',
-  'project_mess_flow.svg',
-  'project_weather_flow.svg',
-  'project_portfolio_flow.svg',
-  'tech_stack.svg',
-];
+/**
+ * Only the hand-maintained assets need this pass. The project cards and flow
+ * diagrams are generated straight onto the token palette by build-cards.mjs
+ * and build-flows.mjs, so they are not listed here.
+ */
+const FILES = ['tech_stack.svg'];
 
 /** sakura + legacy surfaces -> unified violet/blue/cyan on GitHub surfaces */
 const COLORS = [

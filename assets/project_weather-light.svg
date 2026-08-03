@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="850" height="180" role="img" aria-label="J.SkyCast Weather — live weather forecast app with geolocation">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="850" height="180" role="img" aria-label="J.SkyCast Weather — live weather app using WeatherAPI and geolocation">
   <defs>
     <linearGradient id="wx-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff"/>
@@ -48,8 +48,8 @@
   <line x1="626" y1="30" x2="626" y2="150" stroke="#d0d7de" stroke-width="1" stroke-dasharray="3 5" opacity="0.8"/>
 
   <!-- description -->
-  <text x="28" y="83" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#59636e">Live conditions and multi-day forecasts from geolocation or search,</text>
-  <text x="28" y="103" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#59636e">with dynamic backdrops that respond to the current weather state.</text>
+  <text x="28" y="83" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#59636e">Live conditions and forecasts from WeatherAPI via city search or</text>
+  <text x="28" y="103" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#59636e">geolocation, surfacing AQI, UV index and astronomy data.</text>
 
   <!-- tech pills -->
     <g transform="translate(28, 120)">
@@ -65,12 +65,16 @@
       <text x="43" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#3d444d">JavaScript</text>
     </g>
     <g transform="translate(234, 120)">
-      <rect width="93" height="22" rx="5" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
-      <text x="46.5" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#3d444d">Weather API</text>
+      <rect width="86" height="22" rx="5" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="43" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#3d444d">WeatherAPI</text>
     </g>
-    <g transform="translate(334, 120)">
+    <g transform="translate(327, 120)">
       <rect width="93" height="22" rx="5" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
       <text x="46.5" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#3d444d">Geolocation</text>
+    </g>
+    <g transform="translate(427, 120)">
+      <rect width="73" height="22" rx="5" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+      <text x="36.5" y="14.5" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="0.4" fill="#3d444d">AQI + UV</text>
     </g>
 
   <!-- artwork -->

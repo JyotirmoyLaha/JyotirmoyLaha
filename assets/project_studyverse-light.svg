@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="850" height="180" role="img" aria-label="StudyVerse — zen study and life journal with real-time sync">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="850" height="180" role="img" aria-label="StudyVerse — zen study and life journal backed by Firestore">
   <defs>
     <linearGradient id="sv-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff"/>
@@ -48,8 +48,8 @@
   <line x1="626" y1="30" x2="626" y2="150" stroke="#d0d7de" stroke-width="1" stroke-dasharray="3 5" opacity="0.8"/>
 
   <!-- description -->
-  <text x="28" y="83" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#59636e">Zen-inspired daily study &amp; life journal with real-time Firestore sync,</text>
-  <text x="28" y="103" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#59636e">streak tracking, image attachments and full light/dark theming.</text>
+  <text x="28" y="83" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#59636e">Zen-inspired study &amp; life journal — Google Sign-In, Firestore-backed</text>
+  <text x="28" y="103" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" fill="#59636e">entries, Canvas-based image compression and daily streak tracking.</text>
 
   <!-- tech pills -->
     <g transform="translate(28, 120)">

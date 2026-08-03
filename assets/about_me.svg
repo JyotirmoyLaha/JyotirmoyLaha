@@ -100,16 +100,4 @@
     <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0" keyTimes="0;0.539;0.56;0.60;0.64;0.68;0.72;0.76;0.80;0.84;0.88;0.93" dur="18s" repeatCount="indefinite" />
   </rect>
 
-  <!-- ambient drifting sparks -->
-  <g opacity="0.75">
-    <circle cx="0" cy="0" r="1.5" fill="#00F2FE" opacity="0.35">
-      <animateTransform attributeName="transform" type="translate" values="-30,60; 880,150" dur="21s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="0" cy="0" r="1.2" fill="#8B5CF6" opacity="0.4">
-      <animateTransform attributeName="transform" type="translate" values="140,-15; 830,215" dur="26s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="0" cy="0" r="1" fill="#3B82F6" opacity="0.35">
-      <animateTransform attributeName="transform" type="translate" values="-120,200; 870,40" dur="24s" repeatCount="indefinite" />
-    </circle>
-  </g>
 </svg>

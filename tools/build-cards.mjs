@@ -287,17 +287,25 @@ const artPortfolio = `  <g transform="translate(668, 34)">
 
 /* ─────────────── project data ─────────────── */
 
+/**
+ * Stacks below are taken from the repositories themselves — GitHub's language
+ * breakdown plus the actual manifests (requirements.txt, package.json) and
+ * CDN script tags — not from memory. Re-verify against the repo before
+ * editing; several of these are non-obvious (the resume backend is Flask, not
+ * FastAPI; Mess Manager is Firebase, not Node/Mongo).
+ */
 const projects = [
   {
     id: 'sv',
     file: 'project_studyverse.svg',
     name: 'StudyVerse',
     accent: C.violet,
-    aria: 'zen study and life journal with real-time sync',
+    aria: 'zen study and life journal backed by Firestore',
     desc: [
-      'Zen-inspired daily study & life journal with real-time Firestore sync,',
-      'streak tracking, image attachments and full light/dark theming.',
+      'Zen-inspired study & life journal — Google Sign-In, Firestore-backed',
+      'entries, Canvas-based image compression and daily streak tracking.',
     ],
+    // vanilla HTML/CSS/JS + firebase compat SDK from gstatic
     tech: ['HTML5', 'CSS3', 'JavaScript', 'Firebase', 'Firestore', 'Google Auth', 'Canvas API'],
     art: artStudyverse,
   },
@@ -306,12 +314,13 @@ const projects = [
     file: 'project_resume.svg',
     name: 'AI Resume Analyzer',
     accent: C.cyan,
-    aria: 'AI-powered resume scoring and feedback tool',
+    aria: 'resume skill-gap analyser with a Flask backend',
     desc: [
-      'Upload a resume and get AI-scored feedback on structure, keywords and',
-      'role fit — parsed server-side, rendered as an actionable report.',
+      'Upload a PDF resume and pick a target role; a Flask API extracts text',
+      'with pdfplumber, scores skill gaps and returns a learning roadmap.',
     ],
-    tech: ['React', 'Node.js', 'Express', 'Python', 'NLP', 'REST API', 'Tailwind'],
+    // frontend: vanilla + Tailwind CDN + lucide · backend: flask, pdfplumber, gunicorn
+    tech: ['HTML5', 'JavaScript', 'Tailwind', 'Python', 'Flask', 'pdfplumber', 'REST API'],
     art: artResume,
   },
   {
@@ -319,12 +328,13 @@ const projects = [
     file: 'project_mess.svg',
     name: 'Mess Manager',
     accent: C.blue,
-    aria: 'hostel mess billing and attendance manager',
+    aria: 'shared mess expense tracker with a React Native companion app',
     desc: [
-      'Tracks hostel mess attendance, per-member consumption and monthly dues,',
-      'with automated bill splitting and an exportable ledger.',
+      'Shared mess expense tracker — a Firestore ledger with live sync, plus a',
+      'React Native / Expo companion app with Google Sign-In and PDF export.',
     ],
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express', 'MongoDB'],
+    // web: tailwind CDN + firebase · app: expo, firebase, expo-print, google-signin
+    tech: ['JavaScript', 'Tailwind', 'Firebase', 'Firestore', 'React Native', 'Expo'],
     art: artMess,
   },
   {
@@ -332,12 +342,13 @@ const projects = [
     file: 'project_weather.svg',
     name: 'J.SkyCast Weather',
     accent: C.cyan,
-    aria: 'live weather forecast app with geolocation',
+    aria: 'live weather app using WeatherAPI and geolocation',
     desc: [
-      'Live conditions and multi-day forecasts from geolocation or search,',
-      'with dynamic backdrops that respond to the current weather state.',
+      'Live conditions and forecasts from WeatherAPI via city search or',
+      'geolocation, surfacing AQI, UV index and astronomy data.',
     ],
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'Weather API', 'Geolocation'],
+    // vanilla JS hitting api.weatherapi.com; forecast + aqi + uv
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'WeatherAPI', 'Geolocation', 'AQI + UV'],
     art: artWeather,
   },
   {
@@ -345,12 +356,14 @@ const projects = [
     file: 'project_portfolio.svg',
     name: 'Personal Portfolio',
     accent: C.violet,
-    aria: 'responsive personal portfolio site',
+    aria: 'React and Vite portfolio with 3D scenes and a Groq-backed chatbot',
     desc: [
-      'Responsive single-page portfolio with scroll-driven animation, project',
-      'showcase and a working contact pipeline.',
+      'React + Vite portfolio with Three.js and Spline 3D scenes, plus a',
+      'FastAPI chatbot running Groq LLM completions over scraped content.',
     ],
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'GSAP', 'Responsive'],
+    // react, vite, ts, tailwind, three, @react-three/fiber, spline
+    // + portfolio-chatbot/backend: fastapi, uvicorn, groq, beautifulsoup4
+    tech: ['React', 'Vite', 'TypeScript', 'Tailwind', 'Three.js', 'FastAPI', 'Groq AI'],
     art: artPortfolio,
   },
 ];
