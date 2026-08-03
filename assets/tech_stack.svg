@@ -120,6 +120,13 @@
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">GITHUB</text>
   </g>
 
+  <!-- Kotlin -->
+  <g class="tech-pill" transform="translate(753, 50)">
+    <title>Kotlin programming language</title>
+    <rect width="60" height="22" rx="4" fill="#7c3aed" />
+    <text x="30" y="15" text-anchor="middle" class="pill-text">KOTLIN</text>
+  </g>
+
 
   <!-- ===================== ROW 2: PQC & CRYPTOGRAPHY ===================== -->
   <text x="100" y="108" text-anchor="middle" class="category-text">PQC &amp;</text>
@@ -233,6 +240,13 @@
     <title>Groq AI inference platform</title>
     <rect width="65" height="22" rx="4" fill="#7c3aed" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">GROQ AI</text>
+  </g>
+
+  <!-- Hugging Face -->
+  <g class="tech-pill" transform="translate(554, 179)">
+    <title>Hugging Face machine learning platform</title>
+    <rect width="105" height="22" rx="4" fill="#eab308" />
+    <text x="52.5" y="15" text-anchor="middle" class="pill-text" fill="#000000">HUGGING FACE</text>
   </g>
 
 
