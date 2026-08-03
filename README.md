@@ -73,13 +73,8 @@
   </picture>
 </a>
 
-<p align="center">
-  <a href="https://github.com/JyotirmoyLaha/studyverse"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
-  <a href="https://studyverse-vlzh.onrender.com/"><img src="https://img.shields.io/badge/Live_Demo-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
-</p>
-
 <details>
-  <summary><b>Architecture &amp; data flow</b></summary>
+  <summary><b>StudyVerse — architecture &amp; data flow</b></summary>
   <br />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow.svg?v=20260804b" />
@@ -87,6 +82,11 @@
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow.svg?v=20260804b" alt="StudyVerse architecture: Google sign-in via Firebase Auth, entry composed in the browser, attachments downscaled with the Canvas API, then written to Cloud Firestore with streaks derived on read." width="100%" />
   </picture>
 </details>
+
+<p align="center">
+  <a href="https://github.com/JyotirmoyLaha/studyverse"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
+  <a href="https://studyverse-vlzh.onrender.com/"><img src="https://img.shields.io/badge/Live_Demo-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
+</p>
 
 <!-- ─────────────  AI Resume Analyzer  ───────────── -->
 
@@ -98,14 +98,8 @@
   </picture>
 </a>
 
-<p align="center">
-  <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend"><img src="https://img.shields.io/badge/Frontend-161b22?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Frontend source" /></a>
-  <a href="https://github.com/JyotirmoyLaha/ai-resume-analyzer-backend"><img src="https://img.shields.io/badge/Backend-161b22?style=for-the-badge&logo=nodedotjs&logoColor=3fb950" alt="Backend source" /></a>
-  <a href="https://ai-resume-analyzer-hhhb.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
-</p>
-
 <details>
-  <summary><b>Architecture &amp; data flow</b></summary>
+  <summary><b>AI Resume Analyzer — architecture &amp; data flow</b></summary>
   <br />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow.svg?v=20260804b" />
@@ -113,6 +107,12 @@
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow.svg?v=20260804b" alt="AI Resume Analyzer architecture: the Tailwind UI posts a PDF and target role to the Flask /analyze endpoint, resume_parser extracts text with pdfplumber, skill_gap scores it against the role, and the response returns matches, gaps and an ordered learning path." width="100%" />
   </picture>
 </details>
+
+<p align="center">
+  <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend"><img src="https://img.shields.io/badge/Frontend-161b22?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Frontend source" /></a>
+  <a href="https://github.com/JyotirmoyLaha/ai-resume-analyzer-backend"><img src="https://img.shields.io/badge/Backend-161b22?style=for-the-badge&logo=flask&logoColor=e6edf3" alt="Backend source" /></a>
+  <a href="https://ai-resume-analyzer-hhhb.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
+</p>
 
 <!-- ─────────────  Mess Manager  ───────────── -->
 
@@ -124,13 +124,8 @@
   </picture>
 </a>
 
-<p align="center">
-  <a href="https://github.com/JyotirmoyLaha/mess-maneger"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
-  <a href="https://mess-maneger.onrender.com/"><img src="https://img.shields.io/badge/Live_Demo-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
-</p>
-
 <details>
-  <summary><b>Architecture &amp; data flow</b></summary>
+  <summary><b>Mess Manager — architecture &amp; data flow</b></summary>
   <br />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow.svg?v=20260804b" />
@@ -138,6 +133,11 @@
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow.svg?v=20260804b" alt="Mess Manager architecture: Google sign-in gated by firestore.rules, meals and costs written to a shared Firestore ledger, onSnapshot listeners pushing updates to every client, and balances split per member with expo-print emitting a PDF." width="100%" />
   </picture>
 </details>
+
+<p align="center">
+  <a href="https://github.com/JyotirmoyLaha/mess-maneger"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
+  <a href="https://mess-maneger.onrender.com/"><img src="https://img.shields.io/badge/Live_Demo-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
+</p>
 
 <!-- ─────────────  J.SkyCast Weather  ───────────── -->
 
@@ -149,13 +149,8 @@
   </picture>
 </a>
 
-<p align="center">
-  <a href="https://github.com/JyotirmoyLaha/j.weather"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
-  <a href="https://j-weather.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
-</p>
-
 <details>
-  <summary><b>Architecture &amp; data flow</b></summary>
+  <summary><b>J.SkyCast Weather — architecture &amp; data flow</b></summary>
   <br />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow.svg?v=20260804b" />
@@ -163,6 +158,11 @@
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow.svg?v=20260804b" alt="J.SkyCast architecture: a city search or navigator geolocation lookup resolves the location, an async request hits api.weatherapi.com, forecast, AQI, UV index and astronomy data are parsed, and the UI backdrop swaps to match live conditions." width="100%" />
   </picture>
 </details>
+
+<p align="center">
+  <a href="https://github.com/JyotirmoyLaha/j.weather"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
+  <a href="https://j-weather.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
+</p>
 
 <!-- ─────────────  Personal Portfolio  ───────────── -->
 
@@ -174,13 +174,8 @@
   </picture>
 </a>
 
-<p align="center">
-  <a href="https://github.com/JyotirmoyLaha/j.portfolio"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
-  <a href="https://jyotirmoy-portfolio.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
-</p>
-
 <details>
-  <summary><b>Architecture &amp; data flow</b></summary>
+  <summary><b>Personal Portfolio — architecture &amp; data flow</b></summary>
   <br />
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow.svg?v=20260804b" />
@@ -188,6 +183,11 @@
     <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow.svg?v=20260804b" alt="Portfolio architecture: a React and TypeScript bundle built with Vite and styled with Tailwind, Three.js scenes via react-three-fiber plus the Spline runtime, a FastAPI backend scraping context with BeautifulSoup, and Groq LLM completions answering questions about the site." width="100%" />
   </picture>
 </details>
+
+<p align="center">
+  <a href="https://github.com/JyotirmoyLaha/j.portfolio"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
+  <a href="https://jyotirmoy-portfolio.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804b" />
