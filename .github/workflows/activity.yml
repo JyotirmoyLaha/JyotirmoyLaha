@@ -1,0 +1,45 @@
+name: Contribution graph
+
+on:
+  schedule:
+    - cron: '17 0 * * *' # daily, just after midnight UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['tools/build-activity.mjs', 'tools/build-light.mjs']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: activity-graph
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Render graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node tools/build-activity.mjs
+          node tools/build-light.mjs
+
+      - name: Commit if changed
+        run: |
+          git add assets/activity.svg assets/activity-light.svg
+          if git diff --cached --quiet; then
+            echo "graph unchanged"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh contribution graph'
+          git push

@@ -221,9 +221,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&theme=react-dark&bg_color=0d1117&color=e6edf3&line=8B5CF6&point=00F2FE&area=true&area_color=8B5CF6&hide_border=true&custom_title=Contribution%20Activity" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&theme=github-light&bg_color=ffffff&color=1f2328&line=7C3AED&point=0891B2&area=true&area_color=7C3AED&hide_border=true&custom_title=Contribution%20Activity" />
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=JyotirmoyLaha&theme=react-dark&bg_color=0d1117&color=e6edf3&line=8B5CF6&point=00F2FE&area=true&area_color=8B5CF6&hide_border=true&custom_title=Contribution%20Activity" alt="Contribution activity graph for JyotirmoyLaha over the last 31 days" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/activity.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/activity-light.svg" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/activity.svg" alt="Contribution activity graph for JyotirmoyLaha over the last 31 days" width="100%" />
   </picture>
 </p>
 
@@ -231,7 +231,9 @@
   Deliberately only the activity graph here. github-readme-stats cards and the
   streak widget were removed in e1aa9f0 and aa2c272 because they were
   unreliable (rate-limited / broken); don't add them back without checking
-  they actually render.
+  they actually render. The activity graph itself is rendered in-repo by
+  tools/build-activity.mjs (daily, via .github/workflows/activity.yml) after
+  the hosted github-readme-activity-graph service went down.
 -->
 
 <picture>
