@@ -166,14 +166,10 @@ function portraitRows() {
 }
 
 const INFO = [
-  ['OS', 'BCA · Year 3'],
   ['Role', 'Web Developer'],
   ['Focus', 'AI / ML · Web'],
-  ['Stack', 'Python · JavaScript · React · Flask'],
-  ['Backend', 'FastAPI · Node.js · Firebase · PostgreSQL'],
-  ['Security', 'PQC · AES-256-GCM · X25519 · Ed25519'],
-  ['Projects', '5 shipped, all public'],
-  ['Shell', 'build → break → rebuild'],
+  ['Study', 'BCA · Year 3'],
+  ['Motto', 'build → break → rebuild'],
 ];
 
 const RX = 418;            // right column
@@ -186,10 +182,10 @@ function hero() {
   const kS0 = f(T_SCAN0 / scanEnd);
 
   const info = INFO.map(([k, v], i) => {
-    const y = 192 + i * 22;
+    const y = 206 + i * 34;
     return `<g opacity="1">${fadeIn(T_INFO + i * 0.16)}
-    <text x="${RX}" y="${y}" font-family="${MONO}" font-size="11.5" font-weight="700" fill="${C.cyan}">${esc(k)}</text>
-    <text x="${RX + 84}" y="${y}" font-family="${SANS}" font-size="13" font-weight="500" fill="${C.hi}">${esc(v)}</text>
+    <text x="${RX}" y="${y}" font-family="${MONO}" font-size="12" font-weight="700" fill="${C.cyan}">${esc(k)}</text>
+    <text x="${RX + 84}" y="${y}" font-family="${SANS}" font-size="15" font-weight="500" fill="${C.hi}">${esc(v)}</text>
   </g>`;
   }).join('\n  ');
 
@@ -200,7 +196,7 @@ function hero() {
   const tSw = T_INFO + INFO.length * 0.16 + 0.1;
   const tPrompt = tSw + 0.35;
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Terminal running neofetch for Jyotirmoy Laha: an ASCII-art portrait beside his profile — Web Developer, BCA year 3, focus AI/ML and web, stack Python, JavaScript, React, Flask, FastAPI, Node.js, Firebase, PostgreSQL, post-quantum crypto; 5 projects shipped.">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Terminal running neofetch for Jyotirmoy Laha: an ASCII-art portrait beside his profile — Web Developer, focus AI/ML and web, BCA year 3. Motto: build, break, rebuild.">
   ${chrome(W, H, 'jyotirmoy@laha: ~ — neofetch', 'hr')}
   <defs>
         <linearGradient id="hr-beam" x1="0" y1="0" x2="0" y2="1">
