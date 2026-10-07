@@ -140,29 +140,91 @@ function cell(hex, bgNib, row) {
   }
 }
 
-function portraitRows() {
-  const out = [];
+/* deterministic PRNG, so rebuilding never churns the diff */
+function rng(seed) {
+  return () => {
+    seed = (seed + 0x6d2b79f5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t >>> 14) ^ t) / 2 ** 18 % 1;
+  };
+}
+
+/**
+ * Decode reveal. Each row is cut into SEG segments; every segment first
+ * cycles through FRAMES of random glyphs inside the silhouette, then locks
+ * into the real portrait. Lock times run diagonally (top-left first), so the
+ * image "decrypts" as a wave. Scramble frames are static opacity 0 and the
+ * real segments static opacity 1: without SMIL, only the portrait shows.
+ */
+const SEG = 4, SEGW = P.cols / SEG;
+const FRAMES = 3, FRAME_DT = 0.09;
+const NOISE = 'ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ01234567890Z:<>*+=';
+
+function portrait() {
+  const rand = rng(20261007);
+  const real = [], noise = [];
+  let last = 0;
   for (let y = 0; y < P.rows; y++) {
     const row = P.rgb[y], bgr = P.bg[y];
-    const runs = [];
-    for (let x = 0; x < P.cols; x++) {
-      const c = cell(row.slice(x * 6, x * 6 + 6), bgr[x], y);
-      const ch = c ? c.ch : ' ';
-      const fill = c ? c.fill : null;
-      const last = runs[runs.length - 1];
-      if (last && (last.fill === fill || !c)) last.s += ch;
-      else runs.push({ fill, s: ch });
+    const ty = f(PY + (y + 1) * LH - 1.6);
+    for (let sg = 0; sg < SEG; sg++) {
+      const runs = [];
+      let any = false, mask = '';
+      for (let x = sg * SEGW; x < (sg + 1) * SEGW; x++) {
+        const c = cell(row.slice(x * 6, x * 6 + 6), bgr[x], y);
+        any ||= !!c;
+        mask += c ? '1' : '0';
+        const ch = c ? c.ch : ' ';
+        const fill = c ? c.fill : null;
+        const r = runs[runs.length - 1];
+        if (r && (r.fill === fill || !c)) r.s += ch;
+        else runs.push({ fill, s: ch });
+      }
+      if (!any) continue;
+
+      const at = f(T_SCAN0 + 0.15 + (y / P.rows) * 1.6 + (sg / SEG) * 0.7 + rand() * 0.2);
+      last = Math.max(last, at);
+      const geo = `x="${f(PX + sg * SEGW * CW)}" y="${ty}" textLength="${f(SEGW * CW)}" lengthAdjust="spacingAndGlyphs" xml:space="preserve"`;
+      const body = runs.map((r) => (r.fill ? `<tspan fill="${r.fill}">${esc(r.s)}</tspan>` : r.s)).join('');
+      real.push(`<text opacity="1" ${geo}><animate attributeName="opacity" values="0;1" keyTimes="0;${f(at / (at + 0.01))}" calcMode="discrete" dur="${f(at + 0.01)}s" fill="freeze"/>${body}</text>`);
+
+      for (let k = 0; k < FRAMES; k++) {
+        const t0 = at - (FRAMES - k) * FRAME_DT, t1 = t0 + FRAME_DT;
+        const chars = [...mask].map((m) => (m === '1' ? NOISE[Math.floor(rand() * NOISE.length)] : ' ')).join('');
+        noise.push(`<text opacity="0" ${geo}${k === FRAMES - 1 ? ` fill="${C.aqua}"` : ''}><animate attributeName="opacity" values="0;1;0" keyTimes="0;${f(t0 / at)};${f(t1 / at)}" calcMode="discrete" dur="${at}s" fill="freeze"/>${esc(chars)}</text>`);
+      }
     }
-    // trim fully blank rows/edges: leading spaces still count toward textLength
-    const body = runs
-      .map((r) => (r.fill ? `<tspan fill="${r.fill}">${esc(r.s)}</tspan>` : r.s))
-      .join('');
-    const at = T_SCAN0 + (y / P.rows) * T_SCAN;
-    out.push(
-      `<text opacity="1" x="${PX}" y="${f(PY + (y + 1) * LH - 1.6)}" textLength="${f(PW)}" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><animate attributeName="opacity" values="0;0;1" keyTimes="0;${f(at / (at + 0.06))};1" dur="${f(at + 0.06)}s" fill="freeze"/>${body}</text>`
-    );
   }
-  return out.join('\n    ');
+  return { real: real.join('\n    '), noise: noise.join('\n    '), end: last };
+}
+
+/**
+ * Glitch burst, repeating after the decode: cyan/violet ghost copies jitter
+ * either side of the portrait (chromatic split) and two bands tear sideways.
+ * Every layer is static opacity 0, so none of it exists without SMIL.
+ */
+function glitch(begin) {
+  const D = 6.5;                                     // cycle length
+  const kt = '0;0.012;0.024;0.036;0.05;0.064';       // ~0.4s burst at cycle start
+  const tr = (v) => `<animateTransform attributeName="transform" type="translate" values="${v}" keyTimes="${kt}" calcMode="discrete" dur="${D}s" begin="${begin}s" repeatCount="indefinite"/>`;
+  const op = (v) => `<animate attributeName="opacity" values="${v}" keyTimes="${kt}" calcMode="discrete" dur="${D}s" begin="${begin}s" repeatCount="indefinite"/>`;
+  const band = (id, r0, n, shift) => `
+  <g clip-path="url(#${id})" opacity="0">${op('1;0;1;1;0;0')}
+    <rect x="${PX - 6}" y="${f(PY + r0 * LH)}" width="${f(PW + 12)}" height="${f(n * LH)}" fill="${C.bg}"/>
+    <use xlink:href="#hr-pt">${tr(`${shift} 0;0 0;${-shift / 2} 0;${shift * 1.4} 0;0 0;0 0`)}</use>
+  </g>`;
+  return {
+    defs: `
+    <filter id="hr-tc" x="-5%" y="-5%" width="110%" height="110%"><feFlood flood-color="${C.cyan}"/><feComposite in2="SourceAlpha" operator="in"/></filter>
+    <filter id="hr-tv" x="-5%" y="-5%" width="110%" height="110%"><feFlood flood-color="${C.violet}"/><feComposite in2="SourceAlpha" operator="in"/></filter>
+    <clipPath id="hr-b1"><rect x="${PX - 6}" y="${f(PY + 13 * LH)}" width="${f(PW + 12)}" height="${f(4 * LH)}"/></clipPath>
+    <clipPath id="hr-b2"><rect x="${PX - 6}" y="${f(PY + 29 * LH)}" width="${f(PW + 12)}" height="${f(3 * LH)}"/></clipPath>`,
+    under: `
+  <use xlink:href="#hr-pt" filter="url(#hr-tc)" opacity="0">${op('0.85;0.85;0.6;0.85;0;0')}${tr('-4 0;-6 1;-2 0;-5 -1;0 0;0 0')}</use>
+  <use xlink:href="#hr-pt" filter="url(#hr-tv)" opacity="0">${op('0.85;0.85;0.6;0.85;0;0')}${tr('4 0;5 -1;3 0;6 1;0 0;0 0')}</use>`,
+    over: band('hr-b1', 13, 4, 9) + band('hr-b2', 29, 3, -7),
+  };
 }
 
 const INFO = [
@@ -179,6 +241,8 @@ const T_INFO = 1.6;
 
 function hero() {
   const scanEnd = T_SCAN0 + T_SCAN;
+  const pt = portrait();
+  const gl = glitch(f(pt.end + 2.2));
   const kS0 = f(T_SCAN0 / scanEnd);
 
   const info = INFO.map(([k, v], i) => {
@@ -196,10 +260,10 @@ function hero() {
   const tSw = T_INFO + INFO.length * 0.16 + 0.1;
   const tPrompt = tSw + 0.35;
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Terminal running neofetch for Jyotirmoy Laha: an ASCII-art portrait beside his profile — Web Developer, focus AI/ML and web, BCA year 3. Motto: build, break, rebuild.">
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Terminal running neofetch for Jyotirmoy Laha: an ASCII-art portrait beside his profile — Web Developer, focus AI/ML and web, BCA year 3. Motto: build, break, rebuild.">
   ${chrome(W, H, 'jyotirmoy@laha: ~ — neofetch', 'hr')}
-  <defs>
-        <linearGradient id="hr-beam" x1="0" y1="0" x2="0" y2="1">
+  <defs>${gl.defs}
+    <linearGradient id="hr-beam" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="${C.aqua}" stop-opacity="0"/>
       <stop offset="85%" stop-color="${C.aqua}" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="${C.aqua}" stop-opacity="0.9"/>
@@ -221,8 +285,15 @@ function hero() {
   ${promptLine(24, 60, 'neofetch --human', T_CMD0, T_CMD1, T_CMD1 + 0.1, false)}
 
   <!-- ── ASCII portrait ── -->
-  <g font-family="${MONO}" font-size="${FS}" font-weight="700">
-    ${portraitRows()}
+  <g font-family="${MONO}" font-size="${FS}" font-weight="700">${gl.under}
+    <g id="hr-pt">
+    ${pt.real}
+    </g>${gl.over}
+  </g>
+
+  <!-- decode noise: half-width katakana inside the silhouette -->
+  <g font-family="${MONO},'MS Gothic','Osaka-Mono',monospace" font-size="${FS}" font-weight="700" fill="${C.cyan}">
+    ${pt.noise}
   </g>
 
   <!-- print head: rides the reveal edge once, then idles as a slow rescan.

@@ -24,9 +24,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero.svg?v=20261007b" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero-light.svg?v=20261007b" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero.svg?v=20261007b" alt="A terminal runs neofetch for Jyotirmoy Laha: an ASCII-art portrait prints line by line beside his profile — Web Developer, focus AI/ML and web, BCA year 3. Motto: build, break, rebuild." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero.svg?v=20261007c" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero-light.svg?v=20261007c" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero.svg?v=20261007c" alt="A terminal runs neofetch for Jyotirmoy Laha: an ASCII-art portrait prints line by line beside his profile — Web Developer, focus AI/ML and web, BCA year 3. Motto: build, break, rebuild." width="100%" />
   </picture>
 </p>
 
