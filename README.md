@@ -34,7 +34,6 @@
   <a href="https://www.linkedin.com/in/jyotirmoylaha2005/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:jyotirmoy713128@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/JyotirmoyLaha?tab=followers"><img src="https://img.shields.io/github/followers/JyotirmoyLaha?style=for-the-badge&logo=github&logoColor=white&color=7C3AED&labelColor=161b22" alt="Followers" /></a>
-  <img src="https://komarev.com/ghpvc/?username=JyotirmoyLaha&label=Views&color=0891b2&style=for-the-badge" alt="Profile views" />
 </p>
 
 <picture>
