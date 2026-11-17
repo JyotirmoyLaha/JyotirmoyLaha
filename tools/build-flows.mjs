@@ -31,10 +31,10 @@ const SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial
 const MONO = "ui-monospace,'Cascadia Code',Consolas,monospace";
 
 const W = 850;
-const H = 152;
+const H = 130;
 const NODE_W = 180;
 const NODE_H = 74;
-const NODE_Y = 50;
+const NODE_Y = 28; // equal top and bottom margin
 const XS = [28, 232, 436, 640]; // 4 columns, 24px gutters, right edge 820
 
 const esc = (s) =>
@@ -89,18 +89,9 @@ function flow(p) {
       <stop offset="0%" stop-color="${C.elev}"/>
       <stop offset="100%" stop-color="${C.bgAlt}"/>
     </linearGradient>
-    <linearGradient id="${uid}-spine" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="${p.accent}" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="${p.accent}" stop-opacity="1"/>
-      <stop offset="100%" stop-color="${p.accent}" stop-opacity="0.15"/>
-    </linearGradient>
   </defs>
 
   <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="14" fill="url(#${uid}-bg)" stroke="${C.border}" stroke-width="1.5"/>
-  <rect x="0.75" y="16" width="3" height="${H - 32}" rx="1.5" fill="url(#${uid}-spine)"/>
-
-  <text x="28" y="30" font-family="${MONO}" font-size="9.5" font-weight="700" letter-spacing="1.6" fill="${p.accent}">${esc(p.label)}</text>
-  <text x="822" y="30" text-anchor="end" font-family="${MONO}" font-size="9" letter-spacing="1.2" fill="${C.lo}">${esc(p.runtime)}</text>
 
 ${[0, 1, 2].map((i) => connector(i, p.accent)).join('\n')}
 
@@ -116,8 +107,6 @@ const flows = [
     id: 'svf',
     file: 'project_studyverse_flow.svg',
     accent: C.violet,
-    label: 'STUDYVERSE · ARCHITECTURE',
-    runtime: 'FIREBASE / SERVERLESS',
     aria:
       'StudyVerse architecture: Google sign-in via Firebase Auth, Canvas-based image ' +
       'compression, writes to Cloud Firestore, then streak and stat computation on read.',
@@ -144,8 +133,6 @@ const flows = [
     id: 'raf',
     file: 'project_resume_flow.svg',
     accent: C.cyan,
-    label: 'AI RESUME ANALYZER · ARCHITECTURE',
-    runtime: 'FLASK / PYTHON',
     aria:
       'AI Resume Analyzer architecture: the browser posts a PDF and target role to a Flask ' +
       'API, pdfplumber extracts the text, skill_gap scores it against the role, and the ' +
@@ -173,8 +160,6 @@ const flows = [
     id: 'mmf',
     file: 'project_mess_flow.svg',
     accent: C.blue,
-    label: 'MESS MANAGER · ARCHITECTURE',
-    runtime: 'FIRESTORE / EXPO',
     aria:
       'Mess Manager architecture: Google sign-in gated by Firestore security rules, expenses ' +
       'written to a shared ledger, onSnapshot listeners fan changes out to every client, and ' +
@@ -202,8 +187,6 @@ const flows = [
     id: 'wxf',
     file: 'project_weather_flow.svg',
     accent: C.cyan,
-    label: 'J.SKYCAST · ARCHITECTURE',
-    runtime: 'WEATHERAPI / CLIENT-SIDE',
     aria:
       'J.SkyCast architecture: a city search or browser geolocation lookup resolves a query, ' +
       'weatherapi.com returns forecast, air quality and astronomy data, which is parsed and ' +
@@ -231,8 +214,6 @@ const flows = [
     id: 'pff',
     file: 'project_portfolio_flow.svg',
     accent: C.violet,
-    label: 'PORTFOLIO · ARCHITECTURE',
-    runtime: 'VITE / FASTAPI / GROQ',
     aria:
       'Portfolio architecture: a React and Vite single-page app renders Three.js and Spline 3D ' +
       'scenes, a FastAPI backend scrapes site content with BeautifulSoup, and Groq LLM ' +

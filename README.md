@@ -24,55 +24,43 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero.svg?v=20261007c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero-light.svg?v=20261007c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero.svg?v=20261007c" alt="A terminal runs neofetch for Jyotirmoy Laha: an ASCII-art portrait prints line by line beside his profile — Web Developer, focus AI/ML and web, BCA year 3. Motto: build, break, rebuild." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/hero.svg?v=20261117" alt="A terminal runs neofetch for Jyotirmoy Laha: an ASCII-art portrait prints line by line beside his profile — Web Developer, focus AI/ML and web, BCA year 3. Motto: build, break, rebuild." width="100%" />
   </picture>
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/jyotirmoylaha2005/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="mailto:jyotirmoy713128@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://github.com/JyotirmoyLaha?tab=followers"><img src="https://img.shields.io/github/followers/JyotirmoyLaha?style=for-the-badge&logo=github&logoColor=white&color=7C3AED&labelColor=161b22" alt="Followers" /></a>
+  <a href="https://www.linkedin.com/in/jyotirmoylaha2005/"><img src="https://img.shields.io/badge/LinkedIn-161b22?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:jyotirmoy713128@gmail.com"><img src="https://img.shields.io/badge/Email-161b22?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/JyotirmoyLaha?tab=followers"><img src="https://img.shields.io/github/followers/JyotirmoyLaha?style=for-the-badge&logo=github&logoColor=white&color=161b22&labelColor=161b22" alt="Followers" /></a>
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" alt="" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_about.svg?v=20261117" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_about-light.svg?v=20261117" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_about.svg?v=20261117" alt="About" width="100%" />
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_about.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_about-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_about.svg?v=20260804c" alt="About Me" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me.svg?v=20261117" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me-light.svg?v=20261117" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me.svg?v=20261117" alt="BCA student (3rd year) with a foundation in AI/ML and web development. Builder mindset — I ship real-world projects, not tutorials. Philosophy — learn by building, breaking, and rebuilding better. Pronouns — he/him." width="100%" />
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/about_me.svg?v=20260804c" alt="BCA student (3rd year) with a foundation in AI/ML and web development. Builder mindset — I ship real-world projects, not tutorials. Philosophy — learn by building, breaking, and rebuilding better. Pronouns — he/him." width="100%" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" alt="" width="100%" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_projects.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_projects-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_projects.svg?v=20260804c" alt="Featured Projects" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_projects.svg?v=20261117" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_projects-light.svg?v=20261117" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_projects.svg?v=20261117" alt="Selected Projects" width="100%" />
 </picture>
 
 <!-- ─────────────  StudyVerse  ───────────── -->
 
 <a href="https://github.com/JyotirmoyLaha/studyverse">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse.svg?v=20260804c" alt="StudyVerse — zen-inspired study and life journal. Google Sign-In, Firestore-backed entries, Canvas-based image compression and daily streak tracking. Built with HTML5, CSS3, JavaScript, Firebase, Firestore, Google Auth and the Canvas API." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse.svg?v=20261117" alt="StudyVerse — zen-inspired study and life journal. Google Sign-In, Firestore-backed entries, Canvas-based image compression and daily streak tracking. Built with HTML5, CSS3, JavaScript, Firebase, Firestore, Google Auth and the Canvas API." width="100%" />
   </picture>
 </a>
 
@@ -80,9 +68,9 @@
   <summary><b>StudyVerse — architecture &amp; data flow</b></summary>
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow.svg?v=20260804c" alt="StudyVerse architecture: Google sign-in via Firebase Auth, entry composed in the browser, attachments downscaled with the Canvas API, then written to Cloud Firestore with streaks derived on read." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_studyverse_flow.svg?v=20261117" alt="StudyVerse architecture: Google sign-in via Firebase Auth, entry composed in the browser, attachments downscaled with the Canvas API, then written to Cloud Firestore with streaks derived on read." width="100%" />
   </picture>
 </details>
 
@@ -95,9 +83,9 @@
 
 <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume.svg?v=20260804c" alt="AI Resume Analyzer — upload a PDF resume and pick a target role; a Flask API extracts the text with pdfplumber, scores skill gaps and returns a learning roadmap. Built with HTML5, JavaScript, Tailwind, Python, Flask and pdfplumber." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume.svg?v=20261117" alt="AI Resume Analyzer — upload a PDF resume and pick a target role; a Flask API extracts the text with pdfplumber, scores skill gaps and returns a learning roadmap. Built with HTML5, JavaScript, Tailwind, Python, Flask and pdfplumber." width="100%" />
   </picture>
 </a>
 
@@ -105,25 +93,25 @@
   <summary><b>AI Resume Analyzer — architecture &amp; data flow</b></summary>
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow.svg?v=20260804c" alt="AI Resume Analyzer architecture: the Tailwind UI posts a PDF and target role to the Flask /analyze endpoint, resume_parser extracts text with pdfplumber, skill_gap scores it against the role, and the response returns matches, gaps and an ordered learning path." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_resume_flow.svg?v=20261117" alt="AI Resume Analyzer architecture: the Tailwind UI posts a PDF and target role to the Flask /analyze endpoint, resume_parser extracts text with pdfplumber, skill_gap scores it against the role, and the response returns matches, gaps and an ordered learning path." width="100%" />
   </picture>
 </details>
 
 <p align="center">
   <a href="https://github.com/JyotirmoyLaha/ai_resume_analyzer_frontend"><img src="https://img.shields.io/badge/Frontend-161b22?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Frontend source" /></a>
   <a href="https://github.com/JyotirmoyLaha/ai-resume-analyzer-backend"><img src="https://img.shields.io/badge/Backend-161b22?style=for-the-badge&logo=flask&logoColor=e6edf3" alt="Backend source" /></a>
-  <a href="https://ai-resume-analyzer-hhhb.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
+  <a href="https://ai-resume-analyzer-hhhb.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
 </p>
 
 <!-- ─────────────  Mess Manager  ───────────── -->
 
 <a href="https://github.com/JyotirmoyLaha/mess-maneger">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess.svg?v=20260804c" alt="Mess Manager — shared mess expense tracker with a Firestore ledger and live sync, plus a React Native and Expo companion app with Google Sign-In and PDF export. Built with JavaScript, Tailwind, Firebase, Firestore, React Native and Expo." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess.svg?v=20261117" alt="Mess Manager — shared mess expense tracker with a Firestore ledger and live sync, plus a React Native and Expo companion app with Google Sign-In and PDF export. Built with JavaScript, Tailwind, Firebase, Firestore, React Native and Expo." width="100%" />
   </picture>
 </a>
 
@@ -131,24 +119,24 @@
   <summary><b>Mess Manager — architecture &amp; data flow</b></summary>
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow.svg?v=20260804c" alt="Mess Manager architecture: Google sign-in gated by firestore.rules, meals and costs written to a shared Firestore ledger, onSnapshot listeners pushing updates to every client, and balances split per member with expo-print emitting a PDF." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_mess_flow.svg?v=20261117" alt="Mess Manager architecture: Google sign-in gated by firestore.rules, meals and costs written to a shared Firestore ledger, onSnapshot listeners pushing updates to every client, and balances split per member with expo-print emitting a PDF." width="100%" />
   </picture>
 </details>
 
 <p align="center">
   <a href="https://github.com/JyotirmoyLaha/mess-maneger"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
-  <a href="https://mess-maneger.onrender.com/"><img src="https://img.shields.io/badge/Live_Demo-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
+  <a href="https://mess-maneger.onrender.com/"><img src="https://img.shields.io/badge/Live_Demo-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
 </p>
 
 <!-- ─────────────  J.SkyCast Weather  ───────────── -->
 
 <a href="https://github.com/JyotirmoyLaha/j.weather">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather.svg?v=20260804c" alt="J.SkyCast Weather — live conditions and forecasts from WeatherAPI via city search or geolocation, surfacing AQI, UV index and astronomy data. Built with HTML5, CSS3, JavaScript, WeatherAPI and geolocation." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather.svg?v=20261117" alt="J.SkyCast Weather — live conditions and forecasts from WeatherAPI via city search or geolocation, surfacing AQI, UV index and astronomy data. Built with HTML5, CSS3, JavaScript, WeatherAPI and geolocation." width="100%" />
   </picture>
 </a>
 
@@ -156,24 +144,24 @@
   <summary><b>J.SkyCast Weather — architecture &amp; data flow</b></summary>
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow.svg?v=20260804c" alt="J.SkyCast architecture: a city search or navigator geolocation lookup resolves the location, an async request hits api.weatherapi.com, forecast, AQI, UV index and astronomy data are parsed, and the UI backdrop swaps to match live conditions." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_weather_flow.svg?v=20261117" alt="J.SkyCast architecture: a city search or navigator geolocation lookup resolves the location, an async request hits api.weatherapi.com, forecast, AQI, UV index and astronomy data are parsed, and the UI backdrop swaps to match live conditions." width="100%" />
   </picture>
 </details>
 
 <p align="center">
   <a href="https://github.com/JyotirmoyLaha/j.weather"><img src="https://img.shields.io/badge/Source-161b22?style=for-the-badge&logo=github&logoColor=white" alt="Source code" /></a>
-  <a href="https://j-weather.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
+  <a href="https://j-weather.onrender.com"><img src="https://img.shields.io/badge/Live_Demo-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live demo" /></a>
 </p>
 
 <!-- ─────────────  Personal Portfolio  ───────────── -->
 
 <a href="https://github.com/JyotirmoyLaha/j.portfolio">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio.svg?v=20260804c" alt="Personal Portfolio — React and Vite portfolio with Three.js and Spline 3D scenes, plus a FastAPI chatbot running Groq LLM completions over scraped content. Built with React, Vite, TypeScript, Tailwind, Three.js, FastAPI and Groq AI." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio.svg?v=20261117" alt="Personal Portfolio — React and Vite portfolio with Three.js and Spline 3D scenes, plus a FastAPI chatbot running Groq LLM completions over scraped content. Built with React, Vite, TypeScript, Tailwind, Three.js, FastAPI and Groq AI." width="100%" />
   </picture>
 </a>
 
@@ -181,9 +169,9 @@
   <summary><b>Personal Portfolio — architecture &amp; data flow</b></summary>
   <br />
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow.svg?v=20260804c" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow-light.svg?v=20260804c" />
-    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow.svg?v=20260804c" alt="Portfolio architecture: a React and TypeScript bundle built with Vite and styled with Tailwind, Three.js scenes via react-three-fiber plus the Spline runtime, a FastAPI backend scraping context with BeautifulSoup, and Groq LLM completions answering questions about the site." width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow.svg?v=20261117" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow-light.svg?v=20261117" />
+    <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/project_portfolio_flow.svg?v=20261117" alt="Portfolio architecture: a React and TypeScript bundle built with Vite and styled with Tailwind, Three.js scenes via react-three-fiber plus the Spline runtime, a FastAPI backend scraping context with BeautifulSoup, and Groq LLM completions answering questions about the site." width="100%" />
   </picture>
 </details>
 
@@ -193,33 +181,21 @@
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" alt="" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_stack.svg?v=20261117" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_stack-light.svg?v=20261117" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_stack.svg?v=20261117" alt="Technical Stack" width="100%" />
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_stack.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_stack-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_stack.svg?v=20260804c" alt="Tech Arsenal" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack.svg?v=20261117" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack-light.svg?v=20261117" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack.svg?v=20261117" alt="Technical stack by category — languages and core tools: Python, JavaScript, C, HTML5, CSS3, SQL, Git, GitHub, Kotlin. PQC and cryptography: PQC, Utimaco HSM, PKCS#11, AES-256-GCM, X25519, Ed25519. Backend and databases: FastAPI, Flask, Node.js, Express.js, Firebase, PostgreSQL, MySQL, REST APIs, Groq AI, Hugging Face. Frontend and mobile: React, React Native, Expo, Vite, Tailwind CSS. Tools and deployment: Postman, Render, Netlify, SSL pinning, Play Integrity, App Attest." width="100%" />
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/tech_stack.svg?v=20260804c" alt="Tech arsenal by category — languages and core tools: Python, JavaScript, C, HTML5, CSS3, SQL, Git, GitHub, Kotlin. PQC and cryptography: PQC, Utimaco HSM, PKCS#11, AES-256-GCM, X25519, Ed25519. Backend and databases: FastAPI, Flask, Node.js, Express.js, Firebase, PostgreSQL, MySQL, REST APIs, Groq AI, Hugging Face. Frontend and mobile: React, React Native, Expo, Vite, Tailwind CSS. Tools and deployment: Postman, Render, Netlify, SSL pinning, Play Integrity, App Attest." width="100%" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" alt="" width="100%" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_analytics.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_analytics-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_analytics.svg?v=20260804c" alt="GitHub Analytics" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_analytics.svg?v=20261117" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_analytics-light.svg?v=20261117" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/section_analytics.svg?v=20261117" alt="Activity" width="100%" />
 </picture>
 
 <p align="center">
@@ -240,15 +216,9 @@
 -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider-light.svg?v=20260804c" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/divider.svg?v=20260804c" alt="" width="100%" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/outro.svg?v=20261007" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/outro-light.svg?v=20261007" />
-  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/outro.svg?v=20261007" alt="Terminal sign-off: exit. Logout — thanks for scrolling all the way down. Connection to jyotirmoy@laha closed." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/outro.svg?v=20261117" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/outro-light.svg?v=20261117" />
+  <img src="https://raw.githubusercontent.com/JyotirmoyLaha/JyotirmoyLaha/main/assets/outro.svg?v=20261117" alt="Terminal sign-off: exit. Logout — thanks for scrolling all the way down. Connection to jyotirmoy@laha closed." width="100%" />
 </picture>
 
 <p align="center">

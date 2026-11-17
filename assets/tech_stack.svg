@@ -22,13 +22,10 @@
     }
     .pill-text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 9px;
-      fill: #e6edf3;
+      fill: #c9d1d9;
       letter-spacing: 0.5px;
-    }
-    .tech-pill {
-      cursor: pointer;
     }</style>
 
   <!-- Table Body Background -->
@@ -61,63 +58,63 @@
   <!-- Python -->
   <g class="tech-pill" transform="translate(220, 50)">
     <title>Python programming language</title>
-    <rect width="65" height="22" rx="4" fill="#b45309" />
+    <rect width="65" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">PYTHON</text>
   </g>
 
   <!-- JavaScript -->
   <g class="tech-pill" transform="translate(293, 50)">
     <title>JavaScript programming language</title>
-    <rect width="90" height="22" rx="4" fill="#eab308" />
-    <text x="45" y="15" text-anchor="middle" class="pill-text" fill="#000000">JAVASCRIPT</text>
+    <rect width="90" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="45" y="15" text-anchor="middle" class="pill-text">JAVASCRIPT</text>
   </g>
 
   <!-- C -->
   <g class="tech-pill" transform="translate(391, 50)">
     <title>C programming language</title>
-    <rect width="35" height="22" rx="4" fill="#4f46e5" />
+    <rect width="35" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="17.5" y="15" text-anchor="middle" class="pill-text">C</text>
   </g>
 
   <!-- HTML5 -->
   <g class="tech-pill" transform="translate(434, 50)">
     <title>HTML5 markup language</title>
-    <rect width="60" height="22" rx="4" fill="#dc2626" />
+    <rect width="60" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="30" y="15" text-anchor="middle" class="pill-text">HTML5</text>
   </g>
 
   <!-- CSS3 -->
   <g class="tech-pill" transform="translate(502, 50)">
     <title>CSS3 style sheets</title>
-    <rect width="60" height="22" rx="4" fill="#2563eb" />
+    <rect width="60" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="30" y="15" text-anchor="middle" class="pill-text">CSS3</text>
   </g>
 
   <!-- SQL -->
   <g class="tech-pill" transform="translate(570, 50)">
     <title>Structured Query Language</title>
-    <rect width="45" height="22" rx="4" fill="#0891b2" />
+    <rect width="45" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="22.5" y="15" text-anchor="middle" class="pill-text">SQL</text>
   </g>
 
   <!-- Git -->
   <g class="tech-pill" transform="translate(623, 50)">
     <title>Git version control</title>
-    <rect width="45" height="22" rx="4" fill="#ea580c" />
+    <rect width="45" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="22.5" y="15" text-anchor="middle" class="pill-text">GIT</text>
   </g>
 
   <!-- GitHub -->
   <g class="tech-pill" transform="translate(676, 50)">
     <title>GitHub repository hosting</title>
-    <rect width="65" height="22" rx="4" fill="#1f2937" />
+    <rect width="65" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">GITHUB</text>
   </g>
 
   <!-- Kotlin -->
   <g class="tech-pill" transform="translate(753, 50)">
     <title>Kotlin programming language</title>
-    <rect width="60" height="22" rx="4" fill="#7c3aed" />
+    <rect width="60" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="30" y="15" text-anchor="middle" class="pill-text">KOTLIN</text>
   </g>
 
@@ -129,42 +126,42 @@
   <!-- PQC -->
   <g class="tech-pill" transform="translate(220, 102)">
     <title>Post-Quantum Cryptography</title>
-    <rect width="45" height="22" rx="4" fill="#db2777" />
+    <rect width="45" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="22.5" y="15" text-anchor="middle" class="pill-text">PQC</text>
   </g>
 
   <!-- Utimaco HSM -->
   <g class="tech-pill" transform="translate(273, 102)">
     <title>Utimaco Hardware Security Module</title>
-    <rect width="95" height="22" rx="4" fill="#4f46e5" />
+    <rect width="95" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="47.5" y="15" text-anchor="middle" class="pill-text">UTIMACO HSM</text>
   </g>
 
   <!-- PKCS#11 -->
   <g class="tech-pill" transform="translate(376, 102)">
     <title>PKCS#11 Cryptographic Token Interface</title>
-    <rect width="70" height="22" rx="4" fill="#16a34a" />
+    <rect width="70" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="35" y="15" text-anchor="middle" class="pill-text">PKCS#11</text>
   </g>
 
   <!-- AES-256-GCM -->
   <g class="tech-pill" transform="translate(454, 102)">
     <title>AES-256-GCM authenticated encryption</title>
-    <rect width="95" height="22" rx="4" fill="#b45309" />
+    <rect width="95" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="47.5" y="15" text-anchor="middle" class="pill-text">AES-256-GCM</text>
   </g>
 
   <!-- X25519 -->
   <g class="tech-pill" transform="translate(557, 102)">
     <title>X25519 Ephemeral Key Exchange</title>
-    <rect width="65" height="22" rx="4" fill="#0891b2" />
+    <rect width="65" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">X25519</text>
   </g>
 
   <!-- ED25519 -->
   <g class="tech-pill" transform="translate(630, 102)">
     <title>Ed25519 digital signature scheme</title>
-    <rect width="65" height="22" rx="4" fill="#2563eb" />
+    <rect width="65" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">ED25519</text>
   </g>
 
@@ -176,71 +173,71 @@
   <!-- FastAPI -->
   <g class="tech-pill" transform="translate(220, 149)">
     <title>FastAPI Web Framework</title>
-    <rect width="65" height="22" rx="4" fill="#009688" />
+    <rect width="65" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">FASTAPI</text>
   </g>
 
   <!-- Flask -->
   <g class="tech-pill" transform="translate(293, 149)">
     <title>Flask microframework</title>
-    <rect width="55" height="22" rx="4" fill="#4caf50" />
+    <rect width="55" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="27.5" y="15" text-anchor="middle" class="pill-text">FLASK</text>
   </g>
 
   <!-- Node.js -->
   <g class="tech-pill" transform="translate(356, 149)">
     <title>Node.js runtime environment</title>
-    <rect width="65" height="22" rx="4" fill="#16a34a" />
+    <rect width="65" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">NODE.JS</text>
   </g>
 
   <!-- Express.js -->
   <g class="tech-pill" transform="translate(429, 149)">
     <title>Express.js backend framework</title>
-    <rect width="85" height="22" rx="4" fill="#1f2937" />
+    <rect width="85" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="42.5" y="15" text-anchor="middle" class="pill-text">EXPRESS.JS</text>
   </g>
 
   <!-- Firebase -->
   <g class="tech-pill" transform="translate(522, 149)">
     <title>Firebase application development platform</title>
-    <rect width="70" height="22" rx="4" fill="#ea580c" />
+    <rect width="70" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="35" y="15" text-anchor="middle" class="pill-text">FIREBASE</text>
   </g>
 
   <!-- PostgreSQL -->
   <g class="tech-pill" transform="translate(220, 179)">
     <title>PostgreSQL Database</title>
-    <rect width="90" height="22" rx="4" fill="#336791" />
+    <rect width="90" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="45" y="15" text-anchor="middle" class="pill-text">POSTGRESQL</text>
   </g>
 
   <!-- MySQL -->
   <g class="tech-pill" transform="translate(318, 179)">
     <title>MySQL Database</title>
-    <rect width="60" height="22" rx="4" fill="#0891b2" />
+    <rect width="60" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="30" y="15" text-anchor="middle" class="pill-text">MYSQL</text>
   </g>
 
   <!-- REST APIs -->
   <g class="tech-pill" transform="translate(386, 179)">
     <title>Representational State Transfer APIs</title>
-    <rect width="80" height="22" rx="4" fill="#2563eb" />
+    <rect width="80" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="40" y="15" text-anchor="middle" class="pill-text">REST APIS</text>
   </g>
 
   <!-- Groq AI -->
   <g class="tech-pill" transform="translate(474, 179)">
     <title>Groq AI inference platform</title>
-    <rect width="65" height="22" rx="4" fill="#7c3aed" />
+    <rect width="65" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">GROQ AI</text>
   </g>
 
   <!-- Hugging Face -->
   <g class="tech-pill" transform="translate(554, 179)">
     <title>Hugging Face machine learning platform</title>
-    <rect width="105" height="22" rx="4" fill="#eab308" />
-    <text x="52.5" y="15" text-anchor="middle" class="pill-text" fill="#000000">HUGGING FACE</text>
+    <rect width="105" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
+    <text x="52.5" y="15" text-anchor="middle" class="pill-text">HUGGING FACE</text>
   </g>
 
 
@@ -251,35 +248,35 @@
   <!-- React -->
   <g class="tech-pill" transform="translate(220, 226)">
     <title>React library for web user interfaces</title>
-    <rect width="60" height="22" rx="4" fill="#0891b2" />
+    <rect width="60" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="30" y="15" text-anchor="middle" class="pill-text">REACT</text>
   </g>
 
   <!-- React Native -->
   <g class="tech-pill" transform="translate(288, 226)">
     <title>React Native mobile framework</title>
-    <rect width="95" height="22" rx="4" fill="#2563eb" />
+    <rect width="95" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="47.5" y="15" text-anchor="middle" class="pill-text">REACT NATIVE</text>
   </g>
 
   <!-- Expo -->
   <g class="tech-pill" transform="translate(391, 226)">
     <title>Expo framework and platform</title>
-    <rect width="45" height="22" rx="4" fill="#1f2937" />
+    <rect width="45" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="22.5" y="15" text-anchor="middle" class="pill-text">EXPO</text>
   </g>
 
   <!-- Vite -->
   <g class="tech-pill" transform="translate(444, 226)">
     <title>Vite build tool</title>
-    <rect width="45" height="22" rx="4" fill="#7c3aed" />
+    <rect width="45" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="22.5" y="15" text-anchor="middle" class="pill-text">VITE</text>
   </g>
 
   <!-- Tailwind CSS -->
   <g class="tech-pill" transform="translate(497, 226)">
     <title>Tailwind CSS styling library</title>
-    <rect width="95" height="22" rx="4" fill="#2563eb" />
+    <rect width="95" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="47.5" y="15" text-anchor="middle" class="pill-text">TAILWIND CSS</text>
   </g>
 
@@ -291,42 +288,42 @@
   <!-- Postman -->
   <g class="tech-pill" transform="translate(220, 278)">
     <title>Postman API platform</title>
-    <rect width="70" height="22" rx="4" fill="#b45309" />
+    <rect width="70" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="35" y="15" text-anchor="middle" class="pill-text">POSTMAN</text>
   </g>
 
   <!-- Render -->
   <g class="tech-pill" transform="translate(298, 278)">
     <title>Render cloud hosting</title>
-    <rect width="65" height="22" rx="4" fill="#2563eb" />
+    <rect width="65" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">RENDER</text>
   </g>
 
   <!-- Netlify -->
   <g class="tech-pill" transform="translate(371, 278)">
     <title>Netlify web hosting</title>
-    <rect width="65" height="22" rx="4" fill="#0891b2" />
+    <rect width="65" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="32.5" y="15" text-anchor="middle" class="pill-text">NETLIFY</text>
   </g>
 
   <!-- SSL Pinning -->
   <g class="tech-pill" transform="translate(444, 278)">
     <title>SSL certificate public key pinning</title>
-    <rect width="90" height="22" rx="4" fill="#dc2626" />
+    <rect width="90" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="45" y="15" text-anchor="middle" class="pill-text">SSL PINNING</text>
   </g>
 
   <!-- Play Integrity -->
   <g class="tech-pill" transform="translate(542, 278)">
     <title>Google Play Integrity API</title>
-    <rect width="110" height="22" rx="4" fill="#7c3aed" />
+    <rect width="110" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="55" y="15" text-anchor="middle" class="pill-text">PLAY INTEGRITY</text>
   </g>
 
   <!-- App Attest -->
   <g class="tech-pill" transform="translate(660, 278)">
     <title>Apple App Attest API</title>
-    <rect width="90" height="22" rx="4" fill="#db2777" />
+    <rect width="90" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="45" y="15" text-anchor="middle" class="pill-text">APP ATTEST</text>
   </g>
 

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 152" width="850" height="152" role="img" aria-label="Mess Manager architecture: Google sign-in gated by Firestore security rules, expenses written to a shared ledger, onSnapshot listeners fan changes out to every client, and the Expo app exports statements as PDF.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 130" width="850" height="130" role="img" aria-label="Mess Manager architecture: Google sign-in gated by Firestore security rules, expenses written to a shared ledger, onSnapshot listeners fan changes out to every client, and the Expo app exports statements as PDF.">
   <defs>
     <linearGradient id="mmf-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -8,74 +8,65 @@
       <stop offset="0%" stop-color="#161b22"/>
       <stop offset="100%" stop-color="#0f1420"/>
     </linearGradient>
-    <linearGradient id="mmf-spine" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="#3B82F6" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.15"/>
-    </linearGradient>
   </defs>
 
-  <rect x="0.75" y="0.75" width="848.5" height="150.5" rx="14" fill="url(#mmf-bg)" stroke="#30363d" stroke-width="1.5"/>
-  <rect x="0.75" y="16" width="3" height="120" rx="1.5" fill="url(#mmf-spine)"/>
-
-  <text x="28" y="30" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9.5" font-weight="700" letter-spacing="1.6" fill="#3B82F6">MESS MANAGER · ARCHITECTURE</text>
-  <text x="822" y="30" text-anchor="end" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9" letter-spacing="1.2" fill="#8b949e">FIRESTORE / EXPO</text>
+  <rect x="0.75" y="0.75" width="848.5" height="128.5" rx="14" fill="url(#mmf-bg)" stroke="#30363d" stroke-width="1.5"/>
 
   <g>
-    <line x1="210" y1="87" x2="230" y2="87" stroke="#30363d" stroke-width="1.6" stroke-dasharray="3 4"/>
-    <path d="M224,83.5 L230,87 L224,90.5" fill="none" stroke="#3B82F6" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cy="87" r="2.6" fill="#3B82F6">
+    <line x1="210" y1="65" x2="230" y2="65" stroke="#30363d" stroke-width="1.6" stroke-dasharray="3 4"/>
+    <path d="M224,61.5 L230,65 L224,68.5" fill="none" stroke="#3B82F6" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cy="65" r="2.6" fill="#3B82F6">
       <animate attributeName="cx" values="210;228" dur="2.2s" begin="0s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;1;1;0" dur="2.2s" begin="0s" repeatCount="indefinite"/>
     </circle>
   </g>
   <g>
-    <line x1="414" y1="87" x2="434" y2="87" stroke="#30363d" stroke-width="1.6" stroke-dasharray="3 4"/>
-    <path d="M428,83.5 L434,87 L428,90.5" fill="none" stroke="#3B82F6" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cy="87" r="2.6" fill="#3B82F6">
+    <line x1="414" y1="65" x2="434" y2="65" stroke="#30363d" stroke-width="1.6" stroke-dasharray="3 4"/>
+    <path d="M428,61.5 L434,65 L428,68.5" fill="none" stroke="#3B82F6" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cy="65" r="2.6" fill="#3B82F6">
       <animate attributeName="cx" values="414;432" dur="2.2s" begin="0.5s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;1;1;0" dur="2.2s" begin="0.5s" repeatCount="indefinite"/>
     </circle>
   </g>
   <g>
-    <line x1="618" y1="87" x2="638" y2="87" stroke="#30363d" stroke-width="1.6" stroke-dasharray="3 4"/>
-    <path d="M632,83.5 L638,87 L632,90.5" fill="none" stroke="#3B82F6" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cy="87" r="2.6" fill="#3B82F6">
+    <line x1="618" y1="65" x2="638" y2="65" stroke="#30363d" stroke-width="1.6" stroke-dasharray="3 4"/>
+    <path d="M632,61.5 L638,65 L632,68.5" fill="none" stroke="#3B82F6" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cy="65" r="2.6" fill="#3B82F6">
       <animate attributeName="cx" values="618;636" dur="2.2s" begin="1s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;1;1;0" dur="2.2s" begin="1s" repeatCount="indefinite"/>
     </circle>
   </g>
 
   <g>
-    <rect x="28" y="50" width="180" height="74" rx="10" fill="url(#mmf-node)" stroke="#30363d" stroke-width="1.2"/>
-    <rect x="40" y="61" width="19" height="17" rx="4" fill="#3B82F6" fill-opacity="0.16" stroke="#3B82F6" stroke-opacity="0.4" stroke-width="1"/>
-    <text x="49.5" y="73" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9" font-weight="700" fill="#3B82F6">01</text>
-    <text x="66" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#e6edf3">Google Sign-In</text>
-    <text x="40" y="96" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">Access gated by</text>
-    <text x="40" y="108" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">firestore.rules.</text>
+    <rect x="28" y="28" width="180" height="74" rx="10" fill="url(#mmf-node)" stroke="#30363d" stroke-width="1.2"/>
+    <rect x="40" y="39" width="19" height="17" rx="4" fill="#3B82F6" fill-opacity="0.16" stroke="#3B82F6" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="49.5" y="51" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9" font-weight="700" fill="#3B82F6">01</text>
+    <text x="66" y="52" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#e6edf3">Google Sign-In</text>
+    <text x="40" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">Access gated by</text>
+    <text x="40" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">firestore.rules.</text>
   </g>
   <g>
-    <rect x="232" y="50" width="180" height="74" rx="10" fill="url(#mmf-node)" stroke="#30363d" stroke-width="1.2"/>
-    <rect x="244" y="61" width="19" height="17" rx="4" fill="#3B82F6" fill-opacity="0.16" stroke="#3B82F6" stroke-opacity="0.4" stroke-width="1"/>
-    <text x="253.5" y="73" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9" font-weight="700" fill="#3B82F6">02</text>
-    <text x="270" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#e6edf3">Log Expense</text>
-    <text x="244" y="96" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">Meals and costs written to</text>
-    <text x="244" y="108" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">the shared Firestore ledger.</text>
+    <rect x="232" y="28" width="180" height="74" rx="10" fill="url(#mmf-node)" stroke="#30363d" stroke-width="1.2"/>
+    <rect x="244" y="39" width="19" height="17" rx="4" fill="#3B82F6" fill-opacity="0.16" stroke="#3B82F6" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="253.5" y="51" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9" font-weight="700" fill="#3B82F6">02</text>
+    <text x="270" y="52" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#e6edf3">Log Expense</text>
+    <text x="244" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">Meals and costs written to</text>
+    <text x="244" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">the shared Firestore ledger.</text>
   </g>
   <g>
-    <rect x="436" y="50" width="180" height="74" rx="10" fill="url(#mmf-node)" stroke="#30363d" stroke-width="1.2"/>
-    <rect x="448" y="61" width="19" height="17" rx="4" fill="#3B82F6" fill-opacity="0.16" stroke="#3B82F6" stroke-opacity="0.4" stroke-width="1"/>
-    <text x="457.5" y="73" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9" font-weight="700" fill="#3B82F6">03</text>
-    <text x="474" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#e6edf3">Live Sync</text>
-    <text x="448" y="96" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">onSnapshot listeners push</text>
-    <text x="448" y="108" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">updates to every client.</text>
+    <rect x="436" y="28" width="180" height="74" rx="10" fill="url(#mmf-node)" stroke="#30363d" stroke-width="1.2"/>
+    <rect x="448" y="39" width="19" height="17" rx="4" fill="#3B82F6" fill-opacity="0.16" stroke="#3B82F6" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="457.5" y="51" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9" font-weight="700" fill="#3B82F6">03</text>
+    <text x="474" y="52" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#e6edf3">Live Sync</text>
+    <text x="448" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">onSnapshot listeners push</text>
+    <text x="448" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">updates to every client.</text>
   </g>
   <g>
-    <rect x="640" y="50" width="180" height="74" rx="10" fill="url(#mmf-node)" stroke="#30363d" stroke-width="1.2"/>
-    <rect x="652" y="61" width="19" height="17" rx="4" fill="#3B82F6" fill-opacity="0.16" stroke="#3B82F6" stroke-opacity="0.4" stroke-width="1"/>
-    <text x="661.5" y="73" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9" font-weight="700" fill="#3B82F6">04</text>
-    <text x="678" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#e6edf3">Split + Export</text>
-    <text x="652" y="96" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">Balances split per member;</text>
-    <text x="652" y="108" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">expo-print emits a PDF.</text>
+    <rect x="640" y="28" width="180" height="74" rx="10" fill="url(#mmf-node)" stroke="#30363d" stroke-width="1.2"/>
+    <rect x="652" y="39" width="19" height="17" rx="4" fill="#3B82F6" fill-opacity="0.16" stroke="#3B82F6" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="661.5" y="51" text-anchor="middle" font-family="ui-monospace,'Cascadia Code',Consolas,monospace" font-size="9" font-weight="700" fill="#3B82F6">04</text>
+    <text x="678" y="52" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="11" font-weight="700" fill="#e6edf3">Split + Export</text>
+    <text x="652" y="74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">Balances split per member;</text>
+    <text x="652" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="8.5" fill="#8b949e">expo-print emits a PDF.</text>
   </g>
 </svg>

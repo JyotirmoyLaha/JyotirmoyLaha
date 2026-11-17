@@ -4,11 +4,6 @@
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="100%" stop-color="#f6f8fa"/>
     </linearGradient>
-    <linearGradient id="mm-spine" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="#2563eb" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.15"/>
-    </linearGradient>
     <linearGradient id="mm-rule" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2563eb" stop-opacity="0.55"/>
       <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
@@ -24,8 +19,6 @@
   <!-- ambient wash behind the artwork -->
   <circle cx="726" cy="90" r="70" fill="#2563eb" opacity="0.10" filter="url(#mm-soft)"/>
 
-  <!-- accent spine -->
-  <rect x="0.75" y="18" width="3" height="144" rx="1.5" fill="url(#mm-spine)"/>
 
   <!-- title -->
   <rect x="28" y="34" width="8" height="8" rx="1.6" fill="#2563eb" transform="rotate(45 32 38)"/>

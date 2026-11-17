@@ -55,13 +55,10 @@ const MAP = {
 };
 
 /**
- * Colours to leave alone in specific files.
- * tech_stack paints pill labels on saturated brand fills — that text must
- * stay light or it becomes unreadable on red/blue/orange pills.
+ * Colours to leave alone in specific files, keyed by filename. Empty since
+ * the stack chips went monochrome; their labels now follow the theme.
  */
-const KEEP = {
-  'tech_stack.svg': new Set(['#e6edf3']),
-};
+const KEEP = {};
 
 const SOURCES = Object.keys(MAP);
 const RE = new RegExp(SOURCES.join('|'), 'gi');

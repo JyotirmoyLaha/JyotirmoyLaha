@@ -268,19 +268,6 @@ function hero() {
       <stop offset="85%" stop-color="${C.aqua}" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="${C.aqua}" stop-opacity="0.9"/>
     </linearGradient>
-    <linearGradient id="hr-sweep" gradientUnits="userSpaceOnUse" x1="${RX}" y1="0" x2="${RX + 380}" y2="0">
-      <stop offset="0" stop-color="${C.hi}"/>
-      <stop offset="0.40" stop-color="${C.hi}">
-        <animate attributeName="offset" values="-0.35;1.00;1.00" keyTimes="0;0.55;1" dur="9s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="0.50" stop-color="${C.violetHi}">
-        <animate attributeName="offset" values="-0.25;1.10;1.10" keyTimes="0;0.55;1" dur="9s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="0.60" stop-color="${C.hi}">
-        <animate attributeName="offset" values="-0.15;1.20;1.20" keyTimes="0;0.55;1" dur="9s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="1" stop-color="${C.hi}"/>
-    </linearGradient>
   </defs>
   ${promptLine(24, 60, 'neofetch --human', T_CMD0, T_CMD1, T_CMD1 + 0.1, false)}
 
@@ -310,7 +297,7 @@ function hero() {
   <!-- ── identity ── -->
   <g>${fadeIn(T_INFO - 0.35)}
     <text x="${RX}" y="98" font-family="${MONO}" font-size="12" font-weight="700"><tspan fill="${C.cyan}">jyotirmoy</tspan><tspan fill="${C.lo}">@</tspan><tspan fill="${C.violetHi}">laha</tspan></text>
-    <text x="${RX - 2}" y="140" font-family="${SANS}" font-size="38" font-weight="900" letter-spacing="-1.5" fill="url(#hr-sweep)">JYOTIRMOY LAHA</text>
+    <text x="${RX - 2}" y="140" font-family="${SANS}" font-size="38" font-weight="900" letter-spacing="-1.5" fill="${C.hi}">JYOTIRMOY LAHA</text>
     <rect x="${RX}" y="158" width="396" height="1" fill="${C.border}"/>
     <rect x="${RX}" y="158" width="64" height="1.6" fill="${C.violet}"/>
   </g>

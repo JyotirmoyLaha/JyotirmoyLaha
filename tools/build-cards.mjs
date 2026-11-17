@@ -66,11 +66,6 @@ function card(p) {
       <stop offset="0%" stop-color="${C.bg}"/>
       <stop offset="100%" stop-color="${C.bgAlt}"/>
     </linearGradient>
-    <linearGradient id="${uid}-spine" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="${p.accent}" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="${p.accent}" stop-opacity="1"/>
-      <stop offset="100%" stop-color="${p.accent}" stop-opacity="0.15"/>
-    </linearGradient>
     <linearGradient id="${uid}-rule" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="${p.accent}" stop-opacity="0.55"/>
       <stop offset="100%" stop-color="${p.accent}" stop-opacity="0"/>
@@ -86,8 +81,6 @@ function card(p) {
   <!-- ambient wash behind the artwork -->
   <circle cx="726" cy="90" r="70" fill="${p.accent}" opacity="0.10" filter="url(#${uid}-soft)"/>
 
-  <!-- accent spine -->
-  <rect x="0.75" y="18" width="3" height="${H - 36}" rx="1.5" fill="url(#${uid}-spine)"/>
 
   <!-- title -->
   <rect x="${PAD}" y="34" width="8" height="8" rx="1.6" fill="${p.accent}" transform="rotate(45 ${PAD + 4} 38)"/>
